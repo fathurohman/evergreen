@@ -18,6 +18,7 @@ class CreatePostLowonganTable extends Migration
             $table->foreignId('id_bagian');
             $table->string('judul');
             $table->longText('deskripsi');
+            $table->date('tanggal_akhir');
             $table->timestamps();
         });
     }

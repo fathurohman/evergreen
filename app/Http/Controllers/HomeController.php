@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -28,7 +32,7 @@ class HomeController extends Controller
 
     public function edit(){
 
-        return view('page.edit_pass');
+        return view('pages.edit_pass');
     }
 
     public function update(){

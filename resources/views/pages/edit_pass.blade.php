@@ -18,19 +18,19 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="{{ route('password.edit')}}" method="post">
+            <form role="form" action="{{ route('passwords.edit')}}" method="post">
                 @csrf
                 @method("PATCH")
               <div class="card-body">
 
-                @if (Session::has('success'))
+                {{-- @if (Session::has('success'))
                     <div class="alert alert-success" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                        </button>
                         {{Session::get('success')}}
                     </div>
-                @endif
+                @endif --}}
             <div class="form-group">
                 <label for="old_password" class="col-sm-6 col-form-label">Old Password</label>
                 <div class="col-sm-10">

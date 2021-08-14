@@ -33,7 +33,9 @@ Route::patch('account/password', [HomeController::class, 'update'])->name('passw
 
 //bagian
 Route::get('/bagian', [BagianController::class, 'index']);
-
+Route::post('/bagian/store', [BagianController::class, 'store'])->name('bagian.store');
+Route::get('/edit_bagian/{id}', [BagianController::class, 'edit']);
+Route::post('/update_bagian', [BagianController::class, 'update'])->name('bagian.update');
 
 
 //post

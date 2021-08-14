@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Post Lowongan</h1>
+          <h1>Bagian</h1>
         </div>
 
       </div>
@@ -103,7 +103,7 @@
 
                     <div class="form-group">
                         <label class="control-label mb-1">Nama Bagian</label>
-                        <input name="nama_bagian" type="text" value="-" class="form-control" required>
+                        <input name="nama_bagian" type="text" class="form-control" required>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
                    <div>

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostLowonganController;
+use App\Http\Controllers\BagianController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +30,17 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('account/password', [HomeController::class, 'edit'])->name('password.edit');
 Route::patch('account/password', [HomeController::class, 'update'])->name('passwords.edit');
+
+//bagian
+Route::get('/bagian', [BagianController::class, 'index']);
+
+
+
+//post
+Route::get('/post', [PostLowonganController::class, 'index']);
+
+
+
 
 
 });

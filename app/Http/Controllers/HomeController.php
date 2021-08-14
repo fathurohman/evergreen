@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function edit(){
 
-        return view('pages.edit_pass');
+        return view('pages.admin.edit_pass');
     }
 
     public function update(){

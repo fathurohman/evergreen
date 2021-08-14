@@ -68,10 +68,20 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{ url('/users') }}" class="nav-link {{ (request()->segment(1) == 'users') ? 'active' : null }}">
-              <i class="nav-icon fas fa-user"></i>
+            <a href="{{ url('/bagian') }}" class="nav-link {{ (request()->segment(1) == 'bagian') ? 'active' : null }}">
+              <i class="nav-icon fas fa-tag"></i>
               <p>
-                Users
+                Bagian
+                {{-- <span class="right badge badge-danger">New</span> --}}
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}">
+              <i class="nav-icon fas fa-file-alt"></i>
+              <p>
+                Post Lowongan
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>

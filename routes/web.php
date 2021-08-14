@@ -14,9 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
+
+// routes yg bisa di akses jika sudah login
+Route::middleware(['auth'])->group(function () {
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('account/password', [HomeController::class, 'edit'])->name('password.edit');
+Route::patch('account/password', [HomeController::class, 'update'])->name('password.edit');
+
+
+});

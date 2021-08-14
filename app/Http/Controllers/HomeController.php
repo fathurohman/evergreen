@@ -25,4 +25,31 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function edit(){
+
+        return view('page.edit_pass');
+    }
+
+    public function update(){
+
+        request()->validate([
+            'old_password' => 'required',
+            'password'     => ['required', 'string', 'min:6', 'confirmed'],
+        ]);
+
+        $currentPassword = auth()->user()->password;
+        $old_password = request('old_password');
+
+        if(Hash::check($old_password, $currentPassword)){
+            auth()->user()->update([
+                'password' => bcrypt(request('password')),
+            ]);
+
+            return back()->with('success', 'You are changed your password');
+        }else{
+
+            return back()->withErrors(['old_password' => 'Make Sure You Fill Your Current Password']);
+        }
+    }
 }

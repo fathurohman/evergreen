@@ -24,6 +24,26 @@ class PostLowonganController extends Controller
                             ->select('post_lowongan.*','bagian.nama_bagian')
                             ->orderBy('id', 'DESC')
                             ->get(),
+            'dd_bagian' => DB::table('bagian')
+                            ->orderBy('id', 'DESC')
+                            ->get(),
         ]);
     }
+
+    public function store(Request $request){
+
+        $data = new Post_lowongan;
+
+        $data->id_bagian = $request->id_bagian;
+        $data->judul = $request->judul;
+        $data->deskripsi = $request->deskripsi;
+        $data->tanggal_akhir = $request->tanggal_akhir;
+
+        $data->save();
+
+        session()->flash("success", "Data berhasil di tambahkan");
+        return back()->with(['success' => 'Data berhasil di tambahkan']);
+
+    }
+
 }

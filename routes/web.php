@@ -40,7 +40,9 @@ Route::post('/update_bagian', [BagianController::class, 'update'])->name('bagian
 
 //post
 Route::get('/post', [PostLowonganController::class, 'index']);
-
+Route::post('/post/store', [PostLowonganController::class, 'store'])->name('post.store');
+Route::get('/edit_post/{id}', [PostLowonganController::class, 'edit']);
+Route::post('/update_post', [PostLowonganController::class, 'update'])->name('post.update');
 
 
 

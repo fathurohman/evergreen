@@ -27,11 +27,11 @@ class BagianController extends Controller
 
     public function store(Request $request){
 
-        $user = new Bagian;
+        $data = new Bagian;
 
-        $user->nama_bagian = $request->nama_bagian;
+        $data->nama_bagian = $request->nama_bagian;
 
-        $user->save();
+        $data->save();
 
         session()->flash("success", "Data berhasil di tambahkan");
         return back()->with(['success' => 'Data berhasil di tambahkan']);

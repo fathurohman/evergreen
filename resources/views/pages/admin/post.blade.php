@@ -95,7 +95,7 @@
                                             ->Count();
                         @endphp
 
-                          <a class="btn btn-primary" href="/sub_post/{{ $item->id }}"><i class="fa fa-share"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-share"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>
                           <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_post/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                         </td>

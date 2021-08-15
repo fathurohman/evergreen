@@ -48,5 +48,9 @@ Route::get('/delete_post/{id}', [PostLowonganController::class, 'delete']);
 Route::get('/edit_imagepost/{id}', [PostLowonganController::class, 'editimage']);
 Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])->name('imagepost.update');
 
+//pelamar//
+Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
+
+
 
 });

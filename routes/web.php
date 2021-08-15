@@ -43,8 +43,10 @@ Route::get('/post', [PostLowonganController::class, 'index']);
 Route::post('/post/store', [PostLowonganController::class, 'store'])->name('post.store');
 Route::get('/edit_post/{id}', [PostLowonganController::class, 'edit']);
 Route::post('/update_post', [PostLowonganController::class, 'update'])->name('post.update');
+Route::get('/delete_post/{id}', [PostLowonganController::class, 'delete']);
 
-
+Route::get('/edit_imagepost/{id}', [PostLowonganController::class, 'editimage']);
+Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])->name('imagepost.update');
 
 
 });

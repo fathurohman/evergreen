@@ -78,7 +78,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}">
+            <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}
+                {{ (request()->segment(1) == 'edit_imagepost') ? 'active' : null }}
+                ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
                 Post Lowongan

@@ -50,9 +50,9 @@
                     <thead>
                     <tr align="center">
                       <th>No</th>
+                      <th>Image</th>
                       <th>Bagian</th>
                       <th>Judul</th>
-                      <th>Deskripsi</th>
                       <th>Tanggal Akhir</th>
                       <th>Action</th>
 
@@ -62,9 +62,12 @@
                     @foreach ($data_post as $index=>$item)
                     <tr align="center">
                       <td>{{$index+1 }}</td>
+                      <td>
+                        <img src="{{asset('/images/img_post')}}/{{$item->image}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"> <br>
+                        <a class="btn btn-primary" href="/edit_imagepost/{{ $item->id }}"><i class="fa fa-edit"></i> Edit Image</a>
+                      </td>
                       <td>{{$item->nama_bagian }}</td>
                       <td>{{$item->judul }}</td>
-                      <td>{{$item->deskripsi }}</td>
                       <td>
                         <?php
                         $tanggal = $item->tanggal_akhir;
@@ -134,6 +137,12 @@
                     <input name="id" type="hidden" class="form-control" aria-required="true" aria-invalid="false">
 
                     <div class="form-group">
+                        <label class="control-label mb-1">Image</label>
+                        <img id="previewImg" style="max-width: 450px;margin-top: 10px;margin-bottom: 10px" alt="profile image">
+                        <input name="file" type="file" class="form-control" onchange="previewFile(this)" required>
+
+                    </div>
+                    <div class="form-group">
                         <label class="control-label mb-1">Bagian</label>
                            <select name='id_bagian' class="form-control" required>
                                     <option value="" selected>- Pilih -</option>
@@ -152,6 +161,12 @@
                     <div class="form-group">
                         <label class="control-label mb-1">Deskripsi</label>
                         <textarea name="deskripsi" class="form-control" required></textarea>
+                        {{-- <h6>*kosongkan jika tidak ada</h6> --}}
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label mb-1">Kualifikasi</label>
+                        <textarea name="kualifikasi" class="form-control" required></textarea>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 

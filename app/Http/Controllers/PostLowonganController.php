@@ -32,11 +32,16 @@ class PostLowonganController extends Controller
 
     public function store(Request $request){
 
-        $data = new Post_lowongan;
+        $img                    = $request->file('file');
+        $imageName              = time(). '.' .$img->extension();
+        $img->move(public_path('images/img_post'),$imageName);
 
+        $data = new Post_lowongan;
         $data->id_bagian = $request->id_bagian;
         $data->judul = $request->judul;
+        $data->image = $imageName;
         $data->deskripsi = $request->deskripsi;
+        $data->kualifikasi = $request->kualifikasi;
         $data->tanggal_akhir = $request->tanggal_akhir;
 
         $data->save();
@@ -45,5 +50,35 @@ class PostLowonganController extends Controller
         return back()->with(['success' => 'Data berhasil di tambahkan']);
 
     }
+
+    public function editimage($id){
+
+        $data = Post_lowongan::find($id);
+        return view('pages.admin.edit.edit_imagepost', compact('data'));
+    }
+
+    public function updateimage(Request $request) {
+
+        $datas = Post_lowongan::find($request->id);
+        unlink(public_path('images/img_post').'/'.$datas->image);
+        $img           = $request->file('file');
+        $imageName     = time(). '.' .$img->extension();
+        $img->move(public_path('images/img_post'),$imageName);
+
+        $data = Post_lowongan::find($request->id);
+        $data->image       = $imageName;
+        $data->save();
+
+            session()->flash("success", "Image Berhasil Diubah!");
+            return redirect('/post')->with(['success' => 'Image Berhasil Diubah!']);
+        }
+
+    public function delete($id){
+        $data = Post_lowongan::find($id);
+         unlink(public_path('images/img_post').'/'.$data->image);
+        $data->delete();
+            session()->flash("error", "Data berhasil di Dihapus");
+            return redirect('/post')->with(['error' => 'Data Berhasil Dihapus!']);
+       }
 
 }

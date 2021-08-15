@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 14, 2021 at 11:57 AM
+-- Generation Time: Aug 15, 2021 at 12:06 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.20
 
@@ -33,6 +33,14 @@ CREATE TABLE `bagian` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `bagian`
+--
+
+INSERT INTO `bagian` (`id`, `nama_bagian`, `created_at`, `updated_at`) VALUES
+(1, 'Surabaya Office', '2021-08-14 06:28:53', '2021-08-14 19:56:46'),
+(2, 'Jakarta Office', '2021-08-14 06:35:45', '2021-08-14 19:56:34');
 
 -- --------------------------------------------------------
 
@@ -122,27 +130,20 @@ CREATE TABLE `post_lowongan` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `id_bagian` bigint(20) UNSIGNED NOT NULL,
   `judul` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `deskripsi` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `kualifikasi` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `tanggal_akhir` date NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `shared`
+-- Dumping data for table `post_lowongan`
 --
 
-CREATE TABLE `shared` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `gambar_atas` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `judul` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `deskripsi` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `links` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `post_lowongan` (`id`, `id_bagian`, `judul`, `image`, `deskripsi`, `kualifikasi`, `tanggal_akhir`, `created_at`, `updated_at`) VALUES
+(4, 2, 'test', '1628998439.png', '1. oke\r\n2. iya', 'kaya gini\r\nkaya gitu\r\nokeh hahaha', '2021-08-15', '2021-08-14 20:33:59', '2021-08-14 20:33:59');
 
 -- --------------------------------------------------------
 
@@ -166,7 +167,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', NULL, '$2y$10$KJ4htMzPoo2Uw4kGNr/YW.QrZtEuBHyNpGQ/KnyasvQw3KnDkmerO', NULL, '2021-08-13 22:57:06', '2021-08-13 22:57:06');
+(1, 'admin', 'admin@gmail.com', NULL, '$2y$10$j5dK64t7tKpnpp.oHMeEguGrmdly7sGgASMktE72N3hvTQAlPeeiO', NULL, '2021-08-13 22:57:06', '2021-08-14 05:05:17');
 
 --
 -- Indexes for dumped tables
@@ -210,12 +211,6 @@ ALTER TABLE `post_lowongan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `shared`
---
-ALTER TABLE `shared`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -230,7 +225,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bagian`
 --
 ALTER TABLE `bagian`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `data_pelamar`
@@ -254,13 +249,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `post_lowongan`
 --
 ALTER TABLE `post_lowongan`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `shared`
---
-ALTER TABLE `shared`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`

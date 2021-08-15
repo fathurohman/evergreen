@@ -1,0 +1,40 @@
+body {
+  /* padding-top: 5rem; */
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: left;
+}
+
+.jumbotron-edit {
+     padding: 5rem 1rem;
+    /* margin-bottom: 2rem; */
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.wearehiring{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.evergreen-text{
+    padding: 30px;
+    text-align: center;
+    color: #ffff;
+    background-color: #3e8936;
+
+    margin: auto;
+  width: 50%;
+
+}
+
+.footer{
+    padding: 50px;
+    background: #252525;
+}

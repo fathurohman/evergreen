@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/print', function () {
+    return view('pages.print.print');
+});
+
 Auth::routes();
 
 

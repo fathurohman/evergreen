@@ -67,21 +67,13 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="{{ url('/bagian') }}" class="nav-link {{ (request()->segment(1) == 'bagian') ? 'active' : null }}">
-              <i class="nav-icon fas fa-tag"></i>
-              <p>
-                Bagian
-                {{-- <span class="right badge badge-danger">New</span> --}}
-              </p>
-            </a>
-          </li>
+
 
           <li class="nav-item">
             <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_imagepost') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_post') ? 'active' : null }}
-
+                {{ (request()->segment(1) == 'pelamar') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
@@ -91,7 +83,16 @@
             </a>
           </li>
 
-
+          <li class="nav-header">option</li>
+          <li class="nav-item">
+            <a href="{{ url('/bagian') }}" class="nav-link {{ (request()->segment(1) == 'bagian') ? 'active' : null }}">
+              <i class="nav-icon fas fa-tag"></i>
+              <p>
+                Bagian
+                {{-- <span class="right badge badge-danger">New</span> --}}
+              </p>
+            </a>
+          </li>
 
           {{-- <li class="nav-item has-treeview">
             <a href="#" class="nav-link">

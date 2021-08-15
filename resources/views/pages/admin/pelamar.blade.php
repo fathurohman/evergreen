@@ -78,13 +78,13 @@
               </table>
                 <br><br>
 
-                <p>
+                {{-- <p>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_besar">
                       Tambah Hadir Tamu </button>
-                      {{-- @foreach ($data_tamu as $index=>$item)
+                       @foreach ($data_tamu as $index=>$item)
                       <a href="/data_subtamu/cetak_pdf/{{$item->id}}" class="btn btn-primary" target="_blank"><i class="fa fa-print"></i> CETAK PDF</a>
-                      @endforeach --}}
-                     </p>
+                      @endforeach
+                     </p> --}}
 
                 {{-- <table id="example3" class="table table-bordered"><!-- diedit -->
                     <thead>

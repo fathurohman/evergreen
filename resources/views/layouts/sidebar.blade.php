@@ -80,6 +80,8 @@
           <li class="nav-item">
             <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_imagepost') ? 'active' : null }}
+                {{ (request()->segment(1) == 'edit_post') ? 'active' : null }}
+
                 ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>

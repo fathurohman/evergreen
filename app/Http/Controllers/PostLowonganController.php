@@ -51,6 +51,34 @@ class PostLowonganController extends Controller
 
     }
 
+    public function edit($id){
+
+        $data = Post_lowongan::find($id);
+        $data2 = DB::table('post_lowongan')
+                ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
+                ->select('post_lowongan.*','bagian.nama_bagian')
+                ->orderBy('id', 'DESC')
+                ->get();
+        $dd_bagian = DB::table('bagian')->orderBy('id', 'DESC')->get();
+
+        return view('pages.admin.edit.edit_post', compact('data','dd_bagian','data2'));
+    }
+
+    public function update(Request $request) {
+
+            $data = Post_lowongan::find($request->id);
+            $data->id_bagian = $request->id_bagian;
+            $data->judul = $request->judul;
+            $data->deskripsi = $request->deskripsi;
+            $data->kualifikasi = $request->kualifikasi;
+            $data->tanggal_akhir = $request->tanggal_akhir;
+
+            $data->save();
+
+            session()->flash("success", "Data Berhasil Disimpan!");
+            return redirect('/post')->with(['success' => 'Data Berhasil Disimpan!']);
+        }
+
     public function editimage($id){
 
         $data = Post_lowongan::find($id);

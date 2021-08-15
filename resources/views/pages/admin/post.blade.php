@@ -138,7 +138,7 @@
 
                     <div class="form-group">
                         <label class="control-label mb-1">Image</label>
-                        <img id="previewImg" style="max-width: 450px;margin-top: 10px;margin-bottom: 10px" alt="profile image">
+                        <img id="previewImg" style="max-width: 450px;margin-top: 10px;margin-bottom: 10px" alt="image">
                         <input name="file" type="file" class="form-control" onchange="previewFile(this)" required>
 
                     </div>
@@ -160,13 +160,13 @@
 
                     <div class="form-group">
                         <label class="control-label mb-1">Deskripsi</label>
-                        <textarea name="deskripsi" class="form-control" required></textarea>
+                        <textarea rows="6" cols="50" name="deskripsi" class="form-control" required></textarea>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 
                     <div class="form-group">
                         <label class="control-label mb-1">Kualifikasi</label>
-                        <textarea name="kualifikasi" class="form-control" required></textarea>
+                        <textarea rows="8" cols="50" name="kualifikasi" class="form-control" required></textarea>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 

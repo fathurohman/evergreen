@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post_lowongan;
+use PDF;
+use App;
 
 class PostLowonganController extends Controller
 {
@@ -122,6 +124,32 @@ class PostLowonganController extends Controller
                         ->get();
 
         return view('pages.admin.pelamar', compact('data_pelamar', 'data_post'));
+    }
+
+    public function poster($id){
+
+        $data_post =  DB::table('post_lowongan')
+                    ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
+                    ->select('post_lowongan.*','bagian.nama_bagian')
+                    ->where('post_lowongan.id', $id)
+                    ->orderBy('post_lowongan.id', 'DESC')
+                    ->get();
+
+        foreach ($data_post as $index=>$item){
+
+
+           $nama_bagian = $item->nama_bagian;
+           $deskripsi = $item->deskripsi;
+           $kualifikasi = $item->kualifikasi;
+
+        }
+
+      //  $pdf = App::make('dompdf');
+    	// $pdf = PDF::loadview('pages.print.poster',['nama_bagian'=>$nama_bagian,'deskripsi'=>$deskripsi,'kualifikasi'=>$kualifikasi]);
+
+    	//return $pdf->stream();
+        // return $pdf->download();
+        return view('pages.print.poster2', compact('nama_bagian', 'deskripsi','kualifikasi'));
     }
 
 

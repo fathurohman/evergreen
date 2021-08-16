@@ -60,7 +60,7 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label mb-1">Deskripsi</label>
-                    <textarea rows="6" cols="50" name="testimonial_deskripsi" class="form-control" required>{{$data->deskripsi}}</textarea>
+                    <textarea rows="6" cols="50" name="deskripsi" class="form-control" required>{{$data->deskripsi}}</textarea>
                 </div>
                 <div class="form-group">
                     <label class="control-label mb-1">Kualifikasi</label>

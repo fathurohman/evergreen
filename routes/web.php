@@ -22,7 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/print', function () {
-    return view('pages.print.print');
+    return view('pages.print.poster');
 });
 
 Auth::routes();
@@ -54,7 +54,7 @@ Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])
 
 //pelamar//
 Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
-
+Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
 
 });

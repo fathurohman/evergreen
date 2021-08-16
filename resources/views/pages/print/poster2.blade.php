@@ -6,32 +6,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>HRD System | print</title>
+    <title>HRD System | Poster</title>
 
     <!-- Bootstrap core CSS -->
 <link href="{{asset('print_assets/dist/css/bootstrap.min.css')}}" rel="stylesheet">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-
     <!-- Custom styles for this template -->
-    <link href="{{asset('print_assets/style.css')}}" rel="stylesheet">
+    <link href="{{asset('print_assets/style.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('print_assets/print.css')}}" type="text/css" media="print" rel="stylesheet">
   </head>
   <body>
 
@@ -45,7 +28,7 @@
         {{-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> --}}
 
         <p class="evergreen-text">PT. EVERGREEN SHIPPING AGENCY INDONESIA<br>
-                JAKARTA OFFICE
+                {{$nama_bagian }}
         </p>
 
       </div>
@@ -54,9 +37,7 @@
             <table align="center">
                 <tr>
                     <td>
-                        <p class="deskripsi-p">
-                        1. HUMAN RESOURCES STAFF
-                        2. GENERAL AFFAIR - MESSENGER
+                        <p class="deskripsi-p">{{$deskripsi }}
                         </p>
                     </td>
                 </tr>
@@ -69,14 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p class="deskripsi-text">cekek
-                            Bacelor Degre
-                            asjdsaujdh
-                            asdksakd
-                            sadhsadg
-                            asdkahsd
-                            kasdgasdk
-                            hskadgasd
+                        <p class="deskripsi-text">{{$kualifikasi }}
                         </p>
                     </td>
                 </tr>

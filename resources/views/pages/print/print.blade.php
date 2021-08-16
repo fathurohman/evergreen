@@ -38,35 +38,66 @@
 
 <main role="main" class="container">
 
-    <div class="jumbotron-edit">
+    <div class="jumbotron-edit" style="background-image: url('{{asset('/images/img/ever1.jpg')}}')">
         {{-- <h1 class="display-4">Hello, world!</h1> --}}
         <p class="wearehiring">WE ARE <br> HIRING!</p>
-        <br>
+        <br><br>
         {{-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> --}}
-        <div class="card">
 
-        <span class="badge badge-success">PT. EVERGREEN SHIPPING AGENCY INDONESIA  </span>
+        <p class="evergreen-text">PT. EVERGREEN SHIPPING AGENCY INDONESIA<br>
+                JAKARTA OFFICE
+        </p>
 
-        </div>
       </div>
 
-
-        <div class="evergreen-text">
-                <p>cek</p>
+        <div class="deskripsi">
+            <table align="center">
+                <tr>
+                    <td>
+                        <p class="deskripsi-p">
+                        1. HUMAN RESOURCES STAFF
+                        2. GENERAL AFFAIR - MESSENGER
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="kualifikasi-p">
+                            QUALIFICATIONS
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="deskripsi-text">cekek
+                            Bacelor Degre
+                            asjdsaujdh
+                            asdksakd
+                            sadhsadg
+                            asdkahsd
+                            kasdgasdk
+                            hskadgasd
+                        </p>
+                    </td>
+                </tr>
+            </table>
         </div>
+        <br><br>
 
 
 
 
-
-  <div class="starter-template">
+  {{-- <div class="starter-template">
     <h1>Bootstrap starter template</h1>
     <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
+  </div> --}}
 
 
     <div class="footer">
-      <span class="text-muted">Place sticky footer content here.</span>
+      <p>Send Your Resumes in English
+          to recriutment
+
+      </p>
     </div>
 
 

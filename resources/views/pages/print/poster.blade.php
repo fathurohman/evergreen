@@ -6,39 +6,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>HRD System | Poster</title>
+    <title>HRD System | {{$judul}}</title>
 
     <!-- Bootstrap core CSS -->
 <link href="{{asset('print_assets/dist/css/bootstrap.min.css')}}" rel="stylesheet">
 
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-
     <!-- Custom styles for this template -->
-    <link href="{{asset('print_assets/style.css')}}" rel="stylesheet">
+    <link href="{{asset('print_assets/style.css')}}" type="text/css" rel="stylesheet">
+    <link href="{{asset('print_assets/print.css')}}" type="text/css" media="print" rel="stylesheet">
   </head>
   <body>
 
 
 <main role="main" class="container">
 
-    <div class="jumbotron-edit" style="background-image: url('{{asset('/images/img/ever1.jpg')}}')">
+    <div class="jumbotron-edit" style="background-image: url('{{asset('/images/img_post')}}/{{$image}}')">
         {{-- <h1 class="display-4">Hello, world!</h1> --}}
         <p class="wearehiring">WE ARE <br> HIRING!</p>
         <br><br>
@@ -84,11 +67,7 @@
   </div> --}}
 
 
-    <div class="footer">
-      <p>Send Your Resumes in English
-          to recriutment
-
-      </p>
+    <div class="footer"><p>Send Your Resumes in English to recriutment</p>
     </div>
 
 

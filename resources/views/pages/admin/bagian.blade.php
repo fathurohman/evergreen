@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Bagian</h1>
+          <h1>Department</h1>
         </div>
 
       </div>
@@ -50,7 +50,7 @@
                     <thead>
                     <tr align="center">
                       <th>No</th>
-                      <th>Bagian Name</th>
+                      <th>Department</th>
                       <th>Action</th>
 
                     </tr>
@@ -86,7 +86,7 @@
 
                  <!-- Ini adalah Bagian Header Modal -->
                    <div class="modal-header">
-                 <h4 class="modal-title">Add Bagian</h4>
+                 <h4 class="modal-title">Add Department</h4>
                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                  </div>
 
@@ -102,7 +102,7 @@
                     <input name="id" type="hidden" class="form-control" aria-required="true" aria-invalid="false">
 
                     <div class="form-group">
-                        <label class="control-label mb-1">Nama Bagian</label>
+                        <label class="control-label mb-1">Department</label>
                         <input name="nama_bagian" type="text" class="form-control" required>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>

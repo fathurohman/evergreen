@@ -137,7 +137,8 @@ class PostLowonganController extends Controller
 
         foreach ($data_post as $index=>$item){
 
-
+           $image = $item->image;
+           $judul = $item->judul;
            $nama_bagian = $item->nama_bagian;
            $deskripsi = $item->deskripsi;
            $kualifikasi = $item->kualifikasi;
@@ -149,7 +150,7 @@ class PostLowonganController extends Controller
 
     	//return $pdf->stream();
         // return $pdf->download();
-        return view('pages.print.poster2', compact('nama_bagian', 'deskripsi','kualifikasi'));
+        return view('pages.print.poster', compact('image','judul','nama_bagian', 'deskripsi','kualifikasi'));
     }
 
 

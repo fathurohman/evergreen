@@ -88,7 +88,7 @@
             <a href="{{ url('/bagian') }}" class="nav-link {{ (request()->segment(1) == 'bagian') ? 'active' : null }}">
               <i class="nav-icon fas fa-tag"></i>
               <p>
-                Bagian
+                Department
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>

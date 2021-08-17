@@ -27,7 +27,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $allpost  = DB::table('post_lowongan')
+                    ->Count();
+
+
+        return view('home', compact('allpost'));
     }
 
     public function edit(){
@@ -56,4 +61,7 @@ class HomeController extends Controller
             return back()->withErrors(['old_password' => 'Make Sure You Fill Your Current Password']);
         }
     }
+
+
+
 }

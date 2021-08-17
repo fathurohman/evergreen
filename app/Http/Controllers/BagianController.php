@@ -54,7 +54,7 @@ class BagianController extends Controller
         $data->save();
 
         session()->flash("success", "Data berhasil di update");
-        return redirect("/bagian")->with('success', 'Data berhasil di update');
+        return redirect("/department")->with('success', 'Data berhasil di update');
     }
 
 }

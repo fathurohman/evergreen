@@ -85,7 +85,9 @@
 
           <li class="nav-header">option</li>
           <li class="nav-item">
-            <a href="{{ url('/bagian') }}" class="nav-link {{ (request()->segment(1) == 'bagian') ? 'active' : null }}">
+            <a href="{{ url('/department') }}" class="nav-link {{ (request()->segment(1) == 'department') ? 'active' : null }}
+                {{ (request()->segment(1) == 'edit_department') ? 'active' : null }}
+                ">
               <i class="nav-icon fas fa-tag"></i>
               <p>
                 Department

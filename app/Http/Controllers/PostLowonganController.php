@@ -150,7 +150,7 @@ class PostLowonganController extends Controller
 
     	//return $pdf->stream();
         // return $pdf->download();
-        return view('pages.print.poster', compact('image','judul','nama_bagian', 'deskripsi','kualifikasi'));
+        return view('pages.poster.poster', compact('image','judul','nama_bagian', 'deskripsi','kualifikasi'));
     }
 
 

@@ -51,7 +51,7 @@
                     <tr align="center">
                       <th>No</th>
                       <th>Image</th>
-                      <th>Bagian</th>
+                      <th>Department</th>
                       <th>Judul</th>
                       <th>Tanggal Akhir</th>
                       <th>Action</th>
@@ -145,7 +145,7 @@
 
                     </div>
                     <div class="form-group">
-                        <label class="control-label mb-1">Bagian</label>
+                        <label class="control-label mb-1">Department</label>
                            <select name='id_bagian' class="form-control" required>
                                     <option value="" selected>- Pilih -</option>
                                     @foreach ($dd_bagian as $rows)

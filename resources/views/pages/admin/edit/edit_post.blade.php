@@ -42,7 +42,7 @@
                 <input name="id" type="hidden" value="{{$data->id}}" class="form-control">
 
                 <div class="form-group">
-                    <label class="control-label mb-1">Bagian</label>
+                    <label class="control-label mb-1">Department</label>
                        <select name='id_bagian' class="form-control">
                                @foreach ($data2 as $item)
                                <option value="{{$item->id_bagian}}" selected>Pilihan Sebelumnya : {{$item->nama_bagian}}</option>

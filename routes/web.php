@@ -36,10 +36,10 @@ Route::get('account/password', [HomeController::class, 'edit'])->name('password.
 Route::patch('account/password', [HomeController::class, 'update'])->name('passwords.edit');
 
 //bagian
-Route::get('/bagian', [BagianController::class, 'index']);
-Route::post('/bagian/store', [BagianController::class, 'store'])->name('bagian.store');
-Route::get('/edit_bagian/{id}', [BagianController::class, 'edit']);
-Route::post('/update_bagian', [BagianController::class, 'update'])->name('bagian.update');
+Route::get('/department', [BagianController::class, 'index']);
+Route::post('/department/store', [BagianController::class, 'store'])->name('department.store');
+Route::get('/edit_department/{id}', [BagianController::class, 'edit']);
+Route::post('/update_department', [BagianController::class, 'update'])->name('department.update');
 
 
 //post

@@ -61,7 +61,7 @@
                       <td>{{$index+1 }}</td>
                       <td>{{$item->nama_bagian }}</td>
                       <td>
-                          <a class="btn btn-primary" href="/edit_bagian/{{ $item->id }}"><i class="fa fa-edit"></i></a>
+                          <a class="btn btn-primary" href="/edit_department/{{ $item->id }}"><i class="fa fa-edit"></i></a>
                           {{-- <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_bagian/{{ $item->id }}"><i class="fa fa-trash"></i></a> --}}
                         </td>
 
@@ -96,7 +96,7 @@
        <!-- Credit Card -->
        <div id="">
            <div class="card-body">
-               <form action="{{ route('bagian.store')}}"
+               <form action="{{ route('department.store')}}"
                    enctype="multipart/form-data" method="post">
                    @csrf
                     <input name="id" type="hidden" class="form-control" aria-required="true" aria-invalid="false">

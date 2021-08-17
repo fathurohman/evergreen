@@ -7,7 +7,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Edit Bagian</h1>
+          <h1>Edit Department</h1>
         </div>
 
       </div>
@@ -36,13 +36,13 @@
             <!-- /.card-header -->
             <div class="card-body">
 
-                <form action="{{ route('bagian.update') }}"
+                <form action="{{ route('department.update') }}"
                 enctype="multipart/form-data" method="post">
                 @csrf
                 <input name="id" type="hidden" value={{$data->id}} class="form-control" aria-required="true" aria-invalid="false">
 
                 <div class="form-group">
-                    <label class="control-label mb-1">Nama Bagian</label>
+                    <label class="control-label mb-1">Department</label>
                     <input name="nama_bagian" type="text" value="{{$data->nama_bagian}}" class="form-control" required>
                     {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                 </div>

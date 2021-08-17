@@ -74,7 +74,9 @@
 </main><!-- /.container -->
 
 
-
+<script type="text/javascript">
+    window.print();
+</script>
 
   </body>
 </html>

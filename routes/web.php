@@ -61,6 +61,6 @@ Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 //searching...
 Route::get('/search', [SearchController::class, 'index']);
 Route::get('/search/pelamar', [SearchController::class, 'search'])->name('search.pelamar');
-
+Route::get('/delete_pelamar/{id}', [SearchController::class, 'delete']);
 
 });

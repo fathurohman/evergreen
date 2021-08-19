@@ -32,7 +32,7 @@
                              <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-search"></i> Search </button>
                         </div>
                         <div class="form-group">
-                            <a href="{{ url('/search') }}" class="btn btn-info btn-block"><i class="fas fa-recycle"></i> Reset </a>
+                            <a href="{{ url('/search/pelamar') }}" class="btn btn-info btn-block"><i class="fas fa-recycle"></i> Reset </a>
                        </div>
                     </form>
                     </div>
@@ -61,26 +61,11 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @if ($data)
-
-
-                    @foreach ($data as $index=>$item)
-                    <tr align="center">
-                      <td>{{$item->nik}}</td>
-                      <td>{{$item->nama}}</td>
-                      <td><a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_pelamar/{{ $item->id }}"><i class="fa fa-trash"></i></a>
-                      </td>
-                    </tr>
-                    @endforeach
-                    @else
                     <tr>
-                        <td col="3">blank</td>
+                        <td colspan="3">
+                            <p align="center">-</p></td>
 
                     </tr>
-
-
-                    @endif
-
                     </tbody>
                   </table>
             </div>

@@ -18,7 +18,10 @@ class SearchController extends Controller
     public function index(){
 
 
-        return view('pages.admin.search');
+        return view('pages.admin.searchindex',[
+            'data' => 'blank',
+
+        ]);
     }
 
     public function search(Request $request){
@@ -36,4 +39,13 @@ class SearchController extends Controller
         ]);
 
     }
+
+    public function delete($id){
+        $data = Pelamar::find($id);
+        //  unlink(public_path('images/img_post').'/'.$data->image);
+        $data->delete();
+            session()->flash("error", "Data berhasil di Dihapus");
+            return redirect('/search')->with(['error' => 'Data Berhasil Dihapus!']);
+       }
+
 }

@@ -146,7 +146,7 @@ class PostLowonganController extends Controller
         }
 
       //  $pdf = App::make('dompdf');
-    	// $pdf = PDF::loadview('pages.print.poster',['nama_bagian'=>$nama_bagian,'deskripsi'=>$deskripsi,'kualifikasi'=>$kualifikasi]);
+    	// $pdf = PDF::loadview('pages.poster.poster',['nama_bagian'=>$nama_bagian,'deskripsi'=>$deskripsi,'kualifikasi'=>$kualifikasi]);
 
     	//return $pdf->stream();
         // return $pdf->download();

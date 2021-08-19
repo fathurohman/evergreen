@@ -31,8 +31,13 @@ class HomeController extends Controller
         $allpost  = DB::table('post_lowongan')
                     ->Count();
 
+        $allpelamar  = DB::table('data_pelamar')
+                    ->Count();
+        $alldepartment  = DB::table('bagian')
+                    ->Count();
 
-        return view('home', compact('allpost'));
+
+        return view('home', compact('allpost','allpelamar','alldepartment'));
     }
 
     public function edit(){

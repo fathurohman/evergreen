@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostLowonganController;
 use App\Http\Controllers\BagianController;
+use App\Http\Controllers\SearchController;
 
 
 /*
@@ -55,6 +56,11 @@ Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])
 //pelamar//
 Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
+
+
+//searching...
+Route::get('/search', [SearchController::class, 'index']);
+Route::get('/search/pelamar', [SearchController::class, 'search'])->name('search.pelamar');
 
 
 });

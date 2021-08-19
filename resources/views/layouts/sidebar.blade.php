@@ -97,7 +97,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{ url('/searching') }}" class="nav-link {{ (request()->segment(1) == 'searching') ? 'active' : null }}
+            <a href="{{ url('/search/pelamar') }}" class="nav-link {{ (request()->segment(1) == 'search') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-user"></i>
               <p>

@@ -22,12 +22,11 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/print', function () {
-    return view('pages.print.poster');
-});
 
 Auth::routes();
 
+//Formulir Pendaftaran
+Route::get('/post/form/{id}', [PostLowonganController::class, 'formindex'])->name('formindex');
 
 // routes yg bisa di akses jika sudah login
 Route::middleware(['auth'])->group(function () {

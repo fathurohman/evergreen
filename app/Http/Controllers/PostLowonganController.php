@@ -137,6 +137,7 @@ class PostLowonganController extends Controller
 
         foreach ($data_post as $index=>$item){
 
+           $id = $item->id;
            $image = $item->image;
            $judul = $item->judul;
            $nama_bagian = $item->nama_bagian;
@@ -150,9 +151,26 @@ class PostLowonganController extends Controller
 
     	//return $pdf->stream();
         // return $pdf->download();
-        return view('pages.poster.poster', compact('image','judul','nama_bagian', 'deskripsi','kualifikasi'));
+        return view('pages.poster.poster', compact('id','image','judul','nama_bagian', 'deskripsi','kualifikasi'));
     }
 
+
+    //FORMULIR
+
+    public function formindex($id){
+
+        $data_post = DB::table('post_lowongan')
+                        ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
+                        ->select('post_lowongan.*','bagian.nama_bagian')
+                        ->where('post_lowongan.id', $id)
+                        ->orderBy('post_lowongan.id', 'DESC')
+                        ->get();
+
+
+        return view('pages.form', compact('data_post'));
+
+
+    }
 
 
 }

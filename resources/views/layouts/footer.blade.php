@@ -56,7 +56,22 @@
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
+<script type="text/javascript">
+    function copy_text() {
+        document.getElementById("pilih").select();
+        document.execCommand("copy");
 
+            Swal.fire({
+            // position: 'top-end',
+            icon: 'success',
+            title: 'Text berhasil dicopy',
+            showConfirmButton: false,
+            timer: 1500
+
+
+        });
+    }
+</script>
 
 <script>
     $(function(){

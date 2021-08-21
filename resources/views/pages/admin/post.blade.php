@@ -96,12 +96,31 @@
                         @endphp
 
                           <a target="_blank" class="btn btn-primary" href="/poster/{{ $item->id }}">Poster <i class="fa fa-file-image"></i></a>
-                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-share"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-user-tie"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <br><br>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>
                           <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_post/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                         </td>
 
+                    </tr>
+                    <tr>
+                        @php
+                        $uri = url()->current();
+                        @endphp
+                        <td colspan="2">
+                            <label class="control-label">Form URL:</label>
+                            <a target="_blank" class="btn btn-info" href="/post/form/{{ $item->id }}"><i class="fa fa-share-square"></i> Form</a>
+
+                        </td>
+                        <td colspan="4">
+                            <div class="input-group mb-3">
+
+                                <input value="{{$uri}}/form/{{ $item->id }}" type="text" class="form-control" id="pilih" readonly>
+                                <div class="input-group-append">
+                                  <button class="btn btn-info" type="button" onclick="copy_text()"><i class="fa fa-copy"></i> Copy</button>
+                                </div>
+                              </div>
+                            </td>
                     </tr>
                     @endforeach
                     </tbody>

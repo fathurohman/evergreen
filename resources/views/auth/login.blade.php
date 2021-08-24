@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>HRD System</title>
+  <title>HRD | Recruitment System</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -24,7 +24,7 @@
   <div class="login-logo">
       <img class="img-fluid" src="">
       {{-- <img class="img-fluid" src="{{asset('/images/img/evergreen1.png')}}"> --}}
-    <a href=""><b>HRD</b>System</a>
+    <a href=""><b>HRD</b> | Recruitment </a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

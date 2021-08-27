@@ -27,6 +27,7 @@ Auth::routes();
 
 //Formulir Pendaftaran
 Route::get('/post/form/{id}', [PostLowonganController::class, 'formindex'])->name('formindex');
+Route::post('/post/form/store', [PostLowonganController::class, 'formstore'])->name('form.store');
 
 // routes yg bisa di akses jika sudah login
 Route::middleware(['auth'])->group(function () {

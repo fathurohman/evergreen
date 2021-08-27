@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post_lowongan;
+use App\Models\Pelamar;
 use PDF;
 use App;
 
@@ -115,6 +117,7 @@ class PostLowonganController extends Controller
 
         $data_pelamar =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
+                                ->where('status', Null)
                                 ->get();
         $data_post = DB::table('post_lowongan')
                         ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
@@ -168,6 +171,54 @@ class PostLowonganController extends Controller
 
 
         return view('pages.form', compact('data_post'));
+
+
+    }
+
+    public function formstore(Request $request){
+
+        //  $this->validate($request,[
+        //      'id_post_lowongan' => 'required',
+        //      'bagian' => 'required',
+        //      'nik' => 'required',
+        //      'nama' => 'required',
+        //      'umur' => 'required',
+        //      'foto_ktp.*' => 'required|file|mimes:jpg,png,jpeg|max:2048',
+        //      'cv.*' => 'required|file|mimes:pdf|max:2048',
+        //  ]);
+
+         $request->validate([
+            'id_post_lowongan' => 'required',
+             'bagian' => 'required',
+             'nik' => 'required',
+             'nama' => 'required',
+             'umur' => 'required',
+             'foto_ktp.*' => 'required|file|mimes:jpg,png,jpeg|max:2048',
+             'cv.*' => 'required|file|mimes:pdf|max:2048',
+        ]);
+
+
+        $ktp                   = $request->file('ktp');
+        $imageKtp              = time(). '.' .$ktp->getClientOriginalExtension();
+        $ktp->move(public_path('images/foto_ktp'),$imageKtp);
+
+        $cv                   = $request->file('cv');
+        $imageCv              = time(). '.' .$cv->getClientOriginalExtension();
+        $cv->move(public_path('images/cv'),$imageCv);
+
+        $data = new Pelamar;
+        $data->id_post_lowongan = $request->id_post_lowongan;
+        $data->bagian = $request->bagian;
+        $data->nik = $request->nik;
+        $data->nama = $request->nama;
+        $data->umur = $request->umur;
+        $data->foto_ktp = $imageKtp;
+        $data->cv = $imageCv;
+
+        $data->save();
+
+        session()->flash("success", "Daftar Berhasil!");
+        return back()->with(['success' => 'Daftar Berhasil!']);
 
 
     }

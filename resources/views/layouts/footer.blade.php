@@ -119,12 +119,12 @@
       "responsive": true,
     });
     $('#example3').DataTable({
-      "paging": false,
+      "paging": true,
       "lengthChange": false,
-      "searching": false,
-      "ordering": false,
-      "info": false,
-      "autoWidth": false,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": true,
       "responsive": true,
     });
     $('#example4').DataTable({

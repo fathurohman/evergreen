@@ -26,59 +26,64 @@ $status = date('Y-m-d'); @endphp
   <link rel="stylesheet" href="{{asset('assets/dist/css/adminlte.min.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
       <img class="img-fluid" src="">
       {{-- <img class="img-fluid" src="{{asset('/images/img/evergreen1.png')}}"> --}}
-    <a href=""><b>HRD</b>System</a>
+    <a href=""><b>Form</b>Lamaran</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
-    <div class="card-body login-card-body">
+    <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form method="POST" action="{{ route('login') }}">
+      <form method="post" enctype="multipart/form-data" action="{{ route('form.store') }}">
       @csrf
+      @php
+          $id_post_lowongan = request()->segment(3);
+      @endphp
+        <input name="id" type="hidden" class="form-control" aria-required="true" aria-invalid="false">
+        <input name="id_post_lowongan" type="hidden" value="{{$id_post_lowongan}}" class="form-control">
         <div class="input-group mb-3">
-          <input id="email" name="email" type="email" value="{{ old('email') }}" class="form-control @error('email') is-invalid @enderror" placeholder="Email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
+            <input name="bagian" type="text" class="form-control" placeholder="Bagian" required>
+
           </div>
-        </div>
-        @error('email')
-            <div class="alert alert-danger" role="alert">
-            {{ $message }}
-            </div>
-          @enderror
         <div class="input-group mb-3">
-          <input id="password" name="password" type="password" class="form-control @error('email') is-invalid @enderror" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
+          <input name="nik" type="number" class="form-control" placeholder="Nik" required>
+
         </div>
-        @error('password')
-            <div class="alert alert-danger" role="alert">
-            {{ $message }}
-            </div>
-          @enderror
+
+        <div class="input-group mb-3">
+          <input name="nama" type="text" class="form-control" placeholder="Nama" required>
+
+        </div>
+
+         <div class="input-group mb-3">
+          <input name="umur" type="number" class="form-control" placeholder="Umur" required>
+
+        </div>
+
+        <div class="input-group mb-3">
+            <input name="ktp" type="file" class="form-control" >
+
+          </div>
+
+          <div class="input-group mb-3">
+            <input name="cv" type="file" class="form-control" >
+
+          </div>
+
         <div class="row">
           <div class="col-8">
-            <div class="icheck-primary">
-            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
+
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
           </div>
           <!-- /.col -->
         </div>
@@ -113,6 +118,35 @@ $status = date('Y-m-d'); @endphp
 <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('assets/dist/js/adminlte.min.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+<script>
+    $(function(){
+
+        @if(Session::has('success'))
+            Swal.fire({
+            // position: 'top-end',
+            icon: 'success',
+            title: '{{ Session::get("success") }}',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        @endif
+    });
+    </script>
+
+<script>
+    $(function(){
+
+        @if(Session::has('error'))
+        Swal.fire({
+            icon: 'error',
+            title: '{{ Session::get("error") }}',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        @endif
+    });
+    </script>
 
 </body>
 </html>

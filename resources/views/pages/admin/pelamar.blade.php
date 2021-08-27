@@ -44,18 +44,26 @@
                <table id="example4" class="table table-bordered"><!-- diedit -->
                 <thead>
                 <tr align="center">
-                    <th>Bagian</th>
                     <th>Judul</th>
-                    <th>Tanggal Akhir</th>
+                    <th>Department</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach ($data_post as $index=>$item)
                 <tr align="center">
+                    <td>{{$item->judul }}</td>
                     <td>{{$item->nama_bagian }}</td>
-                      <td>{{$item->judul }}</td>
-                      <td>
-                        <?php
+                </tr>
+                <tr align="center">
+                    <th>Deskripsi</th>
+                    <th>Kualifikasi</th>
+                </tr>
+                <tr align="left">
+                    <td><p style="white-space: pre-line">{{$item->deskripsi}}</p></td>
+                    <td><p style="white-space: pre-line">{{$item->kualifikasi}}</p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <b>Batas Waktu :</b> <?php
                         $tanggal = $item->tanggal_akhir;
                             $daftar_hari = array(
                                             'Sunday' => 'Minggu',
@@ -71,8 +79,9 @@
 
                                 echo $daftar_hari[$namahari];
                                 echo date(', d-M-Y', strtotime($tanggal));
-                                ?>
-                    </td>
+                                ?></td>
+
+                </tr>
                 @endforeach
                 </tbody>
               </table>
@@ -86,32 +95,36 @@
                       @endforeach
                      </p> --}}
 
-                {{-- <table id="example3" class="table table-bordered"><!-- diedit -->
+                 <table id="example3" class="table table-bordered">
                     <thead>
                     <tr align="center">
                       <th>No</th>
+                      <th>Nik</th>
                       <th>Nama</th>
-                      <th>Jabatan</th>
-                      <th>Ttd</th>
+                      <th>Umur</th>
                       <th>Action</th>
 
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($data_subtamu as $index=>$item)
+                    @foreach ($data_pelamar as $index=>$item)
                    <tr align="center">
                       <td>{{$index +1 }}</td>
+                      <td>{{$item->nik }}</td>
                       <td>{{$item->nama }}</td>
-                      <td>{{$item->jabatan }}</td>
-                      <td>{{$item->ttd }}</td>
+                      <td>{{$item->umur }}</td>
                      <td>
-                        <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_subtamu/{{ $item->id }}"><i class="fa fa-trash"></i></a>
+                        <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc_pelamar/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 
                     </tr>
                     @endforeach
                     </tbody>
-                  </table> --}}
+                  </table>
+                  <br><br>
+
+
+
             </div>
             <!-- /.card-body -->
           </div>

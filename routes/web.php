@@ -57,6 +57,7 @@ Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])
 Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
+Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);
 
 //searching...
 Route::get('/search', [SearchController::class, 'index']);

@@ -115,6 +115,12 @@ class PostLowonganController extends Controller
 
        public function pelamar($id){
 
+
+        $data_pelamar_acc =  DB::table('data_pelamar')
+                                ->where('id_post_lowongan', $id)
+                                ->where('status', Null)
+                                ->get();
+
         $data_pelamar =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
                                 ->where('status', Null)
@@ -126,7 +132,7 @@ class PostLowonganController extends Controller
                         ->orderBy('post_lowongan.id', 'DESC')
                         ->get();
 
-        return view('pages.admin.pelamar', compact('data_pelamar', 'data_post'));
+        return view('pages.admin.pelamar', compact('data_pelamar', 'data_post','data_pelamar_acc'));
     }
 
     public function poster($id){
@@ -190,12 +196,13 @@ class PostLowonganController extends Controller
          $request->validate([
             'id_post_lowongan' => 'required',
              'bagian' => 'required',
-             'nik' => 'required',
+             'nik' => 'required|unique:data_pelamar,nik',
              'nama' => 'required',
-             'umur' => 'required',
-             'foto_ktp.*' => 'required|file|mimes:jpg,png,jpeg|max:2048',
-             'cv.*' => 'required|file|mimes:pdf|max:2048',
+             'umur' => 'required|max:26',
+             'ktp' => 'required|file|mimes:jpg,png,jpeg|max:2048',
+             'cv' => 'required|file|mimes:pdf|max:2048',
         ]);
+
 
 
         $ktp                   = $request->file('ktp');
@@ -221,6 +228,16 @@ class PostLowonganController extends Controller
         return back()->with(['success' => 'Daftar Berhasil!']);
 
 
+    }
+
+    public function acc($id){
+
+        $data = Pelamar::find($id);
+        $data->status = "acc";
+        $data->save();
+
+        session()->flash("success", "Data diacc!");
+        return back()->with(['success' => 'Data diacc!']);
     }
 
 

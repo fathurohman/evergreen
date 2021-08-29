@@ -48,41 +48,69 @@ $status = date('Y-m-d'); @endphp
       @endphp
         <input name="id" type="hidden" class="form-control" aria-required="true" aria-invalid="false">
         <input name="id_post_lowongan" type="hidden" value="{{$id_post_lowongan}}" class="form-control">
-        <div class="input-group mb-3">
-            <input name="bagian" type="text" class="form-control" placeholder="Bagian" required>
 
-          </div>
-        <div class="input-group mb-3">
-          <input name="nik" type="number" class="form-control" placeholder="Nik" required>
-
-        </div>
-
-        <div class="input-group mb-3">
-          <input name="nama" type="text" class="form-control" placeholder="Nama" required>
-
-        </div>
-
-         <div class="input-group mb-3">
-          <input name="umur" type="number" class="form-control" placeholder="Umur" required>
-
-        </div>
-
-        <div class="input-group mb-3">
-            <input name="ktp" type="file" class="form-control" >
-
+         <div class="form-group">
+            <input name="bagian" type="text" class="form-control" placeholder="Bagian" id="bagian">
+                @error('bagian')
+                <div class="text-danger mt-2">
+                {{ $message }}
+                </div>
+                @enderror
           </div>
 
-          <div class="input-group mb-3">
-            <input name="cv" type="file" class="form-control" >
+          <div class="form-group">
+            <input name="nik" type="number" class="form-control" placeholder="Nik" id="nik" value="{{old("nik")}}" >
+                @error('nik')
+                <div class="text-danger mt-2">
+                {{ $message }}
+                </div>
+                @enderror
+          </div>
 
+        <div class="form-group">
+          <input name="nama" type="text" class="form-control" placeholder="Nama" id="nama">
+            @error('nama')
+            <div class="text-danger mt-2">
+            {{ $message }}
+            </div>
+            @enderror
+        </div>
+
+         <div class="form-group">
+          <input name="umur" type="number" class="form-control" placeholder="Umur" id="umur">
+            @error('umur')
+            <div class="text-danger mt-2">
+            {{ $message }}
+            </div>
+            @enderror
+        </div>
+
+        <div class="form-group">
+          <input name="ktp" type="file" class="form-control" id="ktp" >
+          <div class="text-info mt-2">*file must .jpg,.jpeg,.png | max:2mb</div>
+                @error('ktp')
+                <div class="text-danger mt-2">
+                {{ $message }}
+                </div>
+                @enderror
+          </div>
+
+          <div class="form-group">
+            <input name="cv" type="file" class="form-control" id="cv" >
+            <div class="text-info mt-2">*file must .pdf | max:2mb</div>
+                @error('cv')
+                <div class="text-danger mt-2">
+                {{ $message }}
+                </div>
+                @enderror
           </div>
 
         <div class="row">
-          <div class="col-8">
-
+          <div class="col-4">
+            <a onclick="window.location.reload(true);" class="btn btn-danger btn-block"><font color="white">Reset</font></a>
           </div>
           <!-- /.col -->
-          <div class="col-4">
+          <div class="col-8">
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
           </div>
           <!-- /.col -->

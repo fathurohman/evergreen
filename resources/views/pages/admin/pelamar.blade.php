@@ -99,9 +99,9 @@
                     <thead>
                     <tr align="center">
                       <th>No</th>
-                      <th>Nik</th>
-                      <th>Nama</th>
-                      <th>Umur</th>
+                      <th>Foto KTP</th>
+                      <th>Informasi</th>
+                      <th>CV</th>
                       <th>Action</th>
 
                     </tr>
@@ -110,20 +110,20 @@
                     @foreach ($data_pelamar as $index=>$item)
                    <tr align="center">
                       <td>{{$index +1 }}</td>
-                      <td>{{$item->nik }}</td>
-                      <td>{{$item->nama }}</td>
-                      <td>{{$item->umur }}</td>
+                      <td> <img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"></td>
+                      <td>{{$item->nik }} <br>
+                          {{$item->nama }} <br>
+                          {{$item->umur }} Tahun
+                        </td>
+                      <td></td>
                      <td>
-                        <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc_pelamar/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
+                        <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 
                     </tr>
                     @endforeach
                     </tbody>
                   </table>
-                  <br><br>
-
-
 
             </div>
             <!-- /.card-body -->

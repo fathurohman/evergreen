@@ -83,6 +83,17 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="{{ url('/postss') }}" class="nav-link {{ (request()->segment(1) == 'postss') ? 'active' : null }}
+                ">
+              <i class="nav-icon fas fa-id-card-alt"></i>
+              <p>
+                Pelamar yg lolos
+                {{-- <span class="right badge badge-danger">New</span> --}}
+              </p>
+            </a>
+          </li>
+
           <li class="nav-header">option</li>
           <li class="nav-item">
             <a href="{{ url('/department') }}" class="nav-link {{ (request()->segment(1) == 'department') ? 'active' : null }}

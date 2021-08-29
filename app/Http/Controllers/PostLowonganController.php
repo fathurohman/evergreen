@@ -198,19 +198,21 @@ class PostLowonganController extends Controller
              'bagian' => 'required',
              'nik' => 'required|unique:data_pelamar,nik',
              'nama' => 'required',
-             'umur' => 'required|max:26',
+             'umur' => 'required',
              'ktp' => 'required|file|mimes:jpg,png,jpeg|max:2048',
              'cv' => 'required|file|mimes:pdf|max:2048',
         ]);
 
-
+        $niks = $request->nik;
+        $names = $request->nama;
+        $bagians = $request->bagian;
 
         $ktp                   = $request->file('ktp');
-        $imageKtp              = time(). '.' .$ktp->getClientOriginalExtension();
+        $imageKtp              = $bagians. '_' .$names. '_' .$niks. '.' .$ktp->getClientOriginalExtension();
         $ktp->move(public_path('images/foto_ktp'),$imageKtp);
 
         $cv                   = $request->file('cv');
-        $imageCv              = time(). '.' .$cv->getClientOriginalExtension();
+        $imageCv              = $bagians. '_' .$names.'_'.$niks. '.' .$cv->getClientOriginalExtension();
         $cv->move(public_path('images/cv'),$imageCv);
 
         $data = new Pelamar;
@@ -238,6 +240,34 @@ class PostLowonganController extends Controller
 
         session()->flash("success", "Data diacc!");
         return back()->with(['success' => 'Data diacc!']);
+    }
+
+    public function download_foto($id){
+
+        $data = Pelamar::find($id);
+
+        $fileName = $data->foto_ktp;
+
+
+        $file="./images/foto_ktp/$data->foto_ktp";
+        return response()->download($file, $fileName);
+
+        session()->flash("success", "Download berhasil");
+        return back()->with(['success' => 'Download berhasil']);
+    }
+
+    public function download_cv($id){
+
+        $data = Pelamar::find($id);
+
+        $fileName = $data->cv;
+
+
+        $file="./images/cv/$data->cv";
+        return response()->download($file, $fileName);
+
+        session()->flash("success", "Download berhasil");
+        return back()->with(['success' => 'Download berhasil']);
     }
 
 

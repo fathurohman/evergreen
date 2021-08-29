@@ -50,7 +50,7 @@ $status = date('Y-m-d'); @endphp
         <input name="id_post_lowongan" type="hidden" value="{{$id_post_lowongan}}" class="form-control">
 
          <div class="form-group">
-            <input name="bagian" type="text" class="form-control" placeholder="Bagian" id="bagian">
+            <input name="bagian" type="text" class="form-control" placeholder="Bagian" id="bagian" value="{{old("bagian")}}">
                 @error('bagian')
                 <div class="text-danger mt-2">
                 {{ $message }}
@@ -68,7 +68,7 @@ $status = date('Y-m-d'); @endphp
           </div>
 
         <div class="form-group">
-          <input name="nama" type="text" class="form-control" placeholder="Nama" id="nama">
+          <input name="nama" type="text" class="form-control" placeholder="Nama" id="nama" value="{{old("nama")}}">
             @error('nama')
             <div class="text-danger mt-2">
             {{ $message }}
@@ -77,7 +77,7 @@ $status = date('Y-m-d'); @endphp
         </div>
 
          <div class="form-group">
-          <input name="umur" type="number" class="form-control" placeholder="Umur" id="umur">
+          <input name="umur" type="number" class="form-control" placeholder="Umur" id="umur" value="{{old("umur")}}">
             @error('umur')
             <div class="text-danger mt-2">
             {{ $message }}
@@ -86,7 +86,7 @@ $status = date('Y-m-d'); @endphp
         </div>
 
         <div class="form-group">
-          <input name="ktp" type="file" class="form-control" id="ktp" >
+          <input name="ktp" type="file" class="form-control" id="ktp" value="{{old("ktp")}}" >
           <div class="text-info mt-2">*file must .jpg,.jpeg,.png | max:2mb</div>
                 @error('ktp')
                 <div class="text-danger mt-2">
@@ -96,7 +96,7 @@ $status = date('Y-m-d'); @endphp
           </div>
 
           <div class="form-group">
-            <input name="cv" type="file" class="form-control" id="cv" >
+            <input name="cv" type="file" class="form-control" id="cv" value="{{old("cv")}}">
             <div class="text-info mt-2">*file must .pdf | max:2mb</div>
                 @error('cv')
                 <div class="text-danger mt-2">

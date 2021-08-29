@@ -58,6 +58,8 @@ Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
 Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);
+Route::get('/download_foto/{id}', [PostLowonganController::class, 'download_foto']);
+Route::get('/download_cv/{id}', [PostLowonganController::class, 'download_cv']);
 
 //searching...
 Route::get('/search', [SearchController::class, 'index']);

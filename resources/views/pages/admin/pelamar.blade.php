@@ -110,12 +110,16 @@
                     @foreach ($data_pelamar as $index=>$item)
                    <tr align="center">
                       <td>{{$index +1 }}</td>
-                      <td> <img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"></td>
+                      <td> <img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"><br>
+                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download</a>
+
+                    </td>
                       <td>{{$item->nik }} <br>
                           {{$item->nama }} <br>
                           {{$item->umur }} Tahun
                         </td>
-                      <td></td>
+                      <td><a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download cv</a>
+                      </td>
                      <td>
                         <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>

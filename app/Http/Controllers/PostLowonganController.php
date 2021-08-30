@@ -27,7 +27,8 @@ class PostLowonganController extends Controller
                             ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
                             ->select('post_lowongan.*','bagian.nama_bagian')
                             ->orderBy('id', 'DESC')
-                            ->get(),
+                            ->paginate('10'),
+                            // ->get(),
             'dd_bagian' => DB::table('bagian')
                             ->orderBy('id', 'DESC')
                             ->get(),

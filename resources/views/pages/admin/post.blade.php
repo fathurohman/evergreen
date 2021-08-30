@@ -129,7 +129,11 @@
                     </tr>
                     @endforeach
                     </tbody>
-                  </table>
+                  </table><br>
+                  <div class="row justify-content-center">
+                    {{ $data_post->links() }}
+
+                </div>
             </div>
             <!-- /.card-body -->
           </div>

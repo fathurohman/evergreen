@@ -42,10 +42,15 @@ class SearchController extends Controller
 
     public function delete($id){
         $data = Pelamar::find($id);
-        //  unlink(public_path('images/img_post').'/'.$data->image);
+        if($data->foto_ktp){
+            unlink(public_path('images/foto_ktp').'/'.$data->foto_ktp);
+         }
+         if($data->cv){
+            unlink(public_path('images/cv').'/'.$data->cv);
+         }
         $data->delete();
-            session()->flash("error", "Data berhasil di Dihapus");
-            return redirect('/search')->with(['error' => 'Data Berhasil Dihapus!']);
+            session()->flash("success", "Data berhasil di Dihapus");
+            return redirect('/search')->with(['success' => 'Data Berhasil Dihapus!']);
        }
 
 }

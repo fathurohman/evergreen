@@ -59,10 +59,6 @@
                     <input name="judul" value="{{$data->judul}}" type="text" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label class="control-label mb-1">Deskripsi</label>
-                    <textarea rows="6" cols="50" name="deskripsi" class="form-control" required>{{$data->deskripsi}}</textarea>
-                </div>
-                <div class="form-group">
                     <label class="control-label mb-1">Kualifikasi</label>
                     <textarea rows="8" cols="50" name="kualifikasi" class="form-control" required>{{$data->kualifikasi}}</textarea>
                 </div>

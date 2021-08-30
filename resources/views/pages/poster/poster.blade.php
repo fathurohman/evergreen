@@ -36,9 +36,10 @@
         <div class="deskripsi">
             <table align="center">
                 <tr>
-                    <td>
-                        <p class="deskripsi-p">{{$deskripsi }}
+                    <td>@foreach ($data_position as $index=>$items)
+                        <p class="deskripsi-p">{{$index+1 }}. {{$items->nama_posisi}}
                         </p>
+                        @endforeach
                     </td>
                 </tr>
                 <tr>

@@ -59,7 +59,8 @@
                     <th>Kualifikasi</th>
                 </tr>
                 <tr align="left">
-                    <td><p style="white-space: pre-line">{{$item->deskripsi}}</p></td>
+                    <td><p style="white-space: pre-line">@foreach ($data_position as $index=>$data){{$index+1 }}. {{$data->nama_posisi}} <br> @endforeach</p></td>
+
                     <td><p style="white-space: pre-line">{{$item->kualifikasi}}</p></td>
                 </tr>
                 <tr>
@@ -95,12 +96,12 @@
                       @endforeach
                      </p> --}}
 
-                 <table id="example3" class="table table-bordered">
+                 <table id="examplenot" class="table table-bordered">
                     <thead>
                     <tr align="center">
                       <th>No</th>
-                      <th>Foto KTP</th>
-                      <th>Informasi</th>
+                      <th>Info</th>
+                      {{-- <th>Informasi</th> --}}
                       <th>CV</th>
                       <th>Action</th>
 
@@ -110,24 +111,36 @@
                     @foreach ($data_pelamar as $index=>$item)
                    <tr align="center">
                       <td>{{$index +1 }}</td>
-                      <td> <img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"><br>
-                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download</a>
+                      <td><img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 200px;margin-top: 10px;margin-bottom: 10px">
 
-                    </td>
-                      <td>{{$item->nik }} <br>
+                        {{-- <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download</a> --}}
+                        <br>
+                          <b>{{$item->nik }} <br>
                           {{$item->nama }} <br>
-                          {{$item->umur }} Tahun
-                        </td>
-                      <td><a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download cv</a>
+                          {{$item->umur }} Tahun</b>
+                    </td>
+                      {{-- <td>
+                        </td> --}}
+                      <td>
+                        <embed type="application/pdf" src="{{asset('/images/cv')}}/{{$item->cv}}" width="600" height="400"></embed>
+
                       </td>
                      <td>
+                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Foto</a>
+                        <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a>
                         <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 
                     </tr>
+
                     @endforeach
                     </tbody>
                   </table>
+                  <br>
+                  <div class="row justify-content-center">
+                    {{ $data_pelamar->links() }}
+
+                </div>
 
             </div>
             <!-- /.card-body -->

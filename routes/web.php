@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostLowonganController;
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\PositionController;
 
 
 /*
@@ -52,6 +53,14 @@ Route::get('/delete_post/{id}', [PostLowonganController::class, 'delete']);
 
 Route::get('/edit_imagepost/{id}', [PostLowonganController::class, 'editimage']);
 Route::post('/update_imagepost', [PostLowonganController::class, 'updateimage'])->name('imagepost.update');
+
+//posisi//
+Route::get('/position/{id}', [PositionController::class, 'position']);
+Route::post('/position/store', [PositionController::class, 'store'])->name('position.store');
+Route::get('/edit_position/{id}', [PositionController::class, 'edit']);
+Route::post('/position/update', [PositionController::class, 'update'])->name('position.update');
+Route::get('/delete_position/{id}', [PositionController::class, 'delete']);
+
 
 //pelamar//
 Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);

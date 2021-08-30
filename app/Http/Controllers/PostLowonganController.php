@@ -31,6 +31,7 @@ class PostLowonganController extends Controller
             'dd_bagian' => DB::table('bagian')
                             ->orderBy('id', 'DESC')
                             ->get(),
+
         ]);
     }
 
@@ -44,7 +45,6 @@ class PostLowonganController extends Controller
         $data->id_bagian = $request->id_bagian;
         $data->judul = $request->judul;
         $data->image = $imageName;
-        $data->deskripsi = $request->deskripsi;
         $data->kualifikasi = $request->kualifikasi;
         $data->tanggal_akhir = $request->tanggal_akhir;
 
@@ -73,7 +73,6 @@ class PostLowonganController extends Controller
             $data = Post_lowongan::find($request->id);
             $data->id_bagian = $request->id_bagian;
             $data->judul = $request->judul;
-            $data->deskripsi = $request->deskripsi;
             $data->kualifikasi = $request->kualifikasi;
             $data->tanggal_akhir = $request->tanggal_akhir;
 
@@ -124,15 +123,20 @@ class PostLowonganController extends Controller
         $data_pelamar =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
                                 ->where('status', Null)
-                                ->get();
+                                ->paginate('20');
+
         $data_post = DB::table('post_lowongan')
                         ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
                         ->select('post_lowongan.*','bagian.nama_bagian')
                         ->where('post_lowongan.id', $id)
                         ->orderBy('post_lowongan.id', 'DESC')
                         ->get();
+        $data_position = DB::table('position')
+                        ->where('id_post_lowongan', $id)
+                        ->orderBy('id', 'DESC')
+                        ->get();
 
-        return view('pages.admin.pelamar', compact('data_pelamar', 'data_post','data_pelamar_acc'));
+        return view('pages.admin.pelamar', compact('data_pelamar', 'data_post','data_pelamar_acc','data_position'));
     }
 
     public function poster($id){
@@ -144,23 +148,29 @@ class PostLowonganController extends Controller
                     ->orderBy('post_lowongan.id', 'DESC')
                     ->get();
 
+        $data_position = DB::table('position')
+                    ->where('id_post_lowongan', $id)
+                    ->orderBy('id', 'DESC')
+                    ->get();
+
         foreach ($data_post as $index=>$item){
 
            $id = $item->id;
            $image = $item->image;
            $judul = $item->judul;
            $nama_bagian = $item->nama_bagian;
-           $deskripsi = $item->deskripsi;
            $kualifikasi = $item->kualifikasi;
 
         }
+
+
 
       //  $pdf = App::make('dompdf');
     	// $pdf = PDF::loadview('pages.poster.poster',['nama_bagian'=>$nama_bagian,'deskripsi'=>$deskripsi,'kualifikasi'=>$kualifikasi]);
 
     	//return $pdf->stream();
         // return $pdf->download();
-        return view('pages.poster.poster', compact('id','image','judul','nama_bagian', 'deskripsi','kualifikasi'));
+        return view('pages.poster.poster', compact('id','image','judul','nama_bagian','kualifikasi','data_position'));
     }
 
 
@@ -182,16 +192,6 @@ class PostLowonganController extends Controller
     }
 
     public function formstore(Request $request){
-
-        //  $this->validate($request,[
-        //      'id_post_lowongan' => 'required',
-        //      'bagian' => 'required',
-        //      'nik' => 'required',
-        //      'nama' => 'required',
-        //      'umur' => 'required',
-        //      'foto_ktp.*' => 'required|file|mimes:jpg,png,jpeg|max:2048',
-        //      'cv.*' => 'required|file|mimes:pdf|max:2048',
-        //  ]);
 
          $request->validate([
             'id_post_lowongan' => 'required',

@@ -93,11 +93,15 @@
                             $jumlah_pelamar  = DB::table('data_pelamar')
                                             ->where('id_post_lowongan', $item->id)
                                             ->Count();
+                            $jumlah_position  = DB::table('position')
+                                            ->where('id_post_lowongan', $item->id)
+                                            ->Count();
                         @endphp
 
                           <a target="_blank" class="btn btn-primary" href="/poster/{{ $item->id }}">Poster <i class="fa fa-file-image"></i></a>
-                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-user-tie"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-user-plus"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <br><br>
+                          <a class="btn btn-info" href="/position/{{ $item->id }}">Position <i class="fa fa-male"></i> @if($jumlah_position) <b>{{$jumlah_position}}</b> @else  @endif</a>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>
                           <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_post/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                         </td>
@@ -176,12 +180,6 @@
                     <div class="form-group">
                         <label class="control-label mb-1">Judul</label>
                         <input name="judul" type="text" class="form-control" required>
-                        {{-- <h6>*kosongkan jika tidak ada</h6> --}}
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label mb-1">Deskripsi</label>
-                        <textarea rows="6" cols="50" name="deskripsi" class="form-control" required></textarea>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 

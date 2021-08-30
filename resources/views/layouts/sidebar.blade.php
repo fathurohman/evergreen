@@ -74,6 +74,7 @@
                 {{ (request()->segment(1) == 'edit_imagepost') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_post') ? 'active' : null }}
                 {{ (request()->segment(1) == 'pelamar') ? 'active' : null }}
+                {{ (request()->segment(1) == 'position') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>

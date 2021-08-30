@@ -85,7 +85,8 @@
           </li>
 
           <li class="nav-item">
-            <a href="{{ url('/postss') }}" class="nav-link {{ (request()->segment(1) == 'postss') ? 'active' : null }}
+            <a href="{{ url('/acc_pelamar') }}" class="nav-link {{ (request()->segment(1) == 'acc_pelamar') ? 'active' : null }}
+                {{ (request()->segment(1) == 'pelamar_acc') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-id-card-alt"></i>
               <p>

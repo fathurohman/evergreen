@@ -6,6 +6,7 @@ use App\Http\Controllers\PostLowonganController;
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\AccPelamarController;
 
 
 /*
@@ -69,6 +70,11 @@ Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);
 Route::get('/download_foto/{id}', [PostLowonganController::class, 'download_foto']);
 Route::get('/download_cv/{id}', [PostLowonganController::class, 'download_cv']);
+
+//acc pelamar//
+Route::get('/acc_pelamar', [AccPelamarController::class, 'index']);
+Route::get('/pelamar_acc/{id}', [AccPelamarController::class, 'pelamar_acc']);
+Route::get('/cancel_acc/{id}', [AccPelamarController::class, 'cancel_acc']);
 
 //searching...
 Route::get('/search', [SearchController::class, 'index']);

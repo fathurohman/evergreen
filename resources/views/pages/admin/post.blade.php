@@ -92,6 +92,7 @@
                         @php
                             $jumlah_pelamar  = DB::table('data_pelamar')
                                             ->where('id_post_lowongan', $item->id)
+                                            ->where('status', Null)
                                             ->Count();
                             $jumlah_position  = DB::table('position')
                                             ->where('id_post_lowongan', $item->id)

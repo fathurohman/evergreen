@@ -20,7 +20,7 @@ class PositionController extends Controller
         return view('pages.admin.posisi',[
             'data_position' =>DB::table('position')
                             ->where('id_post_lowongan', $id)
-                            ->orderBy('id', 'DESC')
+                            // ->orderBy('id', 'DESC')
                             ->get(),
             'data_post' => DB::table('post_lowongan')
                             ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')

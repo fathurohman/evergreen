@@ -133,7 +133,7 @@ class PostLowonganController extends Controller
                         ->get();
         $data_position = DB::table('position')
                         ->where('id_post_lowongan', $id)
-                        ->orderBy('id', 'DESC')
+                        // ->orderBy('id', 'DESC')
                         ->get();
 
         return view('pages.admin.pelamar', compact('data_pelamar', 'data_post','data_pelamar_acc','data_position'));
@@ -150,7 +150,7 @@ class PostLowonganController extends Controller
 
         $data_position = DB::table('position')
                     ->where('id_post_lowongan', $id)
-                    ->orderBy('id', 'DESC')
+                    // ->orderBy('id', 'DESC')
                     ->get();
 
         foreach ($data_post as $index=>$item){

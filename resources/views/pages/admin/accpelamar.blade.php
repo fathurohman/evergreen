@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Post Lowongan Acc</h1>
+          <h1>Applicants pass selection</h1>
         </div>
 
       </div>
@@ -28,10 +28,10 @@
                     <thead>
                     <tr align="center">
                       <th>No</th>
-                      <th>Image</th>
                       <th>Department</th>
-                      <th>Judul</th>
-                      <th>Tanggal Akhir</th>
+                      <th>Title</th>
+                      <th>Position</th>
+                      <th>End Date</th>
                       <th>Action</th>
 
                     </tr>
@@ -40,12 +40,9 @@
                     @foreach ($data_post as $index=>$item)
                     <tr align="center">
                       <td>{{$index+1 }}</td>
-                      <td>
-                        <img src="{{asset('/images/img_post')}}/{{$item->image}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px"> <br>
-                        {{-- <a class="btn btn-primary" href="/edit_imagepost/{{ $item->id }}"><i class="fa fa-edit"></i> Edit Image</a> --}}
-                      </td>
                       <td>{{$item->nama_bagian }}</td>
                       <td>{{$item->judul }}</td>
+                      <td></td>
                       <td>
                         <?php
                         $tanggal = $item->tanggal_akhir;
@@ -78,7 +75,7 @@
                         @endphp
 
                           {{-- <a target="_blank" class="btn btn-primary" href="/poster/{{ $item->id }}">Poster <i class="fa fa-file-image"></i></a> --}}
-                          <a class="btn btn-primary" href="/pelamar_acc/{{ $item->id }}">Pelamar <i class="fa fa-user-check"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-primary" href="/applicant_acc/{{ $item->id }}">Applicant <i class="fa fa-user-check"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <br><br>
                           {{-- <a class="btn btn-info" href="/position/{{ $item->id }}">Position <i class="fa fa-male"></i> @if($jumlah_position) <b>{{$jumlah_position}}</b> @else  @endif</a>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>

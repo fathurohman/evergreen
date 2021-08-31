@@ -30,7 +30,7 @@ class AccPelamarController extends Controller
 
     }
 
-    public function pelamar_acc($id){
+    public function applicant_acc($id){
 
 
         $data_pelamar_acc =  DB::table('data_pelamar')

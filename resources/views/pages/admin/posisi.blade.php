@@ -109,7 +109,7 @@
                       <td>{{$item->nama_posisi }}</td>
                       <td>
                           <a class="btn btn-primary" href="/edit_position/{{ $item->id }}"><i class="fa fa-edit"></i></a>
-                          <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_position/{{ $item->id }}"><i class="fa fa-trash"></i></a>
+                          <a onclick="return confirm('Are you sure you want to delete the data ? ');" class="btn btn-danger" href="/delete_position/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                         </td>
 
                     </tr>

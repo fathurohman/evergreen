@@ -28,8 +28,8 @@ Route::get('/', function () {
 Auth::routes();
 
 //Formulir Pendaftaran
-Route::get('/post/form/{id}', [PostLowonganController::class, 'formindex'])->name('formindex');
-Route::post('/post/form/store', [PostLowonganController::class, 'formstore'])->name('form.store');
+Route::get('/form/applicants/{id}', [PostLowonganController::class, 'formindex'])->name('formindex');
+Route::post('/form/applicants/store', [PostLowonganController::class, 'formstore'])->name('form.store');
 
 // routes yg bisa di akses jika sudah login
 Route::middleware(['auth'])->group(function () {
@@ -64,7 +64,7 @@ Route::get('/delete_position/{id}', [PositionController::class, 'delete']);
 
 
 //pelamar//
-Route::get('/pelamar/{id}', [PostLowonganController::class, 'pelamar']);
+Route::get('/applicant/{id}', [PostLowonganController::class, 'applicant']);
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
 Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);
@@ -72,8 +72,8 @@ Route::get('/download_foto/{id}', [PostLowonganController::class, 'download_foto
 Route::get('/download_cv/{id}', [PostLowonganController::class, 'download_cv']);
 
 //acc pelamar//
-Route::get('/acc_pelamar', [AccPelamarController::class, 'index']);
-Route::get('/pelamar_acc/{id}', [AccPelamarController::class, 'pelamar_acc']);
+Route::get('/acc_applicant', [AccPelamarController::class, 'index']);
+Route::get('/applicant_acc/{id}', [AccPelamarController::class, 'applicant_acc']);
 Route::get('/cancel_acc/{id}', [AccPelamarController::class, 'cancel_acc']);
 
 //searching...

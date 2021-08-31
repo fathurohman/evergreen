@@ -73,24 +73,24 @@
             <a href="{{ url('/post') }}" class="nav-link {{ (request()->segment(1) == 'post') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_imagepost') ? 'active' : null }}
                 {{ (request()->segment(1) == 'edit_post') ? 'active' : null }}
-                {{ (request()->segment(1) == 'pelamar') ? 'active' : null }}
+                {{ (request()->segment(1) == 'applicant') ? 'active' : null }}
                 {{ (request()->segment(1) == 'position') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-file-alt"></i>
               <p>
-                Post Lowongan
+                Jobs Posting
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="{{ url('/acc_pelamar') }}" class="nav-link {{ (request()->segment(1) == 'acc_pelamar') ? 'active' : null }}
-                {{ (request()->segment(1) == 'pelamar_acc') ? 'active' : null }}
+            <a href="{{ url('/acc_applicant') }}" class="nav-link {{ (request()->segment(1) == 'acc_applicant') ? 'active' : null }}
+                {{ (request()->segment(1) == 'applicant_acc') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-id-card-alt"></i>
               <p>
-                Pelamar yg lolos
+                Applicants pass selection
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>

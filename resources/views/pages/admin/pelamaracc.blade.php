@@ -44,7 +44,7 @@
                <table id="example4" class="table table-bordered"><!-- diedit -->
                 <thead>
                 <tr align="center">
-                    <th>Judul</th>
+                    <th>Title</th>
                     <th>Department</th>
                 </tr>
                 </thead>
@@ -55,8 +55,8 @@
                     <td>{{$item->nama_bagian }}</td>
                 </tr>
                 <tr align="center">
-                    <th>Deskripsi</th>
-                    <th>Kualifikasi</th>
+                    <th>Position</th>
+                    <th>Qualification</th>
                 </tr>
                 <tr align="left">
                     <td><p style="white-space: pre-line">@foreach ($data_position as $index=>$data){{$index+1 }}. {{$data->nama_posisi}} <br> @endforeach</p></td>

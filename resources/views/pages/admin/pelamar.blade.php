@@ -7,7 +7,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Daftar Pelamar</h1>
+          <h1>List of Applicants</h1>
         </div>
         {{-- <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -44,7 +44,7 @@
                <table id="example4" class="table table-bordered"><!-- diedit -->
                 <thead>
                 <tr align="center">
-                    <th>Judul</th>
+                    <th>Title</th>
                     <th>Department</th>
                 </tr>
                 </thead>
@@ -55,8 +55,8 @@
                     <td>{{$item->nama_bagian }}</td>
                 </tr>
                 <tr align="center">
-                    <th>Deskripsi</th>
-                    <th>Kualifikasi</th>
+                    <th>Position</th>
+                    <th>Qualification</th>
                 </tr>
                 <tr align="left">
                     <td><p style="white-space: pre-line">@foreach ($data_position as $index=>$data){{$index+1 }}. {{$data->nama_posisi}} <br> @endforeach</p></td>
@@ -128,7 +128,7 @@
                      <td>
                         <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Foto</a>
                         <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a>
-                        <a onclick="return confirm('Acc data ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
+                        <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 
                     </tr>

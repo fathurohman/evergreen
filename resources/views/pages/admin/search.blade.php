@@ -68,7 +68,7 @@
                     <tr align="center">
                       <td>{{$item->nik}}</td>
                       <td>{{$item->nama}}</td>
-                      <td><a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_pelamar/{{ $item->id }}"><i class="fa fa-trash"></i></a>
+                      <td><a onclick="return confirm('Are you sure you want to delete the data ?');" class="btn btn-danger" href="/delete_pelamar/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>
                     @endforeach

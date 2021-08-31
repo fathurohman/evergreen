@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Post Lowongan</h1>
+          <h1>Jobs Posting</h1>
         </div>
 
       </div>
@@ -52,8 +52,8 @@
                       <th>No</th>
                       <th>Image</th>
                       <th>Department</th>
-                      <th>Judul</th>
-                      <th>Tanggal Akhir</th>
+                      <th>Title</th>
+                      <th>End Date</th>
                       <th>Action</th>
 
                     </tr>
@@ -100,11 +100,11 @@
                         @endphp
 
                           <a target="_blank" class="btn btn-primary" href="/poster/{{ $item->id }}">Poster <i class="fa fa-file-image"></i></a>
-                          <a class="btn btn-primary" href="/pelamar/{{ $item->id }}">Pelamar <i class="fa fa-user-plus"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-primary" href="/applicant/{{ $item->id }}">Applicant <i class="fa fa-user-plus"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <br><br>
                           <a class="btn btn-info" href="/position/{{ $item->id }}">Position <i class="fa fa-male"></i> @if($jumlah_position) <b>{{$jumlah_position}}</b> @else  @endif</a>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>
-                          <a onclick="return confirm('Hapus data ?');" class="btn btn-danger" href="/delete_post/{{ $item->id }}"><i class="fa fa-trash"></i></a>
+                          <a onclick="return confirm('Are you sure you want to delete the data ?');" class="btn btn-danger" href="/delete_post/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                         </td>
 
                     </tr>
@@ -183,19 +183,19 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label mb-1">Judul</label>
+                        <label class="control-label mb-1">Title</label>
                         <input name="judul" type="text" class="form-control" required>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label mb-1">Kualifikasi</label>
+                        <label class="control-label mb-1">Qualification</label>
                         <textarea rows="8" cols="50" name="kualifikasi" class="form-control" required></textarea>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label mb-1">Tanggal Akhir</label>
+                        <label class="control-label mb-1">End Date</label>
                         <input name="tanggal_akhir" type="date" class="form-control" required>
                         {{-- <h6>*kosongkan jika tidak ada</h6> --}}
                     </div>

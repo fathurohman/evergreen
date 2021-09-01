@@ -185,9 +185,12 @@ class PostLowonganController extends Controller
                         ->where('post_lowongan.id', $id)
                         ->orderBy('post_lowongan.id', 'DESC')
                         ->get();
+        $data_position = DB::table('position')
+                        ->where('id_post_lowongan', $id)
+                        // ->orderBy('id', 'DESC')
+                        ->get();
 
-
-        return view('pages.form', compact('data_post'));
+        return view('pages.form', compact('data_post', 'data_position'));
 
 
     }
@@ -220,6 +223,43 @@ class PostLowonganController extends Controller
              'phone_name_address_employer_1' => 'required',
              'position_1' => 'required',
              'resignation_plans' => 'required',
+             'explain_reasons' => 'required',
+             'salary_1' => 'required',
+             'year_from_2' => 'required',
+             'year_till_2' => 'required',
+             'name_address_employer_2' => 'required',
+             'phone_name_address_employer_2' => 'required',
+             'position_2' => 'required',
+             'salary_2' => 'required',
+             'reason_resigning_1' => 'required',
+             'year_from_3' => 'required',
+             'year_till_3' => 'required',
+             'name_address_employer_3' => 'required',
+             'phone_name_address_employer_3' => 'required',
+             'position_3' => 'required',
+             'salary_3' => 'required',
+             'reason_resigning_2' => 'required',
+             'expect_salary' => 'required',
+             'expect_allowance' => 'required',
+             'hobbies' => 'required',
+             'organizational_activities' => 'required',
+
+             'experiences_leader_1' => 'required',
+             'experiences_leader_2' => 'required',
+
+             'height' => 'required',
+             'weight' => 'required',
+             'hospitalized' => 'required',
+            //  'which_year' => 'required',
+            //  'how_long' => 'required',
+            //  'diagnosis' => 'required',
+            //  'hospitalized_in' => 'required',
+
+
+
+
+
+
 
              'file_foto' => 'required|file|mimes:jpg,png,jpeg|max:1024',
              'file_cv' => 'required|file|mimes:pdf|max:2048',
@@ -229,7 +269,7 @@ class PostLowonganController extends Controller
         $names = $request->nama;
         $bagians = $request->bagian;
 
-        $photo                   = $request->file('photo');
+        $photo                   = $request->file('file_foto');
         $imagePhoto              = $bagians. '_' .$names. '_' .$niks. '.' .$photo->getClientOriginalExtension();
         $photo->move(public_path('images/photos'),$imagePhoto);
 

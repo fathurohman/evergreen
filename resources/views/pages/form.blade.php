@@ -485,55 +485,296 @@ $status = date('Y-m-d'); @endphp
                     @error('resignation_plans')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                     </div>
 
-                    <br>
-                    <label for="nationality">g. If you have resignation plans, explain your reasons. *</label>
-                    <textarea id="nationality" name="explain_reasons" class="form-control "></textarea>
-                    <br>
-                    <label for="ethnic">h. Salary and allowance received: IDR  *</label>
-                    <input id="ethnic" name="salary_1" type="text" class="form-control ">
-                    <label for="current_address">i. Year (from) *</label>
-                    <input id="current_address" name="year_from_2" type="text" class="form-control ">
-                    <label for="current_hp">j. Year (till)  *</label>
-                    <input id="current_hp" name="year_till_2" type="text" class="form-control ">
-                    <label for="permanent_address">k. Name and Address of Employer *</label>
-                    <textarea id="permanent_address" name="name_address_employer_2" class="form-control "></textarea>
-                    <label for="permanent_hp">l. Phone  *</label>
-                    <input id="permanent_hp" name="phone_name_address_employer_2" type="text" class="form-control ">
-                    <label for="place_date_birth">m. Position  *</label>
-                    <input id="place_date_birth" name="position_2" type="text" class="form-control ">
-                    <label for="ethnic">n. Salary and allowance received: IDR  *</label>
-                    <input id="ethnic" name="salary_2" type="text" class="form-control ">
-                    <label for="ethnic">o. Reason for resigning:  *</label>
-                    <input id="ethnic" name="reason_resigning_1" type="text" class="form-control ">
-                    <label for="current_address">p. Year (from) *</label>
-                    <input id="current_address" name="year_from_3" type="text" class="form-control ">
-                    <label for="current_hp">q. Year (till)  *</label>
-                    <input id="current_hp" name="year_till_3" type="text" class="form-control ">
-                    <label for="permanent_address">r. Name and Address of Employer *</label>
-                    <textarea id="permanent_address" name="name_address_employer_3" class="form-control "></textarea>
-                    <label for="permanent_hp">s. Phone  *</label>
-                    <input id="permanent_hp" name="phone_name_address_employer_3" type="text" class="form-control ">
-                    <label for="place_date_birth">t. Position  *</label>
-                    <input id="place_date_birth" name="position_3" type="text" class="form-control ">
-                    <label for="ethnic">u. Salary and allowance received: IDR  *</label>
-                    <input id="ethnic" name="salary_3" type="text" class="form-control ">
-                    <label for="ethnic">v. Reason for resigning:  *</label>
-                    <input id="ethnic" name="reason_resigning_2" type="text" class="form-control ">
-                    <label for="permanent_hp">2. You applied at the department / section of *</label>
-                    <select class="form-control " name="id_bagian">
-                        {{--  --}}
-                        </select>
-                    <label for="place_date_birth">for the position of *</label>
-                    <input id="place_date_birth" name="position" type="text" class="form-control ">
-                    <label for="ethnic">3. You expect a salary of (mention the amount) *</label>
-                    <input id="ethnic" name="expect_salary" type="text" class="form-control ">
-                    <label for="ethnic">4. You expect an allowance for (mention the type) *</label>
-                    <input id="ethnic" name="expect_allowance" type="text" class="form-control ">
+                    <div class="form-group">
+                        <label>g. If you have resignation plans, explain your reasons. *</label>
+                        <textarea name="explain_reasons" class="form-control @error('explain_reasons') is-invalid @enderror">{{old("explain_reasons")}}</textarea>
+                        @error('explain_reasons')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
 
+                    <div class="form-group">
+                        <label>h. Salary and allowance received: IDR  *</label>
+                        <input name="salary_1" type="text" class="form-control @error('explain_reasons') is-invalid @enderror" value="{{old("salary_1")}}">
+                        @error('salary_1')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>i. Year (from) *</label>
+                        <input name="year_from_2" type="text" class="form-control @error('year_from_2') is-invalid @enderror" value="{{old("year_from_2")}}">
+                        @error('year_from_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>j. Year (till)  *</label>
+                        <input name="year_till_2" type="text" class="form-control @error('year_till_2') is-invalid @enderror" value="{{old("year_till_2")}}">
+                        @error('year_till_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>k. Name and Address of Employer *</label>
+                        <textarea name="name_address_employer_2" class="form-control @error('name_address_employer_2') is-invalid @enderror">{{old("name_address_employer_2")}}</textarea>
+                        @error('name_address_employer_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                    <label>l. Phone  *</label>
+                        <input name="phone_name_address_employer_2" type="text" class="form-control @error('phone_name_address_employer_2') is-invalid @enderror" value="{{old("phone_name_address_employer_2")}}">
+                        @error('phone_name_address_employer_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>m. Position  *</label>
+                        <input name="position_2" type="text" class="form-control @error('position_2') is-invalid @enderror" value="{{old("position_2")}}">
+                        @error('position_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>n. Salary and allowance received: IDR  *</label>
+                        <input name="salary_2" type="text" class="form-control @error('salary_2') is-invalid @enderror" value="{{old("salary_2")}}">
+                        @error('salary_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>o. Reason for resigning:  *</label>
+                        <input name="reason_resigning_1" type="text" class="form-control @error('reason_resigning_1') is-invalid @enderror" value="{{old("reason_resigning_1")}}">
+                        @error('reason_resigning_1')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>p. Year (from) *</label>
+                        <input name="year_from_3" type="text" class="form-control @error('year_from_3') is-invalid @enderror" value="{{old("year_from_3")}}">
+                        @error('year_from_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>q. Year (till)  *</label>
+                        <input name="year_till_3" type="text" class="form-control @error('year_till_3') is-invalid @enderror" value="{{old("year_till_3")}}">
+                        @error('year_till_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>r. Name and Address of Employer *</label>
+                        <textarea name="name_address_employer_3" class="form-control @error('name_address_employer_3') is-invalid @enderror">{{old("name_address_employer_3")}}</textarea>
+                        @error('name_address_employer_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>s. Phone  *</label>
+                        <input name="phone_name_address_employer_3" type="text" class="form-control @error('phone_name_address_employer_3') is-invalid @enderror" value="{{old("phone_name_address_employer_3")}}">
+                        @error('phone_name_address_employer_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>t. Position  *</label>
+                        <input name="position_3" type="text" class="form-control @error('position_3') is-invalid @enderror" value="{{old("position_3")}}">
+                        @error('position_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>u. Salary and allowance received: IDR  *</label>
+                        <input name="salary_3" type="text" class="form-control @error('salary_3') is-invalid @enderror" value="{{old("salary_3")}}">
+                        @error('salary_3')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>v. Reason for resigning:  *</label>
+                        <input name="reason_resigning_2" type="text" class="form-control @error('reason_resigning_2') is-invalid @enderror" value="{{old("reason_resigning_2")}}">
+                        @error('reason_resigning_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>2. You applied at the department / section of *</label>
+                        <select class="form-control @error('id_department') is-invalid @enderror" name="id_department">
+                            <option value="{{$data->id_bagian}}" selected>{{$data->nama_bagian}}</option>
+                        </select>
+                        @error('id_department')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>for the position of *</label>
+                        <select name="id_position" type="text" class="form-control @error('id_position') is-invalid @enderror">
+                            <option value="">Choose</option>
+                           @foreach ($data_position as $index=>$items)
+                            <option value="{{$items->id}}" @if(old('id_position') == $items->id) selected @endif> {{$items->nama_posisi}} </option>
+                            @endforeach
+                        </select>
+                        @error('id_position')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>3. You expect a salary of (mention the amount) *</label>
+                        <input name="expect_salary" type="text" class="form-control @error('expect_salary') is-invalid @enderror" value="{{old("expect_salary")}}">
+                        @error('expect_salary')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>4. You expect an allowance for (mention the type) *</label>
+                        <input name="expect_allowance" type="text" class="form-control @error('expect_allowance') is-invalid @enderror" value="{{old("expect_allowance")}}">
+                        @error('expect_allowance')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                     </div>
                     <br>
 
+                    <hr>
+                    <h4># Other Activities</h4>
 
+                    <div class="form-group">
+                        <label>1. Preference / Hobbies *</label>
+                        <input name="hobbies" type="text" class="form-control @error('hobbies') is-invalid @enderror" value="{{old("hobbies")}}">
+                        @error('hobbies')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label>2. Organizational activities *</label>
+                        <input name="organizational_activities" type="text" class="form-control @error('organizational_activities') is-invalid @enderror" value="{{old("organizational_activities")}}">
+                        @error('organizational_activities')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                    </div>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                            <th>Name of Organization</th>
+                            <th>Type of Organization</th>
+                            <th>Year</th>
+                            <th>Position</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td><input name="name_organization_1" type="text" class="form-control" value="{{old("name_organization_1")}}"></td>
+                            <td><input name="type_organization_1" type="text" class="form-control" value="{{old("type_organization_1")}}"></td>
+                            <td><input name="year_organization_1" type="text" class="form-control" value="{{old("year_organization_1")}}"></td>
+                            <td><input name="position_organization_1" type="text" class="form-control" value="{{old("position_organization_1")}}"></td>
+                            </tr>
+                            <tr>
+                            <td><input name="name_organization_2" type="text" class="form-control" value="{{old("name_organization_2")}}"></td>
+                            <td><input name="type_organization_2" type="text" class="form-control" value="{{old("type_organization_2")}}"></td>
+                            <td><input name="year_organization_2" type="text" class="form-control" value="{{old("year_organization_2")}}"></td>
+                            <td><input name="position_organization_2" type="text" class="form-control" value="{{old("position_organization_2")}}"></td>
+                            </tr>
+                            <tr>
+                            <td><input name="name_organization_3" type="text" class="form-control" value="{{old("name_organization_3")}}"></td>
+                            <td><input name="type_organization_3" type="text" class="form-control" value="{{old("type_organization_3")}}"></td>
+                            <td><input name="year_organization_3" type="text" class="form-control" value="{{old("year_organization_3")}}"></td>
+                            <td><input name="position_organization_3" type="text" class="form-control" value="{{old("position_organization_3")}}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="form-group">
+                            <label>3. Experiences as leader of *</label>
+                            <input name="experiences_leader_1" type="text" class="form-control @error('experiences_leader_1') is-invalid @enderror" value="{{old("experiences_leader_1")}}">
+                            @error('experiences_leader_1')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+
+                        <div class="form-group">
+                            <input id="name" name="experiences_leader_2" type="text" class="form-control @error('experiences_leader_2') is-invalid @enderror" value="{{old("experiences_leader_2")}}">
+                            @error('experiences_leader_2')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+                        <br>
+
+                        <hr>
+                        <h4># Other Information</h4>
+                        <div class="form-group">
+							<label>1. Height *</label>
+							<input name="height" type="text" class="form-control @error('height') is-invalid @enderror" value="{{old("height")}}">
+                            @error('height')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+
+                        <div class="form-group">
+							<label>2. Weight *</label>
+							<input name="weight" type="text" class="form-control @error('weight') is-invalid @enderror" value="{{old("weight")}}">
+                            @error('weight')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+
+                        <div class="form-group">
+							<label>3. Have you ever suffered any serious disease that you need to be hospitalized or suffered a long lasting disease *</label>
+							<select name="hospitalized" class="form-control @error('hospitalized') is-invalid @enderror">
+								<option value="">Choose</option>
+								<option value="Never" @if(old('hospitalized') == 'Never') selected @endif>Never</option>
+								<option value="Yes" @if(old('hospitalized') == 'Yes') selected @endif>Yes</option>
+							</select>
+                            @error('hospitalized')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+
+                        <div class="form-group">
+							<label>Which year *</label>
+							<input name="which_year" type="text" class="form-control" value="{{old("which_year")}}">
+
+                        </div>
+
+                        <div class="form-group">
+							<label>How long *</label>
+							<input name="how_long" type="text" class="form-control" value="{{old("how_long")}}">
+
+                        </div>
+
+                        <div class="form-group">
+							<label>Diagnosis *</label>
+							<input name="diagnosis" type="text" class="form-control" value="{{old("diagnosis")}}">
+
+                        </div>
+
+                        <div class="form-group">
+							<label>Hospitalized in *</label>
+							<input name="hospitalized_in" type="text" class="form-control" value="{{old("hospitalized_in")}}">
+
+                        </div>
+
+							<label>4. Acquaintances working at our company *</label>
+							<table class="table">
+                                <thead>
+								<tr>
+								<th>Name</th>
+								<th>Position</th>
+								<th>Office</th>
+								<th>Length of Acquaintance</th>
+								</tr>
+                                </thead>
+                                <tbody>
+								<tr>
+								<td><input name="name_working_1" type="text" class="form-control" value="{{old("name_working_1")}}"></td>
+								<td><input name="position_working_1" type="text" class="form-control" value="{{old("position_working_1")}}"></td>
+								<td><input name="office_working_1" type="text" class="form-control" value="{{old("office_working_1")}}"></td>
+								<td><input name="length_working_1" type="text" class="form-control" value="{{old("length_working_1")}}"></td>
+								</tr>
+								<tr>
+								<td><input name="name_working_2" type="text" class="form-control" value="{{old("name_working_2")}}"></td>
+								<td><input name="position_working_2" type="text" class="form-control" value="{{old("position_working_2")}}"></td>
+								<td><input name="office_working_2" type="text" class="form-control" value="{{old("office_working_2")}}"></td>
+								<td><input name="length_working_2" type="text" class="form-control" value="{{old("length_working_2")}}"></td>
+								</tr>
+								<tr>
+								<td><input name="name_working_3" type="text" class="form-control" value="{{old("name_working_3")}}"></td>
+								<td><input name="position_working_3" type="text" class="form-control" value="{{old("position_working_3")}}"></td>
+								<td><input name="office_working_3" type="text" class="form-control" value="{{old("office_working_3")}}"></td>
+								<td><input name="length_working_3" type="text" class="form-control" value="{{old("length_working_3")}}"></td>
+								</tr>
+                                </tbody>
+							</table>
+
+							<label for="age">5. Do you have any side jobs? *</label>
+							<select id="age" name="side_jobs" class="form-control ">
+								<option value="">Choose</option>
+								<option value="Never">No</option>
+								<option value="Yes">Yes</option>
+							</select>
+							<label for="name">Working as *</label>
+							<input id="name" name="working_as" type="text" class="form-control " >
+							<label for="surname">Remuneration *</label>
+							<input id="surname" name="remuneration" type="text" class="form-control ">
+							<label for="age">6. Have you ever been involved in criminal case or a violation of the laws? *</label>
+							<select id="age" name="laws" class="form-control ">
+								<option value="">Choose</option>
+								<option value="Never">No</option>
+								<option value="Yes">Yes</option>
+							</select>
+							<label for="surname">Type of case *</label>
+							<input id="surname" name="type_case" type="text" class="form-control ">
+							<label for="surname">Sanction *</label>
+							<input id="surname" name="sanction" type="text" class="form-control ">
+							<label for="surname">When & Where *</label>
+							<input id="surname" name="when_where" type="text" class="form-control ">
+							<label for="surname">7. What are you aims in your future career development? (please give a short description) *</label>
+							<textarea id="surname" name="career_development" class="form-control "></textarea>
 
 
 
@@ -541,15 +782,15 @@ $status = date('Y-m-d'); @endphp
 
 
         <div class="form-group">
-          <input name="photo" type="file" class="form-control @error('file_foto') is-invalid @enderror" id="file_foto" value="{{old("file_foto")}}" >
+          <input name="file_foto" type="file" class="form-control @error('file_foto') is-invalid @enderror" id="file_foto" value="{{old("file_foto")}}" >
                 @error('file_foto')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                 <div class="text-info mt-2">*file must .jpg,.jpeg,.png | max:2mb</div>
           </div>
 
           <div class="form-group">
-            <input name="cv" type="file" class="form-control" id="cv" value="{{old("cv")}}">
+            <input name="file_cv" type="file" class="form-control" id="file_cv" value="{{old("file_cv")}}">
             <div class="text-info mt-2">*file must .pdf | max:2mb</div>
-                @error('cv')
+                @error('file_cv')
                 <div class="text-danger mt-2">
                 {{ $message }}
                 </div>
@@ -647,9 +888,8 @@ $status = date('Y-m-d'); @endphp
         "responsive": true,
     });
     } );
-
-
     </script>
+
 
 
 </body>

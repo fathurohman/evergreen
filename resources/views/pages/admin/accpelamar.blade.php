@@ -42,7 +42,17 @@
                       <td>{{$index+1 }}</td>
                       <td>{{$item->nama_bagian }}</td>
                       <td>{{$item->judul }}</td>
-                      <td></td>
+                      <td>
+                          @php
+                              $data_position = DB::table('position')
+                                            ->where('id_post_lowongan' , $item->id)
+                                            ->get();
+                          @endphp
+                        @foreach ($data_position as $index=>$items)
+                            {{$index+1}}. {{$items->nama_posisi}} <br>
+                        @endforeach
+
+                      </td>
                       <td>
                         <?php
                         $tanggal = $item->tanggal_akhir;
@@ -67,7 +77,7 @@
                         @php
                             $jumlah_pelamar  = DB::table('data_pelamar')
                                             ->where('id_post_lowongan', $item->id)
-                                            ->where('status', 'acc')
+                                            ->where('status_accepted', 'acc')
                                             ->Count();
                             $jumlah_position  = DB::table('position')
                                             ->where('id_post_lowongan', $item->id)

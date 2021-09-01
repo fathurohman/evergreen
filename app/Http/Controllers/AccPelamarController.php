@@ -22,7 +22,8 @@ class AccPelamarController extends Controller
                             ->select('post_lowongan.*','bagian.nama_bagian')
                             ->orderBy('id', 'DESC')
                             ->get(),
-            'dd_bagian' => DB::table('bagian')
+            'data_pelamars' => DB::table('data_pelamar')
+                            ->where('status_accepted' , "acc")
                             ->orderBy('id', 'DESC')
                             ->get(),
 
@@ -35,12 +36,12 @@ class AccPelamarController extends Controller
 
         $data_pelamar_acc =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
-                                ->where('status', 'acc')
+                                ->where('status_accepted', 'acc')
                                 ->get();
 
         $data_pelamar =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
-                                ->where('status', Null)
+                                ->where('status_accepted', Null)
                                 ->paginate('20');
 
         $data_post = DB::table('post_lowongan')
@@ -60,7 +61,7 @@ class AccPelamarController extends Controller
     public function cancel_acc($id){
 
         $data = Pelamar::find($id);
-        $data->status = Null;
+        $data->status_accepted = Null;
         $data->save();
 
         session()->flash("success", "Data dicancel!");

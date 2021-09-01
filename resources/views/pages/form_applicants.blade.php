@@ -17,22 +17,20 @@ $status = date('Y-m-d'); @endphp
 <meta name="description" content="Wizard Form with Validation - Responsive">
 <link rel="shortcut icon" href="resources/images/favicon.ico">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{asset('form_assets/bootstrap.min.css')}}">
 <!-- Fontawesome CSS -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
 <!-- Fonts and icons -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
 <!-- Reset CSS -->
-<link rel="stylesheet" href="resources/css/reset.css">
+<link rel="stylesheet" href="{{asset('form_assets/reset.css')}}">
 <!-- Style CSS -->
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="{{asset('form_assets/style.css')}}">
 <!-- Responsive  CSS -->
-<link rel="stylesheet" href="resources/css/responsive.css">
+<link rel="stylesheet" href="{{asset('form_assets/responsive.css')}}">
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.css">
- <!-- DataTables -->
- <link rel="stylesheet" href="{{asset('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
- <link rel="stylesheet" href="{{asset('assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+
 
 <style>
       table {
@@ -63,11 +61,12 @@ $status = date('Y-m-d'); @endphp
 			<div class="login-sec">
 				<div class="login-sec-bg">
 					<h2 class="text-center">EMPLOYEE'S LIVING ENVIRONMENT</h2>
-					<form method="POST" id="example-advanced-form" action="input_registration" style="display: none;" enctype="multipart/form-data">
-						<h3>Columns marked (*) are mandatory</h3>
+					<form method="post" id="example-advanced-form" action="{{ route('form.store') }}" style="display: none;" enctype="multipart/form-data">
+						@csrf
+                        <h3>Columns marked (*) are mandatory</h3>
 						<fieldset class="form-input">
 							<h4># Personal Condition</h4>
-							<label for="name">1. Name *</label>
+							<label for="name">1. Name * @error('personal_name')<div class="text-danger mt-2">{{ $message }}</div>@enderror</label>
 							<input id="name" name="personal_name" type="text" class="form-control ">
 							<label for="age">2. Gender  *</label>
 							<select id="age" name="sex" class="form-control ">
@@ -571,7 +570,7 @@ $status = date('Y-m-d'); @endphp
 		<div class="row">
 			<div class="col-lg-12">
 				<p class="copyright text-center">All Rights Reserved. &copy; <?php echo date("Y"); ?> <a href="https://www.evergreen-line.com/" target="_blank">PT. Evergreen Shipping Agency Indonesia</a> Developed By:
-					<a href="https://erfadigital.com" target="_blank">ERFA Digital</a>
+					<a href="https://erfadigital.com" target="_blank">ERFA Digital Creative</a>
 				</p>
 			</div>
 		</div>
@@ -579,21 +578,17 @@ $status = date('Y-m-d'); @endphp
 </div>
 
 <!-- jquery latest version -->
-<script src="resources/js/jquery.min.js"></script>
+<script src="{{asset('form_assets/js/jquery.min.js')}}"></script>
 <!-- popper.min.js -->
-<script src="resources/js/popper.min.js"></script>
+<script src="{{asset('form_assets/js/popper.min.js')}}"></script>
 <!-- bootstrap js -->
-<script src="resources/js/bootstrap.min.js"></script>
+<script src="{{asset('form_assets/js/bootstrap.min.js')}}"></script>
 <!-- jquery.steps js -->
 <script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js'></script>
-<script src="resources/js/jquery.steps.js"></script>
+<script src="{{asset('form_assets/js/jquery.steps.js')}}"></script>
 <!-- particles js -->
-<script src="resources/js/particles.js"></script>
-<!-- DataTables -->
-<script src="{{asset('assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
-<script src="{{asset('assets/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="{{asset('form_assets/js/particles.js')}}"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
@@ -626,49 +621,9 @@ $status = date('Y-m-d'); @endphp
     });
 </script>
 
-<script>
-    $(function () {
-      $("#post").DataTable({
-        "responsive": true,
-        "autoWidth": false,
-      //   "order": [[ 0, 'desc' ]]
-      });
-      $("#example1").DataTable({
-        "responsive": true,
-        "autoWidth": false,
-      //   "order": [[ 0, 'desc' ]]
-      });
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": true,
-        "ordering": true,
-        "info": true,
-        "autoWidth": true,
-        "responsive": true,
-      });
-      $('#example3').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": true,
-        "ordering": true,
-        "info": true,
-        "autoWidth": true,
-        "responsive": true,
-      });
-      $('#example4').DataTable({
-        "paging": false,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": false,
-        "info": false,
-        "autoWidth": false,
-        "responsive": true,
-      });
-    });
-  </script>
 
-<script type="text/javascript">
+
+{{-- <script type="text/javascript">
 	$(document).ready(function() {
 		particlesJS("particles-js",
 			{
@@ -783,7 +738,7 @@ $status = date('Y-m-d'); @endphp
 			}
     	);
 	});
-</script>
+</script> --}}
 
 <script>
 	var form = $("#example-advanced-form").show();

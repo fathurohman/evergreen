@@ -92,7 +92,7 @@
                         @php
                             $jumlah_pelamar  = DB::table('data_pelamar')
                                             ->where('id_post_lowongan', $item->id)
-                                            ->where('status', Null)
+                                            ->where('status_accepted', Null)
                                             ->Count();
                             $jumlah_position  = DB::table('position')
                                             ->where('id_post_lowongan', $item->id)
@@ -114,7 +114,7 @@
                         @endphp
                         <td colspan="2">
                             <label class="control-label">Form URL:</label>
-                            <a target="_blank" class="btn btn-info" href="/post/form/{{ $item->id }}"><i class="fa fa-share-square"></i> Form</a>
+                            <a target="_blank" class="btn btn-info" href="/form/applicants/{{ $item->id }}"><i class="fa fa-share-square"></i> Form</a>
 
                         </td>
                         <td colspan="4">

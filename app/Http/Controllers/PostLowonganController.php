@@ -118,12 +118,12 @@ class PostLowonganController extends Controller
 
         $data_pelamar_acc =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
-                                ->where('status', Null)
+                                ->where('status_accepted', Null)
                                 ->get();
 
         $data_pelamar =  DB::table('data_pelamar')
                                 ->where('id_post_lowongan', $id)
-                                ->where('status', Null)
+                                ->where('status_accepted', Null)
                                 ->paginate('20');
 
         $data_post = DB::table('post_lowongan')
@@ -201,12 +201,27 @@ class PostLowonganController extends Controller
              'nik' => 'required|unique:data_pelamar,nik',
              'personal_name' => 'required',
              'sex' => 'required',
+             'current_address' => 'required',
+             'phone_current_address' => 'required',
              'permanent_address' => 'required',
+             'phone_permanent_address' => 'required',
              'place_date_birth' => 'required',
              'age' => 'required',
              'religion' => 'required',
              'nationality' => 'required',
-             'file_foto' => 'required|file|mimes:jpg,png,jpeg|max:2048',
+             'ethnic' => 'required',
+             'marital_status' => 'required',
+             'year_married' => 'required',
+
+
+             'year_from_1'=> 'required',
+             'year_till_1' => 'required',
+             'name_address_employer_1' => 'required',
+             'phone_name_address_employer_1' => 'required',
+             'position_1' => 'required',
+             'resignation_plans' => 'required',
+
+             'file_foto' => 'required|file|mimes:jpg,png,jpeg|max:1024',
              'file_cv' => 'required|file|mimes:pdf|max:2048',
         ]);
 
@@ -421,16 +436,12 @@ class PostLowonganController extends Controller
 
         }
 
-
-
-
-
     }
 
     public function acc($id){
 
         $data = Pelamar::find($id);
-        $data->status = "acc";
+        $data->status_accepted = "acc";
         $data->save();
 
         session()->flash("success", "Data diacc!");

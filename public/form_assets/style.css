@@ -15,15 +15,15 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 }
-html {  
-	-ms-overflow-style: scrollbar; 
+html {
+	-ms-overflow-style: scrollbar;
 }
 .alltrans,
-a, 
-input[type="button"], 
-input[type="submit"], 
-button, 
-table th, 
+a,
+input[type="button"],
+input[type="submit"],
+button,
+table th,
 table td,
 .navigation-menu > li > a span:after,
 .btn,
@@ -36,7 +36,7 @@ table td,
 .owl-nav > div:before,
 .portfolio-box:after,
 .portfolio-box img,
-.portfolio-content {	
+.portfolio-content {
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
@@ -44,19 +44,19 @@ a {
 	color: #e52225;
 	text-decoration: none;
 }
-a:hover, 
+a:hover,
 a:focus {
 	color: #e52225;
 	outline: none;
 	text-decoration: none;
 }
-button:hover, 
+button:hover,
 button:focus {
 	outline: none;
 }
 
 .link-dark {
-	color: #0f0f0f;	
+	color: #0f0f0f;
 }
 .link-dark:hover, .link-dark:focus {
 	color: #e52225;
@@ -70,22 +70,22 @@ a:active {
 strong {
 	font-weight: 700;
 }
-small, 
+small,
 .small {
 	font-size: 85%;
 }
-sub, 
+sub,
 sup {
 	font-size: 80%
 }
 p {
 	margin: 0 0 20px;
 }
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
 	line-height: 1.3;
 	margin: 0 0 15px;
@@ -94,7 +94,7 @@ h6 {
 	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
 }
-h1, 
+h1,
 h2 {
 	font-size: 60px;
 }
@@ -196,8 +196,8 @@ html, body{
     overflow-y: scroll;
   }
 .login-sec{
-	padding: 30px 30px; 
-	background:#FFFFFF; 
+	padding: 30px 30px;
+	background:#FFFFFF;
 	border-radius: 0px 10px 10px 0px;
     width:100%;
 	}
@@ -207,10 +207,10 @@ html, body{
     width:100%;
 }
 .login-sec .copy-text{
-	position:absolute; 
-	width:80%; 
-	bottom:20px; 
-	font-size:13px; 
+	position:absolute;
+	width:80%;
+	bottom:20px;
+	font-size:13px;
 	text-align:center;
 	}
 .login-sec .copy-text i{
@@ -220,45 +220,45 @@ html, body{
 	color:#E36262;
 	}
 .login-sec h2{
-	margin-bottom:30px; 
+	margin-bottom:30px;
 	font-weight: 600;
 	font-size: 24px;
 	color: #DE6262;
 	}
 .login-sec h2:after{
-	content:" "; 
-	width:100px; 
-	height:5px; 
-	background:#FEB58A; 
-	display:block; 
-	margin-top:5px; 
-	border-radius:3px; 
+	content:" ";
+	width:100px;
+	height:5px;
+	background:#FEB58A;
+	display:block;
+	margin-top:5px;
+	border-radius:3px;
 	margin-left:auto;
 	margin-right:auto;
 	}
 .btn-login{
-	background: #DE6262; 
-	color:#fff; 
+	background: #DE6262;
+	color:#fff;
 	font-weight:600;
 	}
 .banner-text{
-	width:70%; 
-	position:absolute; 
-	bottom:40px; 
+	width:70%;
+	position:absolute;
+	bottom:40px;
 	padding-left:20px;
 	}
 .banner-text h2{
-	color:#fff; 
+	color:#fff;
 	font-weight:600;
 	font-size: 32px;
 	}
 .banner-text h2:after{
-	content:" "; 
-	width:100px; 
-	height:5px; 
-	background:#FFFFFF; 
-	display:block; 
-	margin-top:20px; 
+	content:" ";
+	width:100px;
+	height:5px;
+	background:#FFFFFF;
+	display:block;
+	margin-top:20px;
 	border-radius:3px;
 	}
 .banner-text p{
@@ -277,9 +277,9 @@ html, body{
 	font-size: 13px;
 	padding: 5px 20px;
 }
-	
-	
-	
+
+
+
 .wizard,.tabcontrol{
     display:block;
     width:100%;
@@ -550,9 +550,9 @@ html, body{
         width:100%
     }
 }
-	
-	
-	
+
+
+
 
 .copyright.text-center{
 	margin-top: 30px;

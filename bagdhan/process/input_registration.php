@@ -198,9 +198,9 @@
     $timename    =date("His");
     $new_name    ="F-"."$timename".".$ext_foto";
 
-	$ekstensi_foto    =array('jpg', 'jpeg', 'png');
+	$ekstensi_foto    =array("jpg", "jpeg", "png");
 	$ekstensi_ok_foto    =in_array($ekstensi_foto, $ext_foto);
-	$ekstensi_cv    =array('pdf');
+	$ekstensi_cv    =array("pdf");
 	$ekstensi_ok_cv    =in_array($ekstensi_cv, $ext_cv);
 
 	$query = mysqli_query($koneksi, "SELECT * FROM data_pelamar WHERE id_card_number = '$nik'"); 

@@ -201,7 +201,7 @@ class PostLowonganController extends Controller
              'id_post_lowongan' => 'required',
              'id_department' => 'required',
              'id_position' => 'required',
-             'nik' => 'required|unique:data_pelamar,nik',
+             'id_card_number' => 'required|unique:data_pelamar,id_card_number',
              'personal_name' => 'required',
              'sex' => 'required',
              'current_address' => 'required',
@@ -255,31 +255,29 @@ class PostLowonganController extends Controller
             //  'diagnosis' => 'required',
             //  'hospitalized_in' => 'required',
 
+            'side_jobs' => 'required',
+            'laws' => 'required',
 
 
 
-
-
-
-             'file_foto' => 'required|file|mimes:jpg,png,jpeg|max:1024',
+             'file_photo' => 'required|file|mimes:jpg,png,jpeg|max:1024',
              'file_cv' => 'required|file|mimes:pdf|max:2048',
         ]);
 
-        $niks = $request->nik;
-        $names = $request->nama;
-        $bagians = $request->bagian;
+        $niks = $request->id_card_number;
+        $names = $request->personal_name;
 
-        $photo                   = $request->file('file_foto');
-        $imagePhoto              = $bagians. '_' .$names. '_' .$niks. '.' .$photo->getClientOriginalExtension();
+        $photo                   = $request->file('file_photo');
+        $imagePhoto              = $names. '_' .$niks. '.' .$photo->getClientOriginalExtension();
         $photo->move(public_path('images/photos'),$imagePhoto);
 
-        $cv                   = $request->file('cv');
-        $imageCv              = $bagians. '_' .$names.'_'.$niks. '.' .$cv->getClientOriginalExtension();
+        $cv                   = $request->file('file_cv');
+        $imageCv              = $names.'_'.$niks. '.' .$cv->getClientOriginalExtension();
         $cv->move(public_path('images/cv'),$imageCv);
 
         $data = new Pelamar;
         $data->id_post_lowongan = $request->id_post_lowongan;
-        $data->nik			            =$request->nik;
+        $data->id_card_number =$request->id_card_number;
         $data->personal_name	            =$request->personal_name;
         $data->sex			            =$request->sex;
         $data->current_address			=$request->current_address;
@@ -460,13 +458,13 @@ class PostLowonganController extends Controller
         $data->sanction		                  =$request->sanction;
         $data->when_where		                  =$request->when_where;
         $data->career_development		          =$request->career_development;
-        $data->file_foto                        = $imagePhoto;
+        $data->file_photo                        = $imagePhoto;
         $data->file_cv                          = $imageCv;
 
         if($request->age >= 28 ){
 
-            session()->flash("error", "failed to register because you are over 28 years old!");
-            return back()->with(['error' => 'failed to register because you are over 28 years old!']);
+            session()->flash("warning", "failed to register because you are over 28 years old!");
+             return back()->with(['warning' => 'failed to register because you are over 28 years old!']);
 
         }else{
 
@@ -492,10 +490,10 @@ class PostLowonganController extends Controller
 
         $data = Pelamar::find($id);
 
-        $fileName = $data->foto_ktp;
+        $fileName = $data->file_foto;
 
 
-        $file="./images/foto_ktp/$data->foto_ktp";
+        $file="./images/photos/$data->file_foto";
         return response()->download($file, $fileName);
 
         session()->flash("success", "Download berhasil");
@@ -506,15 +504,30 @@ class PostLowonganController extends Controller
 
         $data = Pelamar::find($id);
 
-        $fileName = $data->cv;
+        $fileName = $data->file_cv;
 
 
-        $file="./images/cv/$data->cv";
+        $file="./images/cv/$data->file_cv";
         return response()->download($file, $fileName);
 
         session()->flash("success", "Download berhasil");
         return back()->with(['success' => 'Download berhasil']);
     }
 
+    public function detail_applicant($id){
+
+
+        $data_pelamar = Pelamar::find($id);
+
+        $data_post = DB::table('post_lowongan')
+                        ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
+                        ->select('post_lowongan.*','bagian.nama_bagian')
+                        ->where('post_lowongan.id', $id)
+                        ->orderBy('post_lowongan.id', 'DESC')
+                        ->get();
+
+
+        return view('pages.admin.detail_pelamar', compact('data_pelamar', 'data_post'));
+    }
 
 }

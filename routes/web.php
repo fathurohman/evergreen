@@ -65,6 +65,7 @@ Route::get('/delete_position/{id}', [PositionController::class, 'delete']);
 
 //pelamar//
 Route::get('/applicant/{id}', [PostLowonganController::class, 'applicant']);
+Route::get('/detail_applicant/{id}', [PostLowonganController::class, 'detail_applicant']);
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
 Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);

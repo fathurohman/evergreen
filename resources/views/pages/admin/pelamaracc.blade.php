@@ -64,7 +64,7 @@
                     <td><p style="white-space: pre-line">{{$item->kualifikasi}}</p></td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <b>Batas Waktu :</b> <?php
+                    <td colspan="2"> <b>End Data :</b> <?php
                         $tanggal = $item->tanggal_akhir;
                             $daftar_hari = array(
                                             'Sunday' => 'Minggu',
@@ -111,18 +111,18 @@
                     @foreach ($data_pelamar_acc as $index=>$item)
                    <tr align="center">
                       <td>{{$index +1 }}</td>
-                      <td><img src="{{asset('/images/foto_ktp')}}/{{$item->foto_ktp}}" style="max-width: 200px;margin-top: 10px;margin-bottom: 10px">
+                      <td><img src="{{asset('/images/photos')}}/{{$item->file_photo}}" style="max-width: 200px;margin-top: 10px;margin-bottom: 10px">
 
                         {{-- <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download</a> --}}
                         <br>
-                          <b>{{$item->nik }} <br>
-                          {{$item->nama }} <br>
-                          {{$item->umur }} Tahun</b>
+                          <b>{{$item->id_card_number }} <br>
+                          {{$item->personal_name }} <br>
+                          {{$item->age }} Years Old</b>
                     </td>
                       {{-- <td>
                         </td> --}}
                       <td>
-                        <embed type="application/pdf" src="{{asset('/images/cv')}}/{{$item->cv}}" width="600" height="400"></embed>
+                        <embed type="application/pdf" src="{{asset('/images/cv')}}/{{$item->file_cv}}" width="600" height="400"></embed>
 
                       </td>
                      <td>

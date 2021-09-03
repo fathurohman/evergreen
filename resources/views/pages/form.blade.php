@@ -751,51 +751,85 @@ $status = date('Y-m-d'); @endphp
                                 </tbody>
 							</table>
 
-							<label for="age">5. Do you have any side jobs? *</label>
-							<select id="age" name="side_jobs" class="form-control ">
-								<option value="">Choose</option>
-								<option value="Never">No</option>
-								<option value="Yes">Yes</option>
-							</select>
-							<label for="name">Working as *</label>
-							<input id="name" name="working_as" type="text" class="form-control " >
-							<label for="surname">Remuneration *</label>
-							<input id="surname" name="remuneration" type="text" class="form-control ">
-							<label for="age">6. Have you ever been involved in criminal case or a violation of the laws? *</label>
-							<select id="age" name="laws" class="form-control ">
-								<option value="">Choose</option>
-								<option value="Never">No</option>
-								<option value="Yes">Yes</option>
-							</select>
-							<label for="surname">Type of case *</label>
-							<input id="surname" name="type_case" type="text" class="form-control ">
-							<label for="surname">Sanction *</label>
-							<input id="surname" name="sanction" type="text" class="form-control ">
-							<label for="surname">When & Where *</label>
-							<input id="surname" name="when_where" type="text" class="form-control ">
-							<label for="surname">7. What are you aims in your future career development? (please give a short description) *</label>
-							<textarea id="surname" name="career_development" class="form-control "></textarea>
+                            <div class="form-group">
+                                <label>5. Do you have any side jobs? *</label>
+                                <select name="side_jobs" class="form-control @error('side_jobs') is-invalid @enderror">
+                                    <option value="">Choose</option>
+                                    <option value="Never" @if(old('side_jobs') == 'Never') selected @endif>No</option>
+                                    <option value="Yes" @if(old('side_jobs') == 'Yes') selected @endif>Yes</option>
+                                </select>
+                                @error('side_jobs')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                                <label>Working as *</label>
+                                <input name="working_as" type="text" class="form-control @error('working_as') is-invalid @enderror" value="{{old("working_as")}}">
+                                @error('working_as')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                                <label>Remuneration *</label>
+                                <input name="remuneration" type="text" class="form-control @error('remuneration') is-invalid @enderror" value="{{old("remuneration")}}">
+                                @error('remuneration')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                                <label>6. Have you ever been involved in criminal case or a violation of the laws? *</label>
+                                <select name="laws" class="form-control @error('laws') is-invalid @enderror">
+                                    <option value="">Choose</option>
+                                    <option value="Never" @if(old('laws') == 'Never') selected @endif>No</option>
+                                    <option value="Yes" @if(old('laws') == 'Yes') selected @endif>Yes</option>
+                                </select>
+                                @error('side_jobs')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                                <label>Type of case *</label>
+                                <input name="type_case" type="text" class="form-control @error('type_case') is-invalid @enderror" value="{{old("type_case")}}">
+                                @error('type_case')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                                <label>Sanction *</label>
+                                <input name="sanction" type="text" class="form-control @error('sanction') is-invalid @enderror" value="{{old("sanction")}}">
+                                @error('sanction')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
-        <div class="form-group">
-          <input name="file_foto" type="file" class="form-control @error('file_foto') is-invalid @enderror" id="file_foto" value="{{old("file_foto")}}" >
-                @error('file_foto')<div class="text-danger mt-2">{{ $message }}</div>@enderror
-                <div class="text-info mt-2">*file must .jpg,.jpeg,.png | max:2mb</div>
-          </div>
+                            <div class="form-group">
+                                <label>When & Where *</label>
+                                <input name="when_where" type="text" class="form-control @error('when_where') is-invalid @enderror" value="{{old("when_where")}}">
+                                @error('when_where')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
-          <div class="form-group">
-            <input name="file_cv" type="file" class="form-control" id="file_cv" value="{{old("file_cv")}}">
-            <div class="text-info mt-2">*file must .pdf | max:2mb</div>
-                @error('file_cv')
-                <div class="text-danger mt-2">
-                {{ $message }}
-                </div>
-                @enderror
+                            <div class="form-group">
+                                <label>7. What are you aims in your future career development? (please give a short description) *</label>
+                                <textarea name="career_development" class="form-control @error('career_development') is-invalid @enderror">{{old("career_development")}}</textarea>
+                                @error('career_development')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                            </div>
 
+                            <div class="form-group">
+                            <input name="file_photo" type="file" class="form-control @error('file_photo') is-invalid @enderror" id="file_photo" value="{{old("file_photo")}}" >
+                                    @error('file_photo')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                                    <div class="text-info mt-2">*file must .jpg,.jpeg,.png | max:2mb</div>
+                            </div>
+
+                        <div class="form-group">
+                            <input name="file_cv" type="file" class="form-control @error('file_cv') is-invalid @enderror" id="file_cv" value="{{old("file_cv")}}">
+                            <div class="text-info mt-2">*file must .pdf | max:2mb</div>
+                                @error('file_cv')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label>ID Card Number *</label>
+							<input name="id_card_number" type="number" class="form-control @error('id_card_number') is-invalid @enderror" value="{{old("id_card_number")}}">
+                            @error('id_card_number')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+							<p align="justify">In the event of any incorrect information given by me; herein, I am willing to resign or be imposed by a
+								sanction in accordance with the prevailing regulation.<br><br>Note:<br>1. A staff accepted in particular for
+								placement with a Branch / Regional Office shall be exempted from any official promotion.<br>
+								2. A promotion at one's own request shall be exempted from any official promotion.
+							</p>
+                        </div>
+                        <br>
 
 
 
@@ -847,18 +881,41 @@ $status = date('Y-m-d'); @endphp
 <script src="{{asset('assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('assets/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
 <script src="{{asset('assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+
+  <script>
+
+    $(function(){
+
+        @if(Session::has('warning'))
+                Swal.fire({
+                icon: 'error',
+                title: '{{ Session::get("warning") }}',
+                showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+        },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
+        @endif
+    });
+</script>
+
 <script>
 
     $(function(){
 
         @if(Session::has('success'))
-            Swal.fire({
-            // position: 'top-end',
-            icon: 'success',
-            title: '{{ Session::get("success") }}',
-            showConfirmButton: false,
-            timer: 1500
-        })
+                Swal.fire({
+                icon: 'success',
+                title: '{{ Session::get("success") }}',
+                showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+        },
+            hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+    }
+  })
         @endif
     });
     </script>

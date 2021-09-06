@@ -8,7 +8,8 @@
 <meta name="author" content="html.design">
 <!-- description -->
 <meta name="description" content="Wizard Form with Validation - Responsive">
-<link rel="shortcut icon" href="resources/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="resources/question/assets/img/favicon/evergreen_logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="resources/question/assets/img/favicon/evergreen_logo.png">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 <!-- Fontawesome CSS -->

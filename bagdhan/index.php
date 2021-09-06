@@ -45,8 +45,8 @@
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="120x120" href="resources/question/assets/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="resources/question/assets/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="resources/question/assets/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="resources/question/assets/img/favicon/evergreen_logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="resources/question/assets/img/favicon/evergreen_logo.png">
 <link rel="manifest" href="resources/question/assets/img/favicon/site.webmanifest">
 <link rel="mask-icon" href="resources/question/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -101,7 +101,7 @@
                                 <div class="form-group mb-4">
                                     <label for="email">Pilih Tes</label>
                                     <br>
-                                        <input class="form-check-input" type="radio" name="tes" id="exampleRadios1" value="psikotes">
+                                        <input class="form-check-input" type="radio" name="tes" id="exampleRadios1" value="psikotes" required>
                                             <label class="form-check-label" for="exampleRadios1">
                                               Psikotes
                                             </label>

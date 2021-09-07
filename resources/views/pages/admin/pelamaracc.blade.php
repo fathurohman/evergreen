@@ -128,7 +128,7 @@
                      <td>
                         <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Foto</a>
                         <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a>
-                        <a onclick="return confirm('Acc data ?');" class="btn btn-danger" href="/cancel_acc/{{ $item->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>
+                        <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc/{{ $item->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>
                      </td>
 
                     </tr>

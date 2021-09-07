@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
 <title>Intelegensia Test</title>
@@ -70,14 +70,14 @@
 <body>
 
     <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-    
+
 
     <main>
         <!-- Section -->
         <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
             <div class="container">
                 <p class="text-center">
-                    
+
                 </p>
                 <div class="row justify-content-center form-bg-image" data-background-lg="resources/question/assets/img/illustrations/signin.svg">
                     <div class="col-12 d-flex align-items-center justify-content-center">
@@ -120,8 +120,8 @@
   <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
 </svg>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="NIK Anda" name="nik" autofocus required>
-                                    </div>  
+                                        <input type="text" class="form-control" placeholder="NIK Anda" name="id_card_number" autofocus required>
+                                    </div>
                                 </div>
                                 <div class="d-grid">
                                 <input type="submit" class="btn btn-gray-800" value="Mulai Tes">
@@ -131,12 +131,12 @@
                                 <span class="fw-normal"></span>
                             </div>
                             <div class="d-flex justify-content-center my-4">
-                                
+
                             </div>
                             <div class="d-flex justify-content-center align-items-center mt-4">
                                 <span class="fw-normal">
                                 PT. Evergreen Shipping Agency Indonesia
-                                    
+
                                 </span>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
 <!-- Volt JS -->
 <script src="resources/question/assets/js/volt.js"></script>
 
-    
+
 </body>
 
 </html>

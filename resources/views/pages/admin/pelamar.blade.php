@@ -100,9 +100,9 @@
                     <thead>
                     <tr align="center">
                       <th>No</th>
-                      <th>Info</th>
+                      <th>Photo</th>
                       {{-- <th>Informasi</th> --}}
-                      <th>CV</th>
+                      <th>Info</th>
                       <th>Action</th>
 
                     </tr>
@@ -112,24 +112,45 @@
                    <tr align="center">
                       <td>{{$index +1 }}</td>
                       <td><img src="{{asset('/images/photos')}}/{{$item->file_photo}}" style="max-width: 200px;margin-top: 10px;margin-bottom: 10px">
-
+                      </td>
                         {{-- <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download</a> --}}
-                        <br>
-                          <b>{{$item->id_card_number }} <br>
-                          {{$item->personal_name }} <br>
-                          {{$item->age }} Years Old</b>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>NIK</td>
+                                    <td>:</td>
+                                    <td>{{$item->id_card_number }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Personal Name</td>
+                                    <td>:</td>
+                                    <td>{{$item->personal_name }}</td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>:</td>
+                                    <td>{{$item->email }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Age</td>
+                                    <td>:</td>
+                                    <td>{{$item->age }}</td>
+                                </tr>
+
+
+                            </table>
+
                     </td>
                       {{-- <td>
                         </td> --}}
-                      <td>
+                      {{-- <td>
                         <embed type="application/pdf" src="{{asset('/images/cv')}}/{{$item->file_cv}}" width="600" height="400"></embed>
-
-                      </td>
+                      </td> --}}
                      <td>
-                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Photo</a>
-                        <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a>
+                        {{-- <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Photo</a>
+                        <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a> --}}
                         <a class="btn btn-info" href="/detail_applicant/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
-                        <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
+                        {{-- <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a> --}}
                      </td>
 
                     </tr>

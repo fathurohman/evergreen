@@ -69,6 +69,7 @@ Route::get('/detail_applicant/{id}', [PostLowonganController::class, 'detail_app
 Route::get('/poster/{id}', [PostLowonganController::class, 'poster']);
 
 Route::get('/acc/{id}', [PostLowonganController::class, 'acc']);
+Route::get('/acc_detail/{id}', [PostLowonganController::class, 'acc_detail']);
 Route::get('/download_foto/{id}', [PostLowonganController::class, 'download_foto']);
 Route::get('/download_cv/{id}', [PostLowonganController::class, 'download_cv']);
 

@@ -484,8 +484,22 @@ class PostLowonganController extends Controller
         $data->status_accepted = "acc";
         $data->save();
 
-        session()->flash("success", "Data approved!");
-        return back()->with(['success' => 'Data approved!']);
+        session()->flash("success", "Data accepted!");
+        return back()->with(['success' => 'Data accepted!']);
+    }
+
+    public function acc_detail($id){
+
+
+
+        $data = Pelamar::find($id);
+        $data->status_accepted = "acc";
+        $data->save();
+
+        session()->flash("success", "Data accepted!");
+        return redirect()->action(
+            [PostLowonganContoller::class, 'applicant'], ['id' => $data->id_post_lowongan]
+        );
     }
 
     public function download_foto($id){

@@ -18,42 +18,42 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["nik"])) {
+if (!isset($_SESSION["id_card_number"])) {
 header('Location:validation');
 	exit;
 }
 
 $id_data_pelamar=$_SESSION["id_data_pelamar"];
 $personal_name=$_SESSION["personal_name"];
-$nik=$_SESSION["nik"];
+$id_card_number=$_SESSION["id_card_number"];
 
 $koneksi = mysqli_connect("localhost","root","","evergreen");
 
 //set session dulu dengan nama $_SESSION["mulai"]
-if (isset($_SESSION["mulai"])) { 
+if (isset($_SESSION["mulai"])) {
   //jika session sudah ada
   $telah_berlalu = time() - $_SESSION["mulai"];
-} else { 
+} else {
   //jika session belum ada
   $_SESSION["mulai"]  = time();
   $telah_berlalu      = 0;
 }
 
-$sql    = mysqli_query($koneksi, "select * from timer");   
+$sql    = mysqli_query($koneksi, "select * from timer");
 $data   = mysqli_fetch_array($sql);
 
 $temp_waktu = ($data['waktu']*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
 $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
 $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
 
-if ($temp_menit < 60) { 
+if ($temp_menit < 60) {
   /* Apabila $temp_menit yang kurang dari 60 meni */
-  $jam    = 0; 
-  $menit  = $temp_menit; 
-  $detik  = $temp_detik; 
-} else { 
-  /* Apabila $temp_menit lebih dari 60 menit */           
-  $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer 
+  $jam    = 0;
+  $menit  = $temp_menit;
+  $detik  = $temp_detik;
+} else {
+  /* Apabila $temp_menit lebih dari 60 menit */
+  $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer
   $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
   $detik  = $temp_detik;
 }
@@ -61,7 +61,7 @@ if ($temp_menit < 60) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
 <title>Psikotest</title>
@@ -110,7 +110,7 @@ if ($temp_menit < 60) {
 
 <script type="text/javascript">
         $(document).ready(function() {
-            /** Membuat Waktu Mulai Hitung Mundur Dengan 
+            /** Membuat Waktu Mulai Hitung Mundur Dengan
                 * var detik;
                 * var menit;
                 * var jam;
@@ -118,29 +118,29 @@ if ($temp_menit < 60) {
             var detik   = <?= $detik; ?>;
             var menit   = <?= $menit; ?>;
             var jam     = <?= $jam; ?>;
-                  
+
             /**
                * Membuat function hitung() sebagai Penghitungan Waktu
             */
             function hitung() {
-                /** setTimout(hitung, 1000) digunakan untuk 
-                     * mengulang atau merefresh halaman selama 1000 (1 detik) 
+                /** setTimout(hitung, 1000) digunakan untuk
+                     * mengulang atau merefresh halaman selama 1000 (1 detik)
                 */
                 setTimeout(hitung,1000);
-  
+
                 /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
                 if(menit < 10 && jam == 0){
                     var peringatan = 'style="color:red"';
                 };
-  
+
                 /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
                 $('#timer').html(
                   '<span class="mt-1 ms-1 sidebar-text">' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</span>'
                 );
-  
+
                 /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
                 detik --;
-  
+
                 /** Jika var detik < 0
                     * var detik akan dikembalikan ke 59
                     * Menit akan Berkurang 1
@@ -148,7 +148,7 @@ if ($temp_menit < 60) {
                 if(detik < 0) {
                     detik = 59;
                     menit --;
-  
+
                    /** Jika menit < 0
                         * Maka menit akan dikembali ke 59
                         * Jam akan Berkurang 1
@@ -156,21 +156,21 @@ if ($temp_menit < 60) {
                     if(menit < 0) {
                         menit = 59;
                         jam --;
-  
+
                         /** Jika var jam < 0
                             * clearInterval() Memberhentikan Interval dan submit secara otomatis
                         */
-                             
-                        if(jam < 0) { 
-                            clearInterval(hitung); 
+
+                        if(jam < 0) {
+                            clearInterval(hitung);
                             /** Variable yang digunakan untuk submit secara otomatis di Form */
-                            var msform = document.getElementById("msform"); 
+                            var msform = document.getElementById("msform");
                             alert('Waktu telah habis, jawaban Anda akan otomatis tersimpan.');
-                            msform.submit(); 
-                        } 
-                    } 
-                } 
-            }           
+                            msform.submit();
+                        }
+                    }
+                }
+            }
             /** Menjalankan Function Hitung Waktu Mundur */
             hitung();
         });
@@ -180,8 +180,8 @@ if ($temp_menit < 60) {
 <body>
 
         <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-        
-    
+
+
         <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
     <a class="navbar-brand me-lg-5" href="index.html">
         <img class="navbar-brand-dark" src="resources/question/assets/img/brand/light.svg" alt="Volt logo" /> <img class="navbar-brand-light" src="assets/img/brand/dark.svg" alt="Volt logo" />
@@ -241,13 +241,13 @@ if ($temp_menit < 60) {
     </ul>
   </div>
 </nav>
-    
+
         <main class="content">
 
-            
+
 
             <div class="py-4">
-                
+
                 <div class="d-flex justify-content-between w-100 flex-wrap">
                     <div class="mb-3 mb-lg-0">
                         <h1 class="h4">Intelegensia Test</h1>
@@ -435,7 +435,7 @@ if ($temp_menit < 60) {
                 </div>
             </div>
             <div class="theme-settings card bg-gray-800 pt-2 collapse" id="theme-settings">
-    
+
 </div>
 
 <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
@@ -488,7 +488,7 @@ if ($temp_menit < 60) {
 <!-- Volt JS -->
 <script src="resources/question/assets/js/volt.js"></script>
 
-    
+
 </body>
 
 </html>

@@ -106,7 +106,7 @@ if (isset($_POST['msform'])) {
   $jwb_100 = $_POST['jwb_100'];
 
   // id_produk bernilai '' karena kita set auto increment
-  $q = $koneksi->query("INSERT INTO b_inggris VALUES ('$id_data_pelamar', '$jwb_1', '$jwb_2', '$jwb_3', '$jwb_4', '$jwb_5', '$jwb_6'
+  $q = $koneksi->query("INSERT INTO b_inggris VALUES (NULL,'$id_data_pelamar', '$jwb_1', '$jwb_2', '$jwb_3', '$jwb_4', '$jwb_5', '$jwb_6'
   , '$jwb_7', '$jwb_8', '$jwb_9', '$jwb_10', '$jwb_11', '$jwb_12', '$jwb_13', '$jwb_14', '$jwb_15', '$jwb_16', '$jwb_17', '$jwb_18', '$jwb_19', '$jwb_20'
   , '$jwb_21', '$jwb_22', '$jwb_23', '$jwb_24', '$jwb_25', '$jwb_26', '$jwb_27', '$jwb_28', '$jwb_29', '$jwb_30', '$jwb_31', '$jwb_32', '$jwb_33', '$jwb_34'
   , '$jwb_35', '$jwb_36', '$jwb_37', '$jwb_38', '$jwb_39', '$jwb_40', '$jwb_41', '$jwb_42', '$jwb_43', '$jwb_44', '$jwb_45', '$jwb_46', '$jwb_47', '$jwb_48'

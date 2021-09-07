@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 $koneksi = mysqli_connect("localhost","root","","evergreen");
 
 if (isset($_POST['msform'])) {

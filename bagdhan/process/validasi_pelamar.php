@@ -27,7 +27,7 @@ $jumlah3 = mysqli_num_rows($hasil3);
 		$row = mysqli_fetch_assoc($hasil);
 		$_SESSION["id_card_number"]=$row["id_card_number"];
 		$_SESSION["personal_name"]=$row["personal_name"];
-		$_SESSION["id_data_pelamar"]=$row["id_data_pelamar"];
+		$_SESSION["id_data_pelamar"]=$row["id"];
 
 
 		header("Location:psikotest");
@@ -40,7 +40,7 @@ $jumlah3 = mysqli_num_rows($hasil3);
 		$row = mysqli_fetch_assoc($hasil);
 		$_SESSION["id_card_number"]=$row["id_card_number"];
 		$_SESSION["personal_name"]=$row["personal_name"];
-		$_SESSION["id_data_pelamar"]=$row["id_data_pelamar"];
+		$_SESSION["id_data_pelamar"]=$row["id"];
 
 
 		header("Location:english");

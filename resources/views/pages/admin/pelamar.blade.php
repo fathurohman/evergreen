@@ -126,9 +126,9 @@
 
                       </td>
                      <td>
-                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Foto</a>
+                        <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Photo</a>
                         <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a>
-                        <a class="btn btn-info" href="/detail_applicant/{{ $item->id }}"><i class="fa fa-edit"></i> Detail</a>
+                        <a class="btn btn-info" href="/detail_applicant/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
                         <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 

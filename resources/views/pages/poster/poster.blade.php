@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="">
-    <title>HRD System | {{$judul}}</title>
+    <title>{{$judul}}</title>
 
     <!-- Bootstrap core CSS -->
 <link href="{{asset('print_assets/dist/css/bootstrap.min.css')}}" rel="stylesheet">

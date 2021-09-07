@@ -102,6 +102,12 @@ $status = date('Y-m-d'); @endphp
           </div>
 
           <div class="form-group">
+            <label>5. E-mail  *</label>
+            <input name="email" type="text" class="form-control @error('email') is-invalid @enderror" placeholder="E-mail *" id="email" value="{{old("email")}}">
+              @error('email')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+          </div>
+
+          <div class="form-group">
             <label>6. Place and Date of Birth  *</label>
             <input name="place_date_birth" type="text" class="form-control @error('place_date_birth') is-invalid @enderror" placeholder="Jakarta, 01-01-2000" id="place_date_birth" value="{{old("place_date_birth")}}">
               @error('place_date_birth')<div class="text-danger mt-2">{{ $message }}</div>@enderror
@@ -270,11 +276,11 @@ $status = date('Y-m-d'); @endphp
             </tr>
             <tr>
             <td>2nd Child</td>
-            <td><input name="name_your_second_child" type="text" class="form-control" value="{{old("name_your_second_child")}}"></td>
-            <td><select name="sex_name_your_second_child" class="form-control ">
+            <td><input name="name_your_second_child" type="text" class="form-control" value="{{old("sex_your_second_child")}}"></td>
+            <td><select name="sex_your_second_child" class="form-control ">
             <option value="">Choose</option>
-            <option value="M" @if(old('sex_name_your_second_child') == 'M') selected @endif>Male</option>
-            <option value="F" @if(old('sex_name_your_second_child') == 'F') selected @endif>Female</option>
+            <option value="M" @if(old('sex_your_second_child') == 'M') selected @endif>Male</option>
+            <option value="F" @if(old('sex_your_second_child') == 'F') selected @endif>Female</option>
         </select></td>
             <td><input name="age_your_second_child" type="text" class="form-control" value="{{old("age_your_second_child")}}"></td>
             <td><input name="education_your_second_child" type="text" class="form-control" value="{{old("education_your_second_child")}}"></td>
@@ -307,10 +313,10 @@ $status = date('Y-m-d'); @endphp
             <tr>
             <td>5th Child</td>
             <td><input name="name_your_fifth_child" type="text" class="form-control" value="{{old("name_your_fifth_child")}}"></td>
-            <td><select name="sex_fifth_child" class="form-control ">
+            <td><select name="sex_your_fifth_child" class="form-control ">
             <option value="">Choose</option>
-            <option value="M" @if(old('sex_fifth_child') == 'M') selected @endif>Male</option>
-            <option value="F" @if(old('sex_fifth_child') == 'F') selected @endif>Female</option>
+            <option value="M" @if(old('sex_your_fifth_child') == 'M') selected @endif>Male</option>
+            <option value="F" @if(old('sex_your_fifth_child') == 'F') selected @endif>Female</option>
         </select></td>
             <td><input name="age_your_fifth_child" type="number" class="form-control" value="{{old("age_your_fifth_child")}}"></td>
             <td><input name="education_your_fifth_child" type="text" class="form-control" value="{{old("education_your_fifth_child")}}"></td>
@@ -459,7 +465,7 @@ $status = date('Y-m-d'); @endphp
 
                     <div class="form-group">
                         <label>c. Name and Address of Employer *</label>
-                        <textarea name="name_address_employer_1" class="form-control @error('name_address_employer_1') is-invalid @enderror" value="{{old("name_address_employer_1")}}"></textarea>
+                        <textarea name="name_address_employer_1" class="form-control @error('name_address_employer_1') is-invalid @enderror">{{old("name_address_employer_1")}}</textarea>
                         @error('name_address_employer_1')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                     </div>
 
@@ -628,7 +634,7 @@ $status = date('Y-m-d'); @endphp
                         @error('organizational_activities')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                     </div>
 
-                        <table class="table">
+                        <table class="table-responsive">
                             <thead>
                             <tr>
                             <th>Name of Organization</th>
@@ -720,7 +726,7 @@ $status = date('Y-m-d'); @endphp
                         </div>
 
 							<label>4. Acquaintances working at our company *</label>
-							<table class="table">
+							<table class="table-responsive">
                                 <thead>
 								<tr>
 								<th>Name</th>
@@ -780,7 +786,7 @@ $status = date('Y-m-d'); @endphp
                                     <option value="Never" @if(old('laws') == 'Never') selected @endif>No</option>
                                     <option value="Yes" @if(old('laws') == 'Yes') selected @endif>Yes</option>
                                 </select>
-                                @error('side_jobs')<div class="text-danger mt-2">{{ $message }}</div>@enderror
+                                @error('laws')<div class="text-danger mt-2">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="form-group">

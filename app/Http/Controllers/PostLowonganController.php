@@ -208,6 +208,7 @@ class PostLowonganController extends Controller
              'phone_current_address' => 'required',
              'permanent_address' => 'required',
              'phone_permanent_address' => 'required',
+             'email' => 'required|email',
              'place_date_birth' => 'required',
              'age' => 'required',
              'religion' => 'required',
@@ -284,6 +285,7 @@ class PostLowonganController extends Controller
         $data->phone_current_address	    =$request->phone_current_address;
         $data->permanent_address	        =$request->permanent_address;
         $data->phone_permanent_address    =$request->phone_permanent_address;
+        $data->email                    =$request->email;
         $data->place_date_birth			=$request->place_date_birth;
         $data->age	                    =$request->age;
         $data->religion			        =$request->religion;
@@ -482,8 +484,8 @@ class PostLowonganController extends Controller
         $data->status_accepted = "acc";
         $data->save();
 
-        session()->flash("success", "Data diacc!");
-        return back()->with(['success' => 'Data diacc!']);
+        session()->flash("success", "Data approved!");
+        return back()->with(['success' => 'Data approved!']);
     }
 
     public function download_foto($id){
@@ -517,7 +519,15 @@ class PostLowonganController extends Controller
     public function detail_applicant($id){
 
 
-        $data_pelamar = Pelamar::find($id);
+        //  $data = Pelamar::find($id);
+
+         $data = DB::table('data_pelamar')
+                         ->leftjoin('bagian', 'bagian.id','=','data_pelamar.id_department')
+                         ->leftjoin('position', 'position.id','=','data_pelamar.id_position')
+                         ->select('data_pelamar.*','bagian.nama_bagian','position.nama_posisi')
+                         ->where('data_pelamar.id', $id)
+                         ->orderBy('data_pelamar.id', 'DESC')
+                         ->get();
 
         $data_post = DB::table('post_lowongan')
                         ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
@@ -526,8 +536,12 @@ class PostLowonganController extends Controller
                         ->orderBy('post_lowongan.id', 'DESC')
                         ->get();
 
+        $data_position = DB::table('position')
+                        ->where('id_post_lowongan', $id)
+                        ->get();
 
-        return view('pages.admin.detail_pelamar', compact('data_pelamar', 'data_post'));
+
+        return view('pages.admin.detail_pelamar', compact('data', 'data_post','data_position'));
     }
 
 }

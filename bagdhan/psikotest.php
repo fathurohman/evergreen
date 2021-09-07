@@ -30,30 +30,30 @@ $id_card_number=$_SESSION["id_card_number"];
 $koneksi = mysqli_connect("localhost","root","","evergreen");
 
 //set session dulu dengan nama $_SESSION["mulai"]
-if (isset($_SESSION["mulai"])) {
+if (isset($_SESSION["mulai"])) { 
   //jika session sudah ada
   $telah_berlalu = time() - $_SESSION["mulai"];
-} else {
+} else { 
   //jika session belum ada
   $_SESSION["mulai"]  = time();
   $telah_berlalu      = 0;
 }
 
-$sql    = mysqli_query($koneksi, "select * from timer");
+$sql    = mysqli_query($koneksi, "select * from timer");   
 $data   = mysqli_fetch_array($sql);
 
 $temp_waktu = ($data['waktu']*60) - $telah_berlalu; //dijadikan detik dan dikurangi waktu yang berlalu
 $temp_menit = (int)($temp_waktu/60);                //dijadikan menit lagi
 $temp_detik = $temp_waktu%60;                       //sisa bagi untuk detik
 
-if ($temp_menit < 60) {
+if ($temp_menit < 60) { 
   /* Apabila $temp_menit yang kurang dari 60 meni */
-  $jam    = 0;
-  $menit  = $temp_menit;
-  $detik  = $temp_detik;
-} else {
-  /* Apabila $temp_menit lebih dari 60 menit */
-  $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer
+  $jam    = 0; 
+  $menit  = $temp_menit; 
+  $detik  = $temp_detik; 
+} else { 
+  /* Apabila $temp_menit lebih dari 60 menit */           
+  $jam    = (int)($temp_menit/60);    //$temp_menit dijadikan jam dengan dibagi 60 dan dibulatkan menjadi integer 
   $menit  = $temp_menit%60;           //$temp_menit diambil sisa bagi ($temp_menit%60) untuk menjadi menit
   $detik  = $temp_detik;
 }
@@ -61,7 +61,7 @@ if ($temp_menit < 60) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
 <title>Psikotest</title>
@@ -110,7 +110,7 @@ if ($temp_menit < 60) {
 
 <script type="text/javascript">
         $(document).ready(function() {
-            /** Membuat Waktu Mulai Hitung Mundur Dengan
+            /** Membuat Waktu Mulai Hitung Mundur Dengan 
                 * var detik;
                 * var menit;
                 * var jam;
@@ -118,29 +118,29 @@ if ($temp_menit < 60) {
             var detik   = <?= $detik; ?>;
             var menit   = <?= $menit; ?>;
             var jam     = <?= $jam; ?>;
-
+                  
             /**
                * Membuat function hitung() sebagai Penghitungan Waktu
             */
             function hitung() {
-                /** setTimout(hitung, 1000) digunakan untuk
-                     * mengulang atau merefresh halaman selama 1000 (1 detik)
+                /** setTimout(hitung, 1000) digunakan untuk 
+                     * mengulang atau merefresh halaman selama 1000 (1 detik) 
                 */
                 setTimeout(hitung,1000);
-
+  
                 /** Jika waktu kurang dari 10 menit maka Timer akan berubah menjadi warna merah */
                 if(menit < 10 && jam == 0){
                     var peringatan = 'style="color:red"';
                 };
-
+  
                 /** Menampilkan Waktu Timer pada Tag #Timer di HTML yang tersedia */
                 $('#timer').html(
                   '<span class="mt-1 ms-1 sidebar-text">' + jam + ' jam : ' + menit + ' menit : ' + detik + ' detik</span>'
                 );
-
+  
                 /** Melakukan Hitung Mundur dengan Mengurangi variabel detik - 1 */
                 detik --;
-
+  
                 /** Jika var detik < 0
                     * var detik akan dikembalikan ke 59
                     * Menit akan Berkurang 1
@@ -148,7 +148,7 @@ if ($temp_menit < 60) {
                 if(detik < 0) {
                     detik = 59;
                     menit --;
-
+  
                    /** Jika menit < 0
                         * Maka menit akan dikembali ke 59
                         * Jam akan Berkurang 1
@@ -156,21 +156,21 @@ if ($temp_menit < 60) {
                     if(menit < 0) {
                         menit = 59;
                         jam --;
-
+  
                         /** Jika var jam < 0
                             * clearInterval() Memberhentikan Interval dan submit secara otomatis
                         */
-
-                        if(jam < 0) {
-                            clearInterval(hitung);
+                             
+                        if(jam < 0) { 
+                            clearInterval(hitung); 
                             /** Variable yang digunakan untuk submit secara otomatis di Form */
-                            var msform = document.getElementById("msform");
+                            var msform = document.getElementById("msform"); 
                             alert('Waktu telah habis, jawaban Anda akan otomatis tersimpan.');
-                            msform.submit();
-                        }
-                    }
-                }
-            }
+                            msform.submit(); 
+                        } 
+                    } 
+                } 
+            }           
             /** Menjalankan Function Hitung Waktu Mundur */
             hitung();
         });
@@ -180,8 +180,8 @@ if ($temp_menit < 60) {
 <body>
 
         <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-
-
+        
+    
         <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
     <a class="navbar-brand me-lg-5" href="index.html">
         <img class="navbar-brand-dark" src="resources/question/assets/img/brand/light.svg" alt="Volt logo" /> <img class="navbar-brand-light" src="assets/img/brand/dark.svg" alt="Volt logo" />
@@ -241,13 +241,13 @@ if ($temp_menit < 60) {
     </ul>
   </div>
 </nav>
-
+    
         <main class="content">
 
-
+            
 
             <div class="py-4">
-
+                
                 <div class="d-flex justify-content-between w-100 flex-wrap">
                     <div class="mb-3 mb-lg-0">
                         <h1 class="h4">Intelegensia Test</h1>
@@ -300,25 +300,25 @@ if ($temp_menit < 60) {
                                 <legend class="h6">1. 78 : 13 = .......</legend>
                                         <div class="form-check">
                                             <input class="form-check-input" type="hidden" name="id_data_pelamar" value="<?php echo $id_data_pelamar; ?>">
-                                            <input class="form-check-input" type="radio" name="jwb_1" id="exampleRadios1" value="a">
+                                            <input class="form-check-input" type="radio" name="angka_1" id="exampleRadios1" value="a">
                                             <label class="form-check-label" for="exampleRadios1">
                                               a. 5
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_1" id="exampleRadios2" value="b">
+                                            <input class="form-check-input" type="radio" name="angka_1" id="exampleRadios2" value="b">
                                             <label class="form-check-label" for="exampleRadios2">
                                               b. 6
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_1" id="exampleRadios3" value="c">
+                                            <input class="form-check-input" type="radio" name="angka_1" id="exampleRadios3" value="c">
                                             <label class="form-check-label" for="exampleRadios3">
                                               c. 7
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_1" id="exampleRadios4" value="d">
+                                            <input class="form-check-input" type="radio" name="angka_1" id="exampleRadios4" value="d">
                                             <label class="form-check-label" for="exampleRadios4">
                                               d. 8
                                             </label>
@@ -326,25 +326,25 @@ if ($temp_menit < 60) {
                                           <br>
                                 <legend class="h6">2. ....... + 49 = 81</legend>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_2" id="exampleRadios5" value="a">
+                                            <input class="form-check-input" type="radio" name="angka_2" id="exampleRadios5" value="a">
                                             <label class="form-check-label" for="exampleRadios5">
                                               a. 34
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_2" id="exampleRadios6" value="b">
+                                            <input class="form-check-input" type="radio" name="angka_2" id="exampleRadios6" value="b">
                                             <label class="form-check-label" for="exampleRadios6">
                                               b. 36
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_2" id="exampleRadios7" value="c">
+                                            <input class="form-check-input" type="radio" name="angka_2" id="exampleRadios7" value="c">
                                             <label class="form-check-label" for="exampleRadios7">
                                               c. 32
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_2" id="exampleRadios8" value="d">
+                                            <input class="form-check-input" type="radio" name="angka_2" id="exampleRadios8" value="d">
                                             <label class="form-check-label" for="exampleRadios8">
                                               d. 28
                                             </label>
@@ -352,25 +352,25 @@ if ($temp_menit < 60) {
                                           <br>
                                 <legend class="h6">3. ....... - 17 = 18</legend>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_3" id="exampleRadios9" value="a">
+                                            <input class="form-check-input" type="radio" name="angka_3" id="exampleRadios9" value="a">
                                             <label class="form-check-label" for="exampleRadios9">
                                               a. 32
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_3" id="exampleRadios10" value="b">
+                                            <input class="form-check-input" type="radio" name="angka_3" id="exampleRadios10" value="b">
                                             <label class="form-check-label" for="exampleRadios10">
                                               b. 37
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_3" id="exampleRadios11" value="c">
+                                            <input class="form-check-input" type="radio" name="angka_3" id="exampleRadios11" value="c">
                                             <label class="form-check-label" for="exampleRadios11">
                                               c. 35
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_3" id="exampleRadios12" value="d">
+                                            <input class="form-check-input" type="radio" name="angka_3" id="exampleRadios12" value="d">
                                             <label class="form-check-label" for="exampleRadios12">
                                               d. 34
                                             </label>
@@ -378,25 +378,25 @@ if ($temp_menit < 60) {
                                           <br>
                                 <legend class="h6">4. 9 x ....... = 117</legend>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_4" id="exampleRadios13" value="a">
+                                            <input class="form-check-input" type="radio" name="angka_4" id="exampleRadios13" value="a">
                                             <label class="form-check-label" for="exampleRadios13">
                                               a. 13
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_4" id="exampleRadios14" value="b">
+                                            <input class="form-check-input" type="radio" name="angka_4" id="exampleRadios14" value="b">
                                             <label class="form-check-label" for="exampleRadios14">
                                               b. 14
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_4" id="exampleRadios15" value="c">
+                                            <input class="form-check-input" type="radio" name="angka_4" id="exampleRadios15" value="c">
                                             <label class="form-check-label" for="exampleRadios15">
                                               c. 12
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_4" id="exampleRadios16" value="d">
+                                            <input class="form-check-input" type="radio" name="angka_4" id="exampleRadios16" value="d">
                                             <label class="form-check-label" for="exampleRadios16">
                                               d. 15
                                             </label>
@@ -404,27 +404,313 @@ if ($temp_menit < 60) {
                                           <br>
                                 <legend class="h6">5. <sup>5</sup>/<sub>7</sub> x 14 = .......</legend>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_5" id="exampleRadios17" value="a">
+                                            <input class="form-check-input" type="radio" name="angka_5" id="exampleRadios17" value="a">
                                             <label class="form-check-label" for="exampleRadios17">
                                               a. 17 <sup>1</sup>/<sub>2</sub>
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_5" id="exampleRadios18" value="b">
+                                            <input class="form-check-input" type="radio" name="angka_5" id="exampleRadios18" value="b">
                                             <label class="form-check-label" for="exampleRadios18">
                                               b. 10
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_5" id="exampleRadios19" value="c">
+                                            <input class="form-check-input" type="radio" name="angka_5" id="exampleRadios19" value="c">
                                             <label class="form-check-label" for="exampleRadios19">
                                               c. <sup>60</sup>/<sub>7</sub>
                                             </label>
                                           </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="jwb_5" id="exampleRadios20" value="d">
+                                            <input class="form-check-input" type="radio" name="angka_5" id="exampleRadios20" value="d">
                                             <label class="form-check-label" for="exampleRadios20">
                                               d. 9
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">6. 13 x 4 = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_6" id="exampleRadios21" value="a">
+                                            <label class="form-check-label" for="exampleRadios21">
+                                              a. 62
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_6" id="exampleRadios22" value="b">
+                                            <label class="form-check-label" for="exampleRadios22">
+                                              b. 58
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_6" id="exampleRadios23" value="c">
+                                            <label class="form-check-label" for="exampleRadios23">
+                                              c. 54
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_6" id="exampleRadios24" value="d">
+                                            <label class="form-check-label" for="exampleRadios24">
+                                              d. 52
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">7. 13 + 8 = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_7" id="exampleRadios25" value="a">
+                                            <label class="form-check-label" for="exampleRadios25">
+                                              a. 22
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_7" id="exampleRadios26" value="b">
+                                            <label class="form-check-label" for="exampleRadios26">
+                                              b. 24
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_7" id="exampleRadios27" value="c">
+                                            <label class="form-check-label" for="exampleRadios27">
+                                              c. 23
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_7" id="exampleRadios28" value="d">
+                                            <label class="form-check-label" for="exampleRadios28">
+                                              d. 21
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">8. 32 : 8 = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_8" id="exampleRadios29" value="a">
+                                            <label class="form-check-label" for="exampleRadios29">
+                                              a. 4
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_8" id="exampleRadios30" value="b">
+                                            <label class="form-check-label" for="exampleRadios30">
+                                              b. 3
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_8" id="exampleRadios31" value="c">
+                                            <label class="form-check-label" for="exampleRadios31">
+                                              c. 2
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_8" id="exampleRadios32" value="d">
+                                            <label class="form-check-label" for="exampleRadios32">
+                                              d. 5
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">9. 25 + 6 = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_9" id="exampleRadios33" value="a">
+                                            <label class="form-check-label" for="exampleRadios33">
+                                              a. 33
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_9" id="exampleRadios34" value="b">
+                                            <label class="form-check-label" for="exampleRadios34">
+                                              b. 41
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_9" id="exampleRadios35" value="c">
+                                            <label class="form-check-label" for="exampleRadios35">
+                                              c. 42
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_9" id="exampleRadios36" value="d">
+                                            <label class="form-check-label" for="exampleRadios36">
+                                              d. 31
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">10. 0.25 + 0.07 = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_10" id="exampleRadios37" value="a">
+                                            <label class="form-check-label" for="exampleRadios37">
+                                              a. 0.32
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_10" id="exampleRadios38" value="b">
+                                            <label class="form-check-label" for="exampleRadios38">
+                                              b. 0.23
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_10" id="exampleRadios39" value="c">
+                                            <label class="form-check-label" for="exampleRadios39">
+                                              c. 0.032
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_10" id="exampleRadios40" value="d">
+                                            <label class="form-check-label" for="exampleRadios40">
+                                              d. 0.257
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">11. 43 - ....... = 27</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_11" id="exampleRadios41" value="a">
+                                            <label class="form-check-label" for="exampleRadios41">
+                                              a. 14
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_11" id="exampleRadios42" value="b">
+                                            <label class="form-check-label" for="exampleRadios42">
+                                              b. 16
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_11" id="exampleRadios43" value="c">
+                                            <label class="form-check-label" for="exampleRadios43">
+                                              c. 15
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_11" id="exampleRadios44" value="d">
+                                            <label class="form-check-label" for="exampleRadios44">
+                                              d. 17
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">12. 22 - ....... = 9</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_12" id="exampleRadios45" value="a">
+                                            <label class="form-check-label" for="exampleRadios45">
+                                              a. 14
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_12" id="exampleRadios46" value="b">
+                                            <label class="form-check-label" for="exampleRadios46">
+                                              b. 15
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_12" id="exampleRadios47" value="c">
+                                            <label class="form-check-label" for="exampleRadios47">
+                                              c. 13
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_12" id="exampleRadios48" value="d">
+                                            <label class="form-check-label" for="exampleRadios48">
+                                              d. 17
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">13. <sup>14</sup>/<sub>7</sub> x <sup>2</sup>/<sub>7</sub> = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_13" id="exampleRadios49" value="a">
+                                            <label class="form-check-label" for="exampleRadios49">
+                                              a. <sup>5</sup>/<sub>7</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_13" id="exampleRadios50" value="b">
+                                            <label class="form-check-label" for="exampleRadios50">
+                                              b. <sup>4</sup>/<sub>7</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_13" id="exampleRadios51" value="c">
+                                            <label class="form-check-label" for="exampleRadios51">
+                                              c. <sup>3</sup>/<sub>7</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_13" id="exampleRadios52" value="d">
+                                            <label class="form-check-label" for="exampleRadios52">
+                                              d. <sup>2</sup>/<sub>7</sub>
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">14. <sup>6</sup>/<sub>8</sub> x <sup>2</sup>/<sub>4</sub> = .......</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_14" id="exampleRadios53" value="a">
+                                            <label class="form-check-label" for="exampleRadios53">
+                                              a. <sup>5</sup>/<sub>8</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_14" id="exampleRadios54" value="b">
+                                            <label class="form-check-label" for="exampleRadios54">
+                                              b. <sup>3</sup>/<sub>4</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_14" id="exampleRadios55" value="c">
+                                            <label class="form-check-label" for="exampleRadios55">
+                                              c. <sup>3</sup>/<sub>8</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_14" id="exampleRadios56" value="d">
+                                            <label class="form-check-label" for="exampleRadios56">
+                                              d. <sup>1</sup>/<sub>4</sub>
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">15. 26 + ....... = 38</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_15" id="exampleRadios57" value="a">
+                                            <label class="form-check-label" for="exampleRadios57">
+                                              a. 8
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_15" id="exampleRadios58" value="b">
+                                            <label class="form-check-label" for="exampleRadios58">
+                                              b. 12
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_15" id="exampleRadios58" value="c">
+                                            <label class="form-check-label" for="exampleRadios58">
+                                              c. 11
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_15" id="exampleRadios59" value="d">
+                                            <label class="form-check-label" for="exampleRadios59">
+                                              d. 9
+                                            </label>
+                                          </div>
+                                          <br>
+                                <legend class="h6">16. ....... x <sup>1</sup>/<sub>5</sub> = 5</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_16" id="exampleRadios60" value="a">
+                                            <label class="form-check-label" for="exampleRadios60">
+                                              a. <sup>110</sup>/<sub>5</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_16" id="exampleRadios61" value="b">
+                                            <label class="form-check-label" for="exampleRadios61">
+                                              b. <sup>120</sup>/<sub>5</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_16" id="exampleRadios62" value="c">
+                                            <label class="form-check-label" for="exampleRadios62">
+                                              c. <sup>125</sup>/<sub>5</sub>
+                                            </label>
+                                          </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="angka_16" id="exampleRadios63" value="d">
+                                            <label class="form-check-label" for="exampleRadios63">
+                                              d. <sup>100</sup>/<sub>5</sub>
                                             </label>
                                           </div>
                             </div>
@@ -435,7 +721,7 @@ if ($temp_menit < 60) {
                 </div>
             </div>
             <div class="theme-settings card bg-gray-800 pt-2 collapse" id="theme-settings">
-
+    
 </div>
 
 <footer class="bg-white rounded shadow p-5 mb-4 mt-4">
@@ -488,7 +774,4 @@ if ($temp_menit < 60) {
 <!-- Volt JS -->
 <script src="resources/question/assets/js/volt.js"></script>
 
-
-</body>
-
-</html>
+    

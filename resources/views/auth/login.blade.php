@@ -23,7 +23,7 @@
 <div class="login-box">
   <div class="login-logo">
       <img class="img-fluid" src="">
-      {{-- <img class="img-fluid" src="{{asset('/images/img/evergreen1.png')}}"> --}}
+       <img style="max-width: 150px;margin-top: 10px;margin-bottom: 10px" src="{{asset('images/evergreen_logo.png')}}"><br>
     <a href=""><b>HRD</b> | Recruitment </a>
   </div>
   <!-- /.login-logo -->

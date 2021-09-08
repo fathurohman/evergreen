@@ -116,7 +116,7 @@
                 ">
               <i class="nav-icon fas fa-user"></i>
               <p>
-                Searching Pelamar
+                Searching Applicant
                 {{-- <span class="right badge badge-danger">New</span> --}}
               </p>
             </a>

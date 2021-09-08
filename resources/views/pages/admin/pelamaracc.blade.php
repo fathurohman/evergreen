@@ -64,16 +64,16 @@
                     <td><p style="white-space: pre-line">{{$item->kualifikasi}}</p></td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <b>End Data :</b> <?php
+                    <td colspan="2"> <b>End Date :</b> <?php
                         $tanggal = $item->tanggal_akhir;
                             $daftar_hari = array(
-                                            'Sunday' => 'Minggu',
-                                            'Monday' => 'Senin',
-                                            'Tuesday' => 'Selasa',
-                                            'Wednesday' => 'Rabu',
-                                            'Thursday' => 'Kamis',
-                                            'Friday' => 'Jumat',
-                                            'Saturday' => 'Sabtu'
+                                            'Sunday' => 'Sunday',
+                                            'Monday' => 'Monday',
+                                            'Tuesday' => 'Tuesday',
+                                            'Wednesday' => 'Wednesday',
+                                            'Thursday' => 'Thursday',
+                                            'Friday' => 'Friday',
+                                            'Saturday' => 'Saturday'
                                             );
 
                                         $namahari = date('l', strtotime($tanggal));

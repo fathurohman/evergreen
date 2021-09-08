@@ -57,13 +57,13 @@
                         <?php
                         $tanggal = $item->tanggal_akhir;
                             $daftar_hari = array(
-                                            'Sunday' => 'Minggu',
-                                            'Monday' => 'Senin',
-                                            'Tuesday' => 'Selasa',
-                                            'Wednesday' => 'Rabu',
-                                            'Thursday' => 'Kamis',
-                                            'Friday' => 'Jumat',
-                                            'Saturday' => 'Sabtu'
+                                            'Sunday' => 'Sunday',
+                                            'Monday' => 'Monday',
+                                            'Tuesday' => 'Tuesday',
+                                            'Wednesday' => 'Wednesday',
+                                            'Thursday' => 'Thursday',
+                                            'Friday' => 'Friday',
+                                            'Saturday' => 'Saturday'
                                             );
 
                                         $namahari = date('l', strtotime($tanggal));
@@ -85,7 +85,7 @@
                         @endphp
 
                           {{-- <a target="_blank" class="btn btn-primary" href="/poster/{{ $item->id }}">Poster <i class="fa fa-file-image"></i></a> --}}
-                          <a class="btn btn-primary" href="/applicant_acc/{{ $item->id }}">Applicant <i class="fa fa-user-check"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
+                          <a class="btn btn-success" href="/applicant_acc/{{ $item->id }}">Applicant <i class="fa fa-user-check"></i> @if($jumlah_pelamar) <b>{{$jumlah_pelamar}}</b> @else  @endif</a>
                           <br><br>
                           {{-- <a class="btn btn-info" href="/position/{{ $item->id }}">Position <i class="fa fa-male"></i> @if($jumlah_position) <b>{{$jumlah_position}}</b> @else  @endif</a>
                           <a class="btn btn-primary" href="/edit_post/{{ $item->id }}"><i class="fa fa-edit"></i></a>

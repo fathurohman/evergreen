@@ -27,7 +27,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-
+        $date = date('y-m-d');
         $allpost  = DB::table('post_lowongan')
                     ->Count();
 
@@ -36,8 +36,18 @@ class HomeController extends Controller
         $alldepartment  = DB::table('bagian')
                     ->Count();
 
+        $data_post = DB::table('post_lowongan')
+                        ->leftjoin('bagian', 'bagian.id','=','post_lowongan.id_bagian')
+                        ->select('post_lowongan.*','bagian.nama_bagian')
+                        ->where('post_lowongan.tanggal_akhir', '>=', $date)
+                        ->orderBy('id', 'DESC')
+                        ->get();
+        $data_pelamars = DB::table('data_pelamar')
+                    ->where('status_accepted' , "acc")
+                    ->orderBy('id', 'DESC')
+                    ->get();
 
-        return view('home', compact('allpost','allpelamar','alldepartment'));
+        return view('home', compact('allpost','allpelamar','alldepartment', 'data_post', 'data_pelamars'));
     }
 
     public function edit(){

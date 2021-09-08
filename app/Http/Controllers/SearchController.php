@@ -49,8 +49,8 @@ class SearchController extends Controller
             unlink(public_path('images/cv').'/'.$data->cv);
          }
         $data->delete();
-            session()->flash("success", "Data berhasil di Dihapus");
-            return redirect('/search')->with(['success' => 'Data Berhasil Dihapus!']);
+            session()->flash("success", "Data deleted successfully!");
+            return redirect('/search')->with(['success' => 'Data deleted successfully!']);
        }
 
 }

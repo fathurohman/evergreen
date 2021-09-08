@@ -40,8 +40,8 @@ class PositionController extends Controller
         $data->nama_posisi = $request->nama_posisi;
         $data->save();
 
-        session()->flash("success", "Data berhasil di tambahkan");
-        return back()->with(['success' => 'Data berhasil di tambahkan']);
+        session()->flash("success", "Data added successfully!");
+        return back()->with(['success' => 'Data added successfully!']);
 
     }
 
@@ -68,7 +68,7 @@ class PositionController extends Controller
 
         $data->save();
 
-        session()->flash("success", "Data Berhasil Disimpan!");
+        session()->flash("success", "Data saved successfully!");
         return redirect()->action(
             [PositionController::class, 'position'], ['id' => $id_post_lowongan]
         );
@@ -77,8 +77,8 @@ class PositionController extends Controller
     public function delete($id){
         $data = Position::find($id);
         $data->delete();
-            session()->flash("success", "Data berhasil Dihapus");
-            return back()->with(['success' => 'Data berhasil Dihapus']);
+            session()->flash("success", "Data deleted successfully!");
+            return back()->with(['success' => 'Data deleted successfully!']);
        }
 
 }

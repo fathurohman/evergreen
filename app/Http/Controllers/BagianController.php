@@ -33,8 +33,8 @@ class BagianController extends Controller
 
         $data->save();
 
-        session()->flash("success", "Data berhasil di tambahkan");
-        return back()->with(['success' => 'Data berhasil di tambahkan']);
+        session()->flash("success", "Data added successfully!");
+        return back()->with(['success' => 'Data added successfully!']);
 
     }
 
@@ -53,8 +53,8 @@ class BagianController extends Controller
 
         $data->save();
 
-        session()->flash("success", "Data berhasil di update");
-        return redirect("/department")->with('success', 'Data berhasil di update');
+        session()->flash("success", "Data updated successfully!");
+        return redirect("/department")->with('success', 'Data updated successfully!');
     }
 
 }

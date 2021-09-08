@@ -64,8 +64,10 @@ class AccPelamarController extends Controller
         $data->status_accepted = Null;
         $data->save();
 
-        session()->flash("success", "Data dicancel!");
-        return back()->with(['success' => 'Data dicancel!']);
+        session()->flash("success", "Data Canceled!");
+        return redirect()->action(
+            [AccPelamarController::class, 'applicant_acc'], ['id' => $data->id_post_lowongan]
+        );
     }
 
 

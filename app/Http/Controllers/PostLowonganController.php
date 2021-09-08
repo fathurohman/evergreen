@@ -51,8 +51,8 @@ class PostLowonganController extends Controller
 
         $data->save();
 
-        session()->flash("success", "Data berhasil di tambahkan");
-        return back()->with(['success' => 'Data berhasil di tambahkan']);
+        session()->flash("success", "Data added successfully!");
+        return back()->with(['success' => 'Data added successfully!']);
 
     }
 
@@ -79,8 +79,8 @@ class PostLowonganController extends Controller
 
             $data->save();
 
-            session()->flash("success", "Data Berhasil Disimpan!");
-            return redirect('/post')->with(['success' => 'Data Berhasil Disimpan!']);
+            session()->flash("success", "Data updated successfully!");
+            return redirect('/post')->with(['success' => 'Data updated successfully!']);
         }
 
     public function editimage($id){
@@ -101,16 +101,16 @@ class PostLowonganController extends Controller
         $data->image       = $imageName;
         $data->save();
 
-            session()->flash("success", "Image Berhasil Diubah!");
-            return redirect('/post')->with(['success' => 'Image Berhasil Diubah!']);
+            session()->flash("success", "Image Changed Successfully!");
+            return redirect('/post')->with(['success' => 'Image Changed Successfully!']);
         }
 
     public function delete($id){
         $data = Post_lowongan::find($id);
          unlink(public_path('images/img_post').'/'.$data->image);
         $data->delete();
-            session()->flash("error", "Data berhasil di Dihapus");
-            return redirect('/post')->with(['error' => 'Data Berhasil Dihapus!']);
+            session()->flash("error", "Image deleted successfully!");
+            return redirect('/post')->with(['error' => 'Image deleted successfully!']);
        }
 
        public function applicant($id){
@@ -512,8 +512,8 @@ class PostLowonganController extends Controller
         $file="./images/photos/$data->file_foto";
         return response()->download($file, $fileName);
 
-        session()->flash("success", "Download berhasil");
-        return back()->with(['success' => 'Download berhasil']);
+        session()->flash("success", "Download Successfully");
+        return back()->with(['success' => 'Download Successfully']);
     }
 
     public function download_cv($id){
@@ -526,8 +526,8 @@ class PostLowonganController extends Controller
         $file="./images/cv/$data->file_cv";
         return response()->download($file, $fileName);
 
-        session()->flash("success", "Download berhasil");
-        return back()->with(['success' => 'Download berhasil']);
+        session()->flash("success", "Download Successfully");
+        return back()->with(['success' => 'Download Successfully']);
     }
 
     public function detail_applicant($id){

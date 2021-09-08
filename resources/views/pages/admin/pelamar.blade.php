@@ -64,7 +64,7 @@
                     <td><p style="white-space: pre-line">{{$item->kualifikasi}}</p></td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <b>End Data :</b> <?php
+                    <td colspan="2"> <b>End Date :</b> <?php
                         $tanggal = $item->tanggal_akhir;
                             $daftar_hari = array(
                                             'Sunday' => 'Minggu',
@@ -150,7 +150,7 @@
                         {{-- <a class="btn btn-primary" href="/download_foto/{{ $item->id }}"><i class="fa fa-download"></i> Download Photo</a>
                         <a class="btn btn-primary" href="/download_cv/{{ $item->id }}"><i class="fa fa-download"></i> Download CV</a> --}}
                         <a class="btn btn-info" href="/detail_applicant/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
-                        {{-- <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a> --}}
+                        <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $item->id }}"><i class="fa fa-check"></i> Acc</a>
                      </td>
 
                     </tr>

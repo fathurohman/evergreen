@@ -498,7 +498,7 @@ class PostLowonganController extends Controller
 
         session()->flash("success", "Data accepted!");
         return redirect()->action(
-            [PostLowonganContoller::class, 'applicant'], ['id' => $data->id_post_lowongan]
+            [PostLowonganController::class, 'applicant'], ['id' => $data->id_post_lowongan]
         );
     }
 

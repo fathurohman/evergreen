@@ -68,8 +68,8 @@
   </div> --}}
 
 
-    <div class="footer"><p>Send Your Resumes in English to recriutment <br>
-        in link  <b>post/form/{{ $id }}</b> </p>
+    <div class="footer"><p>Please register at the following link
+        <b>post/form/{{ $id }}</b> </p>
     </div>
 
 

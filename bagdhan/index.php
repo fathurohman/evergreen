@@ -83,32 +83,32 @@
                     <div class="col-12 d-flex align-items-center justify-content-center">
                         <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                             <div class="text-center text-md-center mb-4 mt-md-0">
-                                <h1 class="mb-0 h3">Masukkan NIK Anda</h1>
+                                <h1 class="mb-0 h3">Enter your NIK</h1>
                             </div>
                             <?php
                                 if(isset($_GET['pesan'])){
                                     if($_GET['pesan'] == "psikotest_validation"){
-                                        echo "<p style='color:red'>Maaf, Anda sudah pernah mengikuti psikotes sebelumnya.</p>";
+                                        echo "<p style='color:red'>Sorry, you have taken an Psikotest before.</p>";
                                     }elseif($_GET['pesan'] == "english_validation"){
-                                        echo "<p style='color:red'>Maaf, Anda sudah pernah tes bahasa Inggris sebelumnya.</p>";
+                                        echo "<p style='color:red'>Sorry, you have taken an English test before.</p>";
                                     }elseif($_GET['pesan'] == "file_validation"){
-                                        echo "<p style='color:red'>Maaf, Anda tidak lolos verifikasi berkas.</p>";
+                                        echo "<p style='color:red'>Sorry, you didn't pass the file verification.</p>";
                                      }
                                     }
                             ?>
                             <form method="post" action="validasi_pelamar" class="mt-4">
                                 <!-- Form -->
                                 <div class="form-group mb-4">
-                                    <label for="email">Pilih Tes</label>
+                                    <label for="email">Select Test</label>
                                     <br>
                                         <input class="form-check-input" type="radio" name="tes" id="exampleRadios1" value="psikotes" required>
                                             <label class="form-check-label" for="exampleRadios1">
-                                              Psikotes
+                                                Psychotest
                                             </label>
                                             &emsp;
                                         <input class="form-check-input" type="radio" name="tes" id="exampleRadios2" value="english">
                                             <label class="form-check-label" for="exampleRadios2">
-                                              Bahasa Inggris
+                                              English Test
                                             </label>
                                 </div>
                                 <div class="form-group mb-4">
@@ -120,11 +120,11 @@
   <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
 </svg>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="NIK Anda" name="id_card_number" autofocus required>
+                                        <input type="text" class="form-control" placeholder="Your NIK" name="id_card_number" autofocus required>
                                     </div>
                                 </div>
                                 <div class="d-grid">
-                                <input type="submit" class="btn btn-gray-800" value="Mulai Tes">
+                                <input type="submit" class="btn btn-gray-800" value="Start Test">
                                 </div>
                             </form>
                             <div class="mt-3 mb-4 text-center">

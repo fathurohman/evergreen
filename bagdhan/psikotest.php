@@ -271,19 +271,14 @@ if ($temp_menit < 60) {
                                 Salah satu diantaranya adalah jawaban yang benar dari soal tersebut.
                                 Cara menjawabnya adalah dengan melingkari pada lembar jawaban di belakang nomor soal yang bersangkutan,
                                 huruf yang sesuai dengan jawaban tersebut.<br><br>
-                                Contoh:<br>
-                                1) 18 + 7 = .....&emsp;25&emsp;26&emsp;24&emsp;23<br>
-                                2) ..... - <sup>1</sup>/<sub>8</sub> = <sup>1</sup>/<sub>8</sub>&emsp;<sup>2</sup>/<sub>4</sub>&emsp;<sup>3</sup>/<sub>8</sub>&emsp;<sup>1</sup>/<sub>4</sub>&emsp;<sup>4</sup>/<sub>8</sub>
-                                <br><br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-berhitung-angka-1.png"><br>
                                 Pada contoh 1 dapat dilihat bahwa 18 + 7 = 25. Dibelakang contoh 1 dapat dilihat bahwa angka 25 terdapat di bawah
                                 huruf a. Oleh karena itu, pada lembar jawaban dibelakang contoh 1, huruf a telah dilingkari.<br>
                                 Jawaban yang benar dari contoh 2 adalah <sup>1</sup>/<sub>4</sub>. Oleh karena itu pada lembar jawaban dibelakang contoh 2,
                                 huruf c telah dilingkari.<br>
                                 Coba pecahkan sendiri contoh-contoh dibawah ini, dan lingkarilah pada lembar jawaban dibelakang nomor contoh yang bersangkutan,
                                 huruf yang sesuai dengan jawaban yang benar.<br><br>
-                                3) 54 : ..... = 6&emsp;8&emsp;6&emsp;7&emsp;9<br>
-                                4) 0,07 + ..... = 0,67&emsp;0,06&emsp;0,6&emsp;0,63&emsp;0,063<br>
-                                5) <sup>36</sup>/<sub>18</sub> : <sup>12</sup>/<sub>6</sub> = .....&emsp;<sup>3</sup>/<sub>6</sub>&emsp;<sup>4</sup>/<sub>6</sub>&emsp;<sup>3</sup>/<sub>3</sub>&emsp;<sup>12</sup>/<sub>18</sub><br><br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-berhitung-angka-2.png"><br><br>
                                 Jawaban yang benar dari contoh 3 adalah 9. Oleh karena itu pada lembar jawaban dibelakang contoh 3, huruf d harus dilingkari. Jawaban yang
                                 benar contoh-contoh lainnya adalah: contoh 4: b; contoh 5: C.<br>
                                 Jika perlu, perhitungan-perhitungan dapat dilakukan pada kertas buram yang tersedia.</p>
@@ -2104,7 +2099,1544 @@ if ($temp_menit < 60) {
                             </div>
                         </div>
                         <br>
-                        <input type="submit" value="Submit" name="msform" class="btn btn-success d-inline-flex align-items-center">
+                    <div class="card border-light shadow-sm components-section">
+                        <div class="card-body">
+                                <div class="mb-3">
+                                    <h1 class="h4">Bagian 3. Hubungan Kata</h1>
+                                    <h2 class="h5">INSTRUKSI:</h2>
+                                </div>
+                                <!--Buttons-->
+                                <p align="justify">Tes berikut ini terdiri dari kata-kata.<br>
+                                Setiap soal terdiri dari 4 kata a, b, c, dan d.<br>
+                                Carilah 2 buah kata yang memiliki kesamaan arti yang paling dekat atau yang mempunyai arti yang berlawanan.
+                                Setelah kata-kata itu ditemukan, lingkarilah pada lembar jawaban di belakang nomor soal yang bersangkutan,
+                                huruf-huruf yang sesuai:<br><br>
+                                Perhatikan sekarang contoh 1 dibawah ini.<br>
+                                Contoh:<br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-hubungan-kata-1.png"><br>
+                                Pada contoh 1 dapat dilihat, bahwa kata-kata menikah dan kawin memiliki kesamaan arti. Jadi, jawaban contoh 1
+                                adalah a dan c. Oleh karena itu, pada lembar jawaban dibelakang contoh 1, huruf a dan c telah dilingkari.<br><br>
+                                Perhatikan sekarang contoh 2.<br>
+                                Contoh:<br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-hubungan-kata-2.png"><br>
+                                Pada contoh 2, kata-kata tua dan muda mempunyai arti yang berlawanan satu sama lain. Oleh karena itu, pada lembar
+                                jawaban dibelakang contoh 2, huruf b dan d telah dilingkari.<br><br>
+                                Di bawah ini masih ada beberapa contoh untuk latihan. Kerjakan menurut cara yang sama.<br>
+                                Contoh:<br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-hubungan-kata-3.png"><br>
+                                Jawaban yang benar dari contoh-contoh diatas adalah:<br>
+                                contoh 3: b dan c; contoh 4: a dan d; contoh 5: a dan d.</p>
+                            </div>
+                        </div>
+                        <br>
+                    <div class="card border-light shadow-sm components-section">
+                        <div class="card-body">
+                                <div class="mb-3">
+                                    <h1 class="h4">SOAL-SOAL</h1>
+                                    <h2 class="h5">PILIHLAH JAWABAN YANG BENAR PADA LEMBAR JAWABAN</h2>
+                                </div>
+                                            1.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_1[]" id="examplecheckbox156" value="a">
+                                            <label class="form-check-label" for="examplecheckbox156">
+                                              a. sedikit
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_1[]" id="examplecheckbox157" value="b">
+                                            <label class="form-check-label" for="examplecheckbox157">
+                                              b. tepat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_1[]" id="examplecheckbox158" value="c">
+                                            <label class="form-check-label" for="examplecheckbox158">
+                                              c. jernih
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_1[]" id="examplecheckbox159" value="d">
+                                            <label class="form-check-label" for="examplecheckbox159">
+                                              d. banyak
+                                            </label>
+                                            <br>
+                                            2.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_2[]" id="examplecheckbox160" value="a">
+                                            <label class="form-check-label" for="examplecheckbox160">
+                                              a. pergi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_2[]" id="examplecheckbox161" value="b">
+                                            <label class="form-check-label" for="examplecheckbox161">
+                                              b. berdiri
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_2[]" id="examplecheckbox162" value="c">
+                                            <label class="form-check-label" for="examplecheckbox162">
+                                              c. datang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_2[]" id="examplecheckbox163" value="d">
+                                            <label class="form-check-label" for="examplecheckbox163">
+                                              d. beristirahat
+                                            </label>
+                                            <br>
+                                            3.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_3[]" id="examplecheckbox164" value="a">
+                                            <label class="form-check-label" for="examplecheckbox164">
+                                              a. hasrat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_3[]" id="examplecheckbox165" value="b">
+                                            <label class="form-check-label" for="examplecheckbox165">
+                                              b. pengetahuan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_3[]" id="examplecheckbox166" value="c">
+                                            <label class="form-check-label" for="examplecheckbox166">
+                                              c. keinginan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_3[]" id="examplecheckbox167" value="d">
+                                            <label class="form-check-label" for="examplecheckbox167">
+                                              d. kekuasaan
+                                            </label>
+                                            <br>
+                                            4.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_4[]" id="examplecheckbox168" value="a">
+                                            <label class="form-check-label" for="examplecheckbox168">
+                                              a. jauh
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_4[]" id="examplecheckbox169" value="b">
+                                            <label class="form-check-label" for="examplecheckbox169">
+                                              b. luas
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_4[]" id="examplecheckbox170" value="c">
+                                            <label class="form-check-label" for="examplecheckbox170">
+                                              c. dekat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_4[]" id="examplecheckbox171" value="d">
+                                            <label class="form-check-label" for="examplecheckbox171">
+                                              d. nyaring
+                                            </label>
+                                            <br>
+                                            5.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_5[]" id="examplecheckbox172" value="a">
+                                            <label class="form-check-label" for="examplecheckbox172">
+                                              a. terik
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_5[]" id="examplecheckbox173" value="b">
+                                            <label class="form-check-label" for="examplecheckbox173">
+                                              b. panas
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_5[]" id="examplecheckbox174" value="c">
+                                            <label class="form-check-label" for="examplecheckbox174">
+                                              c. tawar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_5[]" id="examplecheckbox175" value="d">
+                                            <label class="form-check-label" for="examplecheckbox175">
+                                              d. sial
+                                            </label>
+                                            <br>
+                                            6.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_6[]" id="examplecheckbox176" value="a">
+                                            <label class="form-check-label" for="examplecheckbox176">
+                                              a. kelana
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_6[]" id="examplecheckbox177" value="b">
+                                            <label class="form-check-label" for="examplecheckbox177">
+                                              b. pemberontak
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_6[]" id="examplecheckbox178" value="c">
+                                            <label class="form-check-label" for="examplecheckbox178">
+                                              c. pelari
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_6[]" id="examplecheckbox179" value="d">
+                                            <label class="form-check-label" for="examplecheckbox179">
+                                              d. pengembara
+                                            </label>
+                                            <br>
+                                            7.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_7[]" id="examplecheckbox180" value="a">
+                                            <label class="form-check-label" for="examplecheckbox180">
+                                              a. jasad
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_7[]" id="examplecheckbox181" value="b">
+                                            <label class="form-check-label" for="examplecheckbox181">
+                                              b. ijazah
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_7[]" id="examplecheckbox182" value="c">
+                                            <label class="form-check-label" for="examplecheckbox182">
+                                              c. organisme
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_7[]" id="examplecheckbox183" value="d">
+                                            <label class="form-check-label" for="examplecheckbox183">
+                                              d. alat
+                                            </label>
+                                            <br>
+                                            8.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_8[]" id="examplecheckbox184" value="a">
+                                            <label class="form-check-label" for="examplecheckbox184">
+                                              a. kikir
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_8[]" id="examplecheckbox185" value="b">
+                                            <label class="form-check-label" for="examplecheckbox185">
+                                              b. dermawan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_8[]" id="examplecheckbox186" value="c">
+                                            <label class="form-check-label" for="examplecheckbox186">
+                                              c. kurus
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_8[]" id="examplecheckbox187" value="d">
+                                            <label class="form-check-label" for="examplecheckbox187">
+                                              d. mendewakan
+                                            </label>
+                                            <br>
+                                            9.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_9[]" id="examplecheckbox188" value="a">
+                                            <label class="form-check-label" for="examplecheckbox188">
+                                              a. azas
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_9[]" id="examplecheckbox189" value="b">
+                                            <label class="form-check-label" for="examplecheckbox189">
+                                              b. tamat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_9[]" id="examplecheckbox190" value="c">
+                                            <label class="form-check-label" for="examplecheckbox190">
+                                              c. prinsip
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_9[]" id="examplecheckbox191" value="d">
+                                            <label class="form-check-label" for="examplecheckbox191">
+                                              d. kekuasaan
+                                            </label>
+                                            <br>
+                                            10.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_10[]" id="examplecheckbox192" value="a">
+                                            <label class="form-check-label" for="examplecheckbox192">
+                                              a. mencurigakan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_10[]" id="examplecheckbox193" value="b">
+                                            <label class="form-check-label" for="examplecheckbox193">
+                                              b. malu
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_10[]" id="examplecheckbox194" value="c">
+                                            <label class="form-check-label" for="examplecheckbox194">
+                                              c. haram
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_10[]" id="examplecheckbox195" value="d">
+                                            <label class="form-check-label" for="examplecheckbox195">
+                                              d. halal
+                                            </label>
+                                            <br>
+                                            11.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_11[]" id="examplecheckbox196" value="a">
+                                            <label class="form-check-label" for="examplecheckbox196">
+                                              a. serasi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_11[]" id="examplecheckbox197" value="b">
+                                            <label class="form-check-label" for="examplecheckbox197">
+                                              b. sesuai
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_11[]" id="examplecheckbox198" value="c">
+                                            <label class="form-check-label" for="examplecheckbox198">
+                                              c. ceroboh
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_11[]" id="examplecheckbox199" value="d">
+                                            <label class="form-check-label" for="examplecheckbox199">
+                                              d. kabur
+                                            </label>
+                                            <br>
+                                            12.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_12[]" id="examplecheckbox200" value="a">
+                                            <label class="form-check-label" for="examplecheckbox200">
+                                              a. menyala
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_12[]" id="examplecheckbox201" value="b">
+                                            <label class="form-check-label" for="examplecheckbox201">
+                                              b. menyalak
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_12[]" id="examplecheckbox202" value="c">
+                                            <label class="form-check-label" for="examplecheckbox202">
+                                              c. padam
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_12[]" id="examplecheckbox203" value="d">
+                                            <label class="form-check-label" for="examplecheckbox203">
+                                              d. meradang
+                                            </label>
+                                            <br>
+                                            13.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_13[]" id="examplecheckbox204" value="a">
+                                            <label class="form-check-label" for="examplecheckbox204">
+                                              a. terpencil
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_13[]" id="examplecheckbox205" value="b">
+                                            <label class="form-check-label" for="examplecheckbox205">
+                                              b. terpencar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_13[]" id="examplecheckbox206" value="c">
+                                            <label class="form-check-label" for="examplecheckbox206">
+                                              c. jinak
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_13[]" id="examplecheckbox207" value="d">
+                                            <label class="form-check-label" for="examplecheckbox207">
+                                              d. terasing
+                                            </label>
+                                            <br>
+                                            14.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_14[]" id="examplecheckbox208" value="a">
+                                            <label class="form-check-label" for="examplecheckbox208">
+                                              a. ramah
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_14[]" id="examplecheckbox209" value="b">
+                                            <label class="form-check-label" for="examplecheckbox209">
+                                              b. lihai
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_14[]" id="examplecheckbox210" value="c">
+                                            <label class="form-check-label" for="examplecheckbox210">
+                                              c. arif
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_14[]" id="examplecheckbox211" value="d">
+                                            <label class="form-check-label" for="examplecheckbox211">
+                                              d. bijaksana
+                                            </label>
+                                            <br>
+                                            15.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_15[]" id="examplecheckbox212" value="a">
+                                            <label class="form-check-label" for="examplecheckbox212">
+                                              a. tongkat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_15[]" id="examplecheckbox213" value="b">
+                                            <label class="form-check-label" for="examplecheckbox213">
+                                              b. taraf
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_15[]" id="examplecheckbox214" value="c">
+                                            <label class="form-check-label" for="examplecheckbox214">
+                                              c. titik
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_15[]" id="examplecheckbox215" value="d">
+                                            <label class="form-check-label" for="examplecheckbox215">
+                                              d. tingkat
+                                            </label>
+                                            <br>  
+                                            16.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_16[]" id="examplecheckbox216" value="a">
+                                            <label class="form-check-label" for="examplecheckbox216">
+                                              a. megah
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_16[]" id="examplecheckbox217" value="b">
+                                            <label class="form-check-label" for="examplecheckbox217">
+                                              b. tegang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_16[]" id="examplecheckbox218" value="c">
+                                            <label class="form-check-label" for="examplecheckbox218">
+                                              c. malu
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_16[]" id="examplecheckbox219" value="d">
+                                            <label class="form-check-label" for="examplecheckbox219">
+                                              d. kejang
+                                            </label>
+                                            <br>
+                                            17.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_17[]" id="examplecheckbox220" value="a">
+                                            <label class="form-check-label" for="examplecheckbox220">
+                                              a. untung
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_17[]" id="examplecheckbox221" value="b">
+                                            <label class="form-check-label" for="examplecheckbox221">
+                                              b. jujur
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_17[]" id="examplecheckbox222" value="c">
+                                            <label class="form-check-label" for="examplecheckbox222">
+                                              c. mujur
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_17[]" id="examplecheckbox223" value="d">
+                                            <label class="form-check-label" for="examplecheckbox223">
+                                              d. urung
+                                            </label>
+                                            <br>   
+                                            18.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_18[]" id="examplecheckbox224" value="a">
+                                            <label class="form-check-label" for="examplecheckbox224">
+                                              a. meradang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_18[]" id="examplecheckbox225" value="b">
+                                            <label class="form-check-label" for="examplecheckbox225">
+                                              b. murung
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_18[]" id="examplecheckbox226" value="c">
+                                            <label class="form-check-label" for="examplecheckbox226">
+                                              c. mengampuni
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_18[]" id="examplecheckbox227" value="d">
+                                            <label class="form-check-label" for="examplecheckbox227">
+                                              d. gembira
+                                            </label>
+                                            <br>
+                                            19.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_19[]" id="examplecheckbox228" value="a">
+                                            <label class="form-check-label" for="examplecheckbox228">
+                                              a. lapang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_19[]" id="examplecheckbox229" value="b">
+                                            <label class="form-check-label" for="examplecheckbox229">
+                                              b. ruang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_19[]" id="examplecheckbox230" value="c">
+                                            <label class="form-check-label" for="examplecheckbox230">
+                                              c. panjang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_19[]" id="examplecheckbox231" value="d">
+                                            <label class="form-check-label" for="examplecheckbox231">
+                                              d. luas
+                                            </label>
+                                            <br>
+                                            20.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_20[]" id="examplecheckbox232" value="a">
+                                            <label class="form-check-label" for="examplecheckbox232">
+                                              a. memperbaiki
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_20[]" id="examplecheckbox233" value="b">
+                                            <label class="form-check-label" for="examplecheckbox233">
+                                              b. menutupi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_20[]" id="examplecheckbox234" value="c">
+                                            <label class="form-check-label" for="examplecheckbox234">
+                                              c. menyelubungi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_20[]" id="examplecheckbox235" value="d">
+                                            <label class="form-check-label" for="examplecheckbox235">
+                                              d. mencari
+                                            </label>
+                                            <br>  
+                                            21.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_21[]" id="examplecheckbox236" value="a">
+                                            <label class="form-check-label" for="examplecheckbox236">
+                                              a. sementara
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_21[]" id="examplecheckbox237" value="b">
+                                            <label class="form-check-label" for="examplecheckbox237">
+                                              b. menggembirakan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_21[]" id="examplecheckbox238" value="c">
+                                            <label class="form-check-label" for="examplecheckbox238">
+                                              c. menyeret
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_21[]" id="examplecheckbox239" value="d">
+                                            <label class="form-check-label" for="examplecheckbox239">
+                                              d. kekal
+                                            </label>
+                                            <br>     
+                                            22.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_22[]" id="examplecheckbox240" value="a">
+                                            <label class="form-check-label" for="examplecheckbox240">
+                                              a. nisbi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_22[]" id="examplecheckbox241" value="b">
+                                            <label class="form-check-label" for="examplecheckbox241">
+                                              b. mutlak
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_22[]" id="examplecheckbox242" value="c">
+                                            <label class="form-check-label" for="examplecheckbox242">
+                                              c. curiga
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_22[]" id="examplecheckbox243" value="d">
+                                            <label class="form-check-label" for="examplecheckbox243">
+                                              d. malu
+                                            </label>
+                                            <br>
+                                            23.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_23[]" id="examplecheckbox244" value="a">
+                                            <label class="form-check-label" for="examplecheckbox244">
+                                              a. dispensasi
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_23[]" id="examplecheckbox245" value="b">
+                                            <label class="form-check-label" for="examplecheckbox245">
+                                              b. amnesti
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_23[]" id="examplecheckbox246" value="c">
+                                            <label class="form-check-label" for="examplecheckbox246">
+                                              c. kelonggaran
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_23[]" id="examplecheckbox247" value="d">
+                                            <label class="form-check-label" for="examplecheckbox247">
+                                              d. penyesalan
+                                            </label>
+                                            <br>
+                                            24.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_24[]" id="examplecheckbox248" value="a">
+                                            <label class="form-check-label" for="examplecheckbox248">
+                                              a. marah
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_24[]" id="examplecheckbox249" value="b">
+                                            <label class="form-check-label" for="examplecheckbox249">
+                                              b. melarat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_24[]" id="examplecheckbox250" value="c">
+                                            <label class="form-check-label" for="examplecheckbox250">
+                                              c. gusar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_24[]" id="examplecheckbox251" value="d">
+                                            <label class="form-check-label" for="examplecheckbox251">
+                                              d. mengesalkan
+                                            </label>
+                                            <br>
+                                            25.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_25[]" id="examplecheckbox252" value="a">
+                                            <label class="form-check-label" for="examplecheckbox252">
+                                              a. pengecut
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_25[]" id="examplecheckbox253" value="b">
+                                            <label class="form-check-label" for="examplecheckbox253">
+                                              b. rendah hati
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_25[]" id="examplecheckbox254" value="c">
+                                            <label class="form-check-label" for="examplecheckbox254">
+                                              c. kecil
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_25[]" id="examplecheckbox255" value="d">
+                                            <label class="form-check-label" for="examplecheckbox255">
+                                              d. sombong
+                                            </label>
+                                            <br>
+                                            26.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_26[]" id="examplecheckbox256" value="a">
+                                            <label class="form-check-label" for="examplecheckbox256">
+                                              a. penyakit
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_26[]" id="examplecheckbox257" value="b">
+                                            <label class="form-check-label" for="examplecheckbox257">
+                                              b. tobat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_26[]" id="examplecheckbox258" value="c">
+                                            <label class="form-check-label" for="examplecheckbox258">
+                                              c. bisa
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_26[]" id="examplecheckbox259" value="d">
+                                            <label class="form-check-label" for="examplecheckbox259">
+                                              d. racun
+                                            </label>
+                                            <br>
+                                            27.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_27[]" id="examplecheckbox260" value="a">
+                                            <label class="form-check-label" for="examplecheckbox260">
+                                              a. damai
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_27[]" id="examplecheckbox261" value="b">
+                                            <label class="form-check-label" for="examplecheckbox261">
+                                              b. berseri
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_27[]" id="examplecheckbox262" value="c">
+                                            <label class="form-check-label" for="examplecheckbox262">
+                                              c. tenang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_27[]" id="examplecheckbox263" value="d">
+                                            <label class="form-check-label" for="examplecheckbox263">
+                                              d. mulia
+                                            </label>
+                                            <br>
+                                            28.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_28[]" id="examplecheckbox264" value="a">
+                                            <label class="form-check-label" for="examplecheckbox264">
+                                              a. mengganggu
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_28[]" id="examplecheckbox265" value="b">
+                                            <label class="form-check-label" for="examplecheckbox265">
+                                              b. mengangkat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_28[]" id="examplecheckbox266" value="c">
+                                            <label class="form-check-label" for="examplecheckbox266">
+                                              c. mengangkut
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_28[]" id="examplecheckbox267" value="d">
+                                            <label class="form-check-label" for="examplecheckbox267">
+                                              d. mengusik
+                                            </label>
+                                            <br>
+                                            29.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_29[]" id="examplecheckbox268" value="a">
+                                            <label class="form-check-label" for="examplecheckbox268">
+                                              a. menguji
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_29[]" id="examplecheckbox269" value="b">
+                                            <label class="form-check-label" for="examplecheckbox269">
+                                              b. memuji
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_29[]" id="examplecheckbox270" value="c">
+                                            <label class="form-check-label" for="examplecheckbox270">
+                                              c. menyanjung
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_29[]" id="examplecheckbox271" value="d">
+                                            <label class="form-check-label" for="examplecheckbox271">
+                                              d. mendewakan
+                                            </label>
+                                            <br>
+                                            30.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_30[]" id="examplecheckbox272" value="a">
+                                            <label class="form-check-label" for="examplecheckbox272">
+                                              a. vertikal
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_30[]" id="examplecheckbox273" value="b">
+                                            <label class="form-check-label" for="examplecheckbox273">
+                                              b. lurus
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_30[]" id="examplecheckbox274" value="c">
+                                            <label class="form-check-label" for="examplecheckbox274">
+                                              c. tegak lurus
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_30[]" id="examplecheckbox275" value="d">
+                                            <label class="form-check-label" for="examplecheckbox275">
+                                              d. rata-rata
+                                            </label>
+                                            <br>
+                                            31.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_31[]" id="examplecheckbox276" value="a">
+                                            <label class="form-check-label" for="examplecheckbox276">
+                                              a. peraturan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_31[]" id="examplecheckbox277" value="b">
+                                            <label class="form-check-label" for="examplecheckbox277">
+                                              b. kebiasaan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_31[]" id="examplecheckbox278" value="c">
+                                            <label class="form-check-label" for="examplecheckbox278">
+                                              c. kenangan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_31[]" id="examplecheckbox279" value="d">
+                                            <label class="form-check-label" for="examplecheckbox279">
+                                              d. adat
+                                            </label>
+                                            <br>
+                                            32.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_32[]" id="examplecheckbox280" value="a">
+                                            <label class="form-check-label" for="examplecheckbox280">
+                                              a. pendekar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_32[]" id="examplecheckbox281" value="b">
+                                            <label class="form-check-label" for="examplecheckbox281">
+                                              b. pelopor
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_32[]" id="examplecheckbox282" value="c">
+                                            <label class="form-check-label" for="examplecheckbox282">
+                                              c. penyajak
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_32[]" id="examplecheckbox283" value="d">
+                                            <label class="form-check-label" for="examplecheckbox283">
+                                              d. penyair
+                                            </label>
+                                            <br>
+                                            33.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_33[]" id="examplecheckbox284" value="a">
+                                            <label class="form-check-label" for="examplecheckbox284">
+                                              a. menarik
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_33[]" id="examplecheckbox285" value="b">
+                                            <label class="form-check-label" for="examplecheckbox285">
+                                              b. asing
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_33[]" id="examplecheckbox286" value="c">
+                                            <label class="form-check-label" for="examplecheckbox286">
+                                              c. aneh
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_33[]" id="examplecheckbox287" value="d">
+                                            <label class="form-check-label" for="examplecheckbox287">
+                                              d. umum
+                                            </label>
+                                            <br>
+                                            34.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_34[]" id="examplecheckbox288" value="a">
+                                            <label class="form-check-label" for="examplecheckbox288">
+                                              a. bara
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_34[]" id="examplecheckbox289" value="b">
+                                            <label class="form-check-label" for="examplecheckbox289">
+                                              b. suluh
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_34[]" id="examplecheckbox290" value="c">
+                                            <label class="form-check-label" for="examplecheckbox290">
+                                              c. obor
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_34[]" id="examplecheckbox291" value="d">
+                                            <label class="form-check-label" for="examplecheckbox291">
+                                              d. menara
+                                            </label>
+                                            <br>
+                                            35.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_35[]" id="examplecheckbox292" value="a">
+                                            <label class="form-check-label" for="examplecheckbox292">
+                                              a. cemar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_35[]" id="examplecheckbox293" value="b">
+                                            <label class="form-check-label" for="examplecheckbox293">
+                                              b. sedih
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_35[]" id="examplecheckbox294" value="c">
+                                            <label class="form-check-label" for="examplecheckbox294">
+                                              c. cemas
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_35[]" id="examplecheckbox295" value="d">
+                                            <label class="form-check-label" for="examplecheckbox295">
+                                              d. bersih
+                                            </label>
+                                            <br>
+                                            36.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_36[]" id="examplecheckbox296" value="a">
+                                            <label class="form-check-label" for="examplecheckbox296">
+                                              a. sedih
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_36[]" id="examplecheckbox297" value="b">
+                                            <label class="form-check-label" for="examplecheckbox297">
+                                              b. lamban
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_36[]" id="examplecheckbox298" value="c">
+                                            <label class="form-check-label" for="examplecheckbox298">
+                                              c. kasar
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_36[]" id="examplecheckbox299" value="d">
+                                            <label class="form-check-label" for="examplecheckbox299">
+                                              d. hati-hati
+                                            </label>
+                                            <br>
+                                            37.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_37[]" id="examplecheckbox300" value="a">
+                                            <label class="form-check-label" for="examplecheckbox300">
+                                              a. penat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_37[]" id="examplecheckbox301" value="b">
+                                            <label class="form-check-label" for="examplecheckbox301">
+                                              b. kenyang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_37[]" id="examplecheckbox302" value="c">
+                                            <label class="form-check-label" for="examplecheckbox302">
+                                              c. penuh
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_37[]" id="examplecheckbox303" value="d">
+                                            <label class="form-check-label" for="examplecheckbox303">
+                                              d. jenuh
+                                            </label>
+                                            <br>
+                                            38.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_38[]" id="examplecheckbox304" value="a">
+                                            <label class="form-check-label" for="examplecheckbox304">
+                                              a. tak bersemangat
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_38[]" id="examplecheckbox305" value="b">
+                                            <label class="form-check-label" for="examplecheckbox305">
+                                              b. ramah tamah
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_38[]" id="examplecheckbox306" value="c">
+                                            <label class="form-check-label" for="examplecheckbox306">
+                                              c. keranjingan
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_38[]" id="examplecheckbox307" value="d">
+                                            <label class="form-check-label" for="examplecheckbox307">
+                                              d. berpantang
+                                            </label>
+                                            <br>
+                                            39.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_39[]" id="examplecheckbox308" value="a">
+                                            <label class="form-check-label" for="examplecheckbox308">
+                                              a. nila
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_39[]" id="examplecheckbox309" value="b">
+                                            <label class="form-check-label" for="examplecheckbox309">
+                                              b. aib
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_39[]" id="examplecheckbox310" value="c">
+                                            <label class="form-check-label" for="examplecheckbox310">
+                                              c. nista
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_39[]" id="examplecheckbox311" value="d">
+                                            <label class="form-check-label" for="examplecheckbox311">
+                                              d. dosa
+                                            </label>
+                                            <br>
+                                            40.&emsp;<input class="form-check-input" type="checkbox" name="hubungan_40[]" id="examplecheckbox312" value="a">
+                                            <label class="form-check-label" for="examplecheckbox312">
+                                              a. sombong
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_40[]" id="examplecheckbox313" value="b">
+                                            <label class="form-check-label" for="examplecheckbox313">
+                                              b. terkendali
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_40[]" id="examplecheckbox314" value="c">
+                                            <label class="form-check-label" for="examplecheckbox314">
+                                              c. lancang
+                                            </label>&emsp;
+                                            <input class="form-check-input" type="checkbox" name="hubungan_40[]" id="examplecheckbox315" value="d">
+                                            <label class="form-check-label" for="examplecheckbox315">
+                                              d. gila hormat
+                                            </label>
+                                            <br>                              
+                            </div>
+                        </div>
+                        <br>
+                    <div class="card border-light shadow-sm components-section">
+                        <div class="card-body">
+                                <div class="mb-3">
+                                    <h1 class="h4">Bagian 4. Abstraksi non Verbal</h1>
+                                    <h2 class="h5">INSTRUKSI:</h2>
+                                </div>
+                                <!--Buttons-->
+                                <p align="justify">Dalam tes ini setiap soal terdiri dari 10 gambar.<br>
+                                Empat gambar pertama dari setiap soal menunjukkan kesamaan dalam suatu hal atau segi tertentu. Dua diantara
+                                enam gambar a, b, c, d, e, dan f berikutnya menunjukkan kesamaan dengan keempat gambar pertama itu. Carilah kedua
+                                gambar yang dimaksudkan itu. Apabila kedua gambar itu sudah ditemukan, lingkarilah pada lembar jawaban dibelakang
+                                nomor soal yang bersangkutan, huruf-huruf yang menunjukkan gambar tersebut.<br><br>
+                                Perhatikan contoh-contoh dibawah ini.<br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-abstraksi-non-verbal-1.png"><br>
+                                Pada contoh 1 dapat dilihat, bahwa gambar 4 yang pertama semuanya adalah segiempat atau bujur sangkar. Dari 6 gambar
+                                a dan f saja yang menunjukkan kesamaan itu yaitu berupa segiempat atau bujur sangkar. Oleh karena itu, pada lembar
+                                jawaban dibelakang contoh 1, huruf a dan f telah dilingkari. Perhatikan sekarang contoh 2. Keempat gambar pertama
+                                semuanya dihitamkan dengan cara yang sama. Diantara 6 gambar berikutnya, hanya gambar c dan e yang dihitamkan dengan
+                                cara yang sama. Oleh karena itu, pada lembar jawaban dibelakang contoh 2, huruf c dan e telah dilingkari.<br><br>
+                                Dibawah ini terdapat 3 contoh sebagai latihan. Kerjakan menurut cara yang sama.<br>
+                                <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\contoh-abstraksi-non-verbal-2.png"><br>
+                                Pada contoh 3, dapat dilihat bahwa keempat gambar pertama adalah garis-garis bengkok. Dengan demikian jawaban yang benar
+                                dari contoh 3 adalah c dan e. Oleh karena itu, pada lembar jawaban dibelakang contoh 3, huruf c dan e harus dilingkari.
+                                Jawaban contoh 4 adalah d dan e, sebab garis-garis dalam keempat gambar pertama hanya menyinggung lingkaran dan bukannya
+                                memontong. Jawaban contoh 5 adalah e dan f. Jika diperhatikan, maka akan dapat dilihat bahwa bentuk-bentuk dalam keempat
+                                gambar pertama dari contoh 5 tidak ada yang bersudut tegak lurus, dan gambar e dan f menunjukkan kesamaan itu.</p>
+                            </div>
+                        </div>
+                        <br>
+                    <div class="card border-light shadow-sm components-section">
+                        <div class="card-body">
+                                <div class="mb-3">
+                                    <h1 class="h4">SOAL-SOAL</h1>
+                                    <h2 class="h5">PILIHLAH JAWABAN YANG BENAR PADA LEMBAR JAWABAN YANG BENAR</h2>
+                                </div>
+                                <legend class="h6">1. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-1.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox316" value="a">
+                                            <label class="form-check-label" for="examplecheckbox316">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox317" value="b">
+                                            <label class="form-check-label" for="examplecheckbox317">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox318" value="c">
+                                            <label class="form-check-label" for="examplecheckbox318">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox319" value="d">
+                                            <label class="form-check-label" for="examplecheckbox319">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox320" value="e">
+                                            <label class="form-check-label" for="examplecheckbox320">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_1[]" id="examplecheckbox321" value="f">
+                                            <label class="form-check-label" for="examplecheckbox321">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">2. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-2.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox322" value="a">
+                                            <label class="form-check-label" for="examplecheckbox322">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox323" value="b">
+                                            <label class="form-check-label" for="examplecheckbox323">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox324" value="c">
+                                            <label class="form-check-label" for="examplecheckbox324">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox325" value="d">
+                                            <label class="form-check-label" for="examplecheckbox325">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox326" value="e">
+                                            <label class="form-check-label" for="examplecheckbox326">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_2[]" id="examplecheckbox327" value="f">
+                                            <label class="form-check-label" for="examplecheckbox327">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-2-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">3. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-3.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox328" value="a">
+                                            <label class="form-check-label" for="examplecheckbox328">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox329" value="b">
+                                            <label class="form-check-label" for="examplecheckbox329">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox330" value="c">
+                                            <label class="form-check-label" for="examplecheckbox330">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox331" value="d">
+                                            <label class="form-check-label" for="examplecheckbox331">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox332" value="e">
+                                            <label class="form-check-label" for="examplecheckbox332">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_3[]" id="examplecheckbox333" value="f">
+                                            <label class="form-check-label" for="examplecheckbox333">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-3-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">4. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-4.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox334" value="a">
+                                            <label class="form-check-label" for="examplecheckbox334">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox335" value="b">
+                                            <label class="form-check-label" for="examplecheckbox335">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox336" value="c">
+                                            <label class="form-check-label" for="examplecheckbox336">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox337" value="d">
+                                            <label class="form-check-label" for="examplecheckbox337">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox338" value="e">
+                                            <label class="form-check-label" for="examplecheckbox338">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_4[]" id="examplecheckbox339" value="f">
+                                            <label class="form-check-label" for="examplecheckbox339">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-4-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">5. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-5.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox340" value="a">
+                                            <label class="form-check-label" for="examplecheckbox340">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox341" value="b">
+                                            <label class="form-check-label" for="examplecheckbox341">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox342" value="c">
+                                            <label class="form-check-label" for="examplecheckbox342">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox343" value="d">
+                                            <label class="form-check-label" for="examplecheckbox343">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox344" value="e">
+                                            <label class="form-check-label" for="examplecheckbox344">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_5[]" id="examplecheckbox345" value="f">
+                                            <label class="form-check-label" for="examplecheckbox345">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-5-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">6. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-6.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox346" value="a">
+                                            <label class="form-check-label" for="examplecheckbox346">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox347" value="b">
+                                            <label class="form-check-label" for="examplecheckbox347">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox348" value="c">
+                                            <label class="form-check-label" for="examplecheckbox348">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox349" value="d">
+                                            <label class="form-check-label" for="examplecheckbox349">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox350" value="e">
+                                            <label class="form-check-label" for="examplecheckbox350">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_6[]" id="examplecheckbox351" value="f">
+                                            <label class="form-check-label" for="examplecheckbox351">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-6-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">7. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-7.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox352" value="a">
+                                            <label class="form-check-label" for="examplecheckbox352">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox353" value="b">
+                                            <label class="form-check-label" for="examplecheckbox353">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox354" value="c">
+                                            <label class="form-check-label" for="examplecheckbox354">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox355" value="d">
+                                            <label class="form-check-label" for="examplecheckbox355">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox356" value="e">
+                                            <label class="form-check-label" for="examplecheckbox356">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_7[]" id="examplecheckbox357" value="f">
+                                            <label class="form-check-label" for="examplecheckbox357">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-7-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">8. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-8.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox358" value="a">
+                                            <label class="form-check-label" for="examplecheckbox358">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox359" value="b">
+                                            <label class="form-check-label" for="examplecheckbox359">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox360" value="c">
+                                            <label class="form-check-label" for="examplecheckbox360">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox361" value="d">
+                                            <label class="form-check-label" for="examplecheckbox361">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox362" value="e">
+                                            <label class="form-check-label" for="examplecheckbox362">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_8[]" id="examplecheckbox363" value="f">
+                                            <label class="form-check-label" for="examplecheckbox363">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-8-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">9. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-9.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox364" value="a">
+                                            <label class="form-check-label" for="examplecheckbox364">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox365" value="b">
+                                            <label class="form-check-label" for="examplecheckbox365">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox366" value="c">
+                                            <label class="form-check-label" for="examplecheckbox366">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox367" value="d">
+                                            <label class="form-check-label" for="examplecheckbox367">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox368" value="e">
+                                            <label class="form-check-label" for="examplecheckbox368">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_9[]" id="examplecheckbox369" value="f">
+                                            <label class="form-check-label" for="examplecheckbox369">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-9-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">10. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-10.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox370" value="a">
+                                            <label class="form-check-label" for="examplecheckbox370">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox371" value="b">
+                                            <label class="form-check-label" for="examplecheckbox371">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox372" value="c">
+                                            <label class="form-check-label" for="examplecheckbox372">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox373" value="d">
+                                            <label class="form-check-label" for="examplecheckbox373">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox374" value="e">
+                                            <label class="form-check-label" for="examplecheckbox374">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_10[]" id="examplecheckbox375" value="f">
+                                            <label class="form-check-label" for="examplecheckbox375">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-10-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">11. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-11.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox376" value="a">
+                                            <label class="form-check-label" for="examplecheckbox376">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox377" value="b">
+                                            <label class="form-check-label" for="examplecheckbox377">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox378" value="c">
+                                            <label class="form-check-label" for="examplecheckbox378">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox379" value="d">
+                                            <label class="form-check-label" for="examplecheckbox379">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox380" value="e">
+                                            <label class="form-check-label" for="examplecheckbox380">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_11[]" id="examplecheckbox381" value="f">
+                                            <label class="form-check-label" for="examplecheckbox381">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-11-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">12. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-12.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox382" value="a">
+                                            <label class="form-check-label" for="examplecheckbox382">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox383" value="b">
+                                            <label class="form-check-label" for="examplecheckbox383">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox384" value="c">
+                                            <label class="form-check-label" for="examplecheckbox384">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox385" value="d">
+                                            <label class="form-check-label" for="examplecheckbox385">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox386" value="e">
+                                            <label class="form-check-label" for="examplecheckbox386">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_12[]" id="examplecheckbox387" value="f">
+                                            <label class="form-check-label" for="examplecheckbox387">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-12-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">13. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-13.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox388" value="a">
+                                            <label class="form-check-label" for="examplecheckbox388">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-13-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox389" value="b">
+                                            <label class="form-check-label" for="examplecheckbox389">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-13-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox390" value="c">
+                                            <label class="form-check-label" for="examplecheckbox390">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox391" value="d">
+                                            <label class="form-check-label" for="examplecheckbox391">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-13-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox392" value="e">
+                                            <label class="form-check-label" for="examplecheckbox392">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-1-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_13[]" id="examplecheckbox393" value="f">
+                                            <label class="form-check-label" for="examplecheckbox393">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-13-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">14. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-14.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox394" value="a">
+                                            <label class="form-check-label" for="examplecheckbox394">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox395" value="b">
+                                            <label class="form-check-label" for="examplecheckbox395">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox396" value="c">
+                                            <label class="form-check-label" for="examplecheckbox396">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox397" value="d">
+                                            <label class="form-check-label" for="examplecheckbox397">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox398" value="e">
+                                            <label class="form-check-label" for="examplecheckbox398">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_14[]" id="examplecheckbox399" value="f">
+                                            <label class="form-check-label" for="examplecheckbox399">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-14-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">15. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-15.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox400" value="a">
+                                            <label class="form-check-label" for="examplecheckbox400">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox401" value="b">
+                                            <label class="form-check-label" for="examplecheckbox401">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox402" value="c">
+                                            <label class="form-check-label" for="examplecheckbox402">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox403" value="d">
+                                            <label class="form-check-label" for="examplecheckbox403">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox404" value="e">
+                                            <label class="form-check-label" for="examplecheckbox404">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_15[]" id="examplecheckbox405" value="f">
+                                            <label class="form-check-label" for="examplecheckbox405">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-15-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">16. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-16.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox406" value="a">
+                                            <label class="form-check-label" for="examplecheckbox406">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox407" value="b">
+                                            <label class="form-check-label" for="examplecheckbox407">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox408" value="c">
+                                            <label class="form-check-label" for="examplecheckbox408">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox409" value="d">
+                                            <label class="form-check-label" for="examplecheckbox409">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox410" value="e">
+                                            <label class="form-check-label" for="examplecheckbox410">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_16[]" id="examplecheckbox411" value="f">
+                                            <label class="form-check-label" for="examplecheckbox411">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-16-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">17. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-17.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox412" value="a">
+                                            <label class="form-check-label" for="examplecheckbox412">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox413" value="b">
+                                            <label class="form-check-label" for="examplecheckbox413">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox414" value="c">
+                                            <label class="form-check-label" for="examplecheckbox414">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox415" value="d">
+                                            <label class="form-check-label" for="examplecheckbox415">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox416" value="e">
+                                            <label class="form-check-label" for="examplecheckbox416">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_17[]" id="examplecheckbox417" value="f">
+                                            <label class="form-check-label" for="examplecheckbox417">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-17-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">18. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-18.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox418" value="a">
+                                            <label class="form-check-label" for="examplecheckbox418">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox419" value="b">
+                                            <label class="form-check-label" for="examplecheckbox419">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox420" value="c">
+                                            <label class="form-check-label" for="examplecheckbox420">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox421" value="d">
+                                            <label class="form-check-label" for="examplecheckbox421">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox422" value="e">
+                                            <label class="form-check-label" for="examplecheckbox422">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_18[]" id="examplecheckbox423" value="f">
+                                            <label class="form-check-label" for="examplecheckbox423">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-18-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">19. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-19.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox424" value="a">
+                                            <label class="form-check-label" for="examplecheckbox424">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox425" value="b">
+                                            <label class="form-check-label" for="examplecheckbox425">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox426" value="c">
+                                            <label class="form-check-label" for="examplecheckbox426">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox427" value="d">
+                                            <label class="form-check-label" for="examplecheckbox427">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox428" value="e">
+                                            <label class="form-check-label" for="examplecheckbox428">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_19[]" id="examplecheckbox429" value="f">
+                                            <label class="form-check-label" for="examplecheckbox429">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-19-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">20. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-20.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox430" value="a">
+                                            <label class="form-check-label" for="examplecheckbox430">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox431" value="b">
+                                            <label class="form-check-label" for="examplecheckbox431">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox432" value="c">
+                                            <label class="form-check-label" for="examplecheckbox432">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox433" value="d">
+                                            <label class="form-check-label" for="examplecheckbox433">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox434" value="e">
+                                            <label class="form-check-label" for="examplecheckbox434">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_20[]" id="examplecheckbox435" value="f">
+                                            <label class="form-check-label" for="examplecheckbox435">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-20-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">21. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-21.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox436" value="a">
+                                            <label class="form-check-label" for="examplecheckbox436">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox437" value="b">
+                                            <label class="form-check-label" for="examplecheckbox437">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox438" value="c">
+                                            <label class="form-check-label" for="examplecheckbox438">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox439" value="d">
+                                            <label class="form-check-label" for="examplecheckbox439">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox440" value="e">
+                                            <label class="form-check-label" for="examplecheckbox440">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_21[]" id="examplecheckbox441" value="f">
+                                            <label class="form-check-label" for="examplecheckbox441">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-21-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">22. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-22.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox442" value="a">
+                                            <label class="form-check-label" for="examplecheckbox442">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox443" value="b">
+                                            <label class="form-check-label" for="examplecheckbox443">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox444" value="c">
+                                            <label class="form-check-label" for="examplecheckbox444">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox445" value="d">
+                                            <label class="form-check-label" for="examplecheckbox445">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox446" value="e">
+                                            <label class="form-check-label" for="examplecheckbox446">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_22[]" id="examplecheckbox447" value="f">
+                                            <label class="form-check-label" for="examplecheckbox447">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-22-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">23. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-23.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox448" value="a">
+                                            <label class="form-check-label" for="examplecheckbox448">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox449" value="b">
+                                            <label class="form-check-label" for="examplecheckbox449">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox450" value="c">
+                                            <label class="form-check-label" for="examplecheckbox450">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox451" value="d">
+                                            <label class="form-check-label" for="examplecheckbox451">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox452" value="e">
+                                            <label class="form-check-label" for="examplecheckbox452">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_23[]" id="examplecheckbox453" value="f">
+                                            <label class="form-check-label" for="examplecheckbox453">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-23-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">24. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-24.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox454" value="a">
+                                            <label class="form-check-label" for="examplecheckbox454">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox455" value="b">
+                                            <label class="form-check-label" for="examplecheckbox455">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox456" value="c">
+                                            <label class="form-check-label" for="examplecheckbox456">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox457" value="d">
+                                            <label class="form-check-label" for="examplecheckbox457">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox458" value="e">
+                                            <label class="form-check-label" for="examplecheckbox458">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_24[]" id="examplecheckbox459" value="f">
+                                            <label class="form-check-label" for="examplecheckbox459">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-24-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">25. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-25.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox460" value="a">
+                                            <label class="form-check-label" for="examplecheckbox460">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox461" value="b">
+                                            <label class="form-check-label" for="examplecheckbox461">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox462" value="c">
+                                            <label class="form-check-label" for="examplecheckbox462">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox463" value="d">
+                                            <label class="form-check-label" for="examplecheckbox463">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox464" value="e">
+                                            <label class="form-check-label" for="examplecheckbox464">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_25[]" id="examplecheckbox465" value="f">
+                                            <label class="form-check-label" for="examplecheckbox465">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-25-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">26. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-26.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox466" value="a">
+                                            <label class="form-check-label" for="examplecheckbox466">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox467" value="b">
+                                            <label class="form-check-label" for="examplecheckbox467">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox468" value="c">
+                                            <label class="form-check-label" for="examplecheckbox468">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox469" value="d">
+                                            <label class="form-check-label" for="examplecheckbox469">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox470" value="e">
+                                            <label class="form-check-label" for="examplecheckbox470">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_26[]" id="examplecheckbox471" value="f">
+                                            <label class="form-check-label" for="examplecheckbox471">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-26-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">27. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-27.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox472" value="a">
+                                            <label class="form-check-label" for="examplecheckbox472">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox473" value="b">
+                                            <label class="form-check-label" for="examplecheckbox473">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox474" value="c">
+                                            <label class="form-check-label" for="examplecheckbox474">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox475" value="d">
+                                            <label class="form-check-label" for="examplecheckbox475">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox476" value="e">
+                                            <label class="form-check-label" for="examplecheckbox476">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_27[]" id="examplecheckbox477" value="f">
+                                            <label class="form-check-label" for="examplecheckbox477">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-27-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">28. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-28.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox478" value="a">
+                                            <label class="form-check-label" for="examplecheckbox478">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox479" value="b">
+                                            <label class="form-check-label" for="examplecheckbox479">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox480" value="c">
+                                            <label class="form-check-label" for="examplecheckbox480">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox481" value="d">
+                                            <label class="form-check-label" for="examplecheckbox481">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox482" value="e">
+                                            <label class="form-check-label" for="examplecheckbox482">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_28[]" id="examplecheckbox483" value="f">
+                                            <label class="form-check-label" for="examplecheckbox483">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-28-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">29. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-29.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox484" value="a">
+                                            <label class="form-check-label" for="examplecheckbox484">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox485" value="b">
+                                            <label class="form-check-label" for="examplecheckbox485">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox486" value="c">
+                                            <label class="form-check-label" for="examplecheckbox486">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox487" value="d">
+                                            <label class="form-check-label" for="examplecheckbox487">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox488" value="e">
+                                            <label class="form-check-label" for="examplecheckbox488">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_29[]" id="examplecheckbox489" value="f">
+                                            <label class="form-check-label" for="examplecheckbox489">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-29-f.png">
+                                            </label>
+                                            <br>
+                                <legend class="h6">30. <img src="resources\question\assets\img\soal-psikotes\soal-abstraksi-30.png"></legend>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox490" value="a">
+                                            <label class="form-check-label" for="examplecheckbox490">
+                                              a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-a.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox491" value="b">
+                                            <label class="form-check-label" for="examplecheckbox491">
+                                              b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-b.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox492" value="c">
+                                            <label class="form-check-label" for="examplecheckbox492">
+                                              c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-c.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox493" value="d">
+                                            <label class="form-check-label" for="examplecheckbox493">
+                                              d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-d.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox494" value="e">
+                                            <label class="form-check-label" for="examplecheckbox494">
+                                              e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-e.png">
+                                            </label>
+                                            <input class="form-check-input" type="checkbox" name="abstraksi_30[]" id="examplecheckbox495" value="f">
+                                            <label class="form-check-label" for="examplecheckbox495">
+                                              f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-abstraksi-30-f.png">
+                                            </label>
+                                            <br>                                          
+                            </div>
+                        </div>
+                        <br>
+                        <input type="submit" value="Simpan Jawaban" name="msform" class="btn btn-success d-inline-flex align-items-center">
                     </div>
                 </div>
             </div>
@@ -2392,6 +3924,636 @@ if ($temp_menit < 60) {
 			$("input[name='bagian_26[]']").change(function() {
                              var maxpil = 2;
                               var jml = $("input[name='bagian_26[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_1[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_1[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_2[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_2[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_3[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_3[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_4[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_4[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_5[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_5[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_6[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_6[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_7[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_7[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_8[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_8[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_9[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_9[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_10[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_10[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_11[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_11[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_12[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_12[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_13[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_13[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_14[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_14[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_15[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_15[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_16[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_16[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_17[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_17[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_18[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_18[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_19[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_19[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_20[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_20[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_21[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_21[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_22[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_22[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_23[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_23[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_24[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_24[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_25[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_25[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_26[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_26[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_27[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_27[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_28[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_28[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_29[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_29[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_30[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_30[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_31[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_31[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_32[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_32[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_33[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_33[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_34[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_34[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_35[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_35[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_36[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_36[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_37[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_37[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_38[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_38[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_39[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_39[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='hubungan_40[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='hubungan_40[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_1[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_1[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_2[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_2[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_3[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_3[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_4[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_4[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_5[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_5[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_6[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_6[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_7[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_7[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_8[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_8[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_9[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_9[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_10[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_10[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_11[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_11[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_12[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_12[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_13[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_13[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_14[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_14[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_15[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_15[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_16[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_16[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_17[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_17[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_18[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_18[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_19[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_19[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_20[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_20[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_21[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_21[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_22[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_22[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_23[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_23[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_24[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_24[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_25[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_25[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_26[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_26[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_27[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_27[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_28[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_28[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_29[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_29[]']:checked").length;
+				if(jml > maxpil){
+					$(this).prop("checked","");
+			}
+			});
+		});
+  $(document).ready(function(){
+			$("input[name='abstraksi_30[]']").change(function() {
+                             var maxpil = 2;
+                              var jml = $("input[name='abstraksi_30[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}

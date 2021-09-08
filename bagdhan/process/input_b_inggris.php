@@ -113,7 +113,7 @@ if (isset($_POST['msform'])) {
   , '$jwb_49', '$jwb_50', '$jwb_51', '$jwb_52', '$jwb_53', '$jwb_54', '$jwb_55', '$jwb_56', '$jwb_57', '$jwb_58', '$jwb_59', '$jwb_60', '$jwb_61', '$jwb_62'
   , '$jwb_63', '$jwb_64', '$jwb_65', '$jwb_66', '$jwb_67', '$jwb_68', '$jwb_69', '$jwb_70', '$jwb_71', '$jwb_72', '$jwb_73', '$jwb_74', '$jwb_75', '$jwb_76'
   , '$jwb_77', '$jwb_78', '$jwb_79', '$jwb_80', '$jwb_81', '$jwb_82', '$jwb_83', '$jwb_84', '$jwb_85', '$jwb_86', '$jwb_87', '$jwb_88', '$jwb_89', '$jwb_90'
-  , '$jwb_91', '$jwb_92', '$jwb_93', '$jwb_94', '$jwb_95', '$jwb_96', '$jwb_97', '$jwb_98', '$jwb_99', '$jwb_100')");
+  , '$jwb_91', '$jwb_92', '$jwb_93', '$jwb_94', '$jwb_95', '$jwb_96', '$jwb_97', '$jwb_98', '$jwb_99', '$jwb_100', NULL, NULL)");
 
   if ($q) {
     // pesan jika data tersimpan

@@ -9,7 +9,7 @@ class Psikotest extends Model
 {
     use HasFactory;
 
-    protected $table ='prikotest';
+    protected $table ='psikotest';
 
     protected $guarded = [];
 }

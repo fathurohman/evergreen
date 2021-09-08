@@ -687,11 +687,7 @@
                                   <label>ID Card Number</label>
                                   <input name="id_card_number" type="number" class="form-control-plaintext @error('id_card_number') is-invalid @enderror" value="{{$data->id_card_number}}">
                                   @error('id_card_number')<div class="text-danger mt-2">{{ $message }}</div>@enderror
-                                  <p align="justify">In the event of any incorrect information given by me; herein, I am willing to resign or be imposed by a
-                                      sanction in accordance with the prevailing regulation.<br><br>Note:<br>1. A staff accepted in particular for
-                                      placement with a Branch / Regional Office shall be exempted from any official promotion.<br>
-                                      2. A promotion at one's own request shall be exempted from any official promotion.
-                                  </p>
+
                               </div>
                               <br>
 
@@ -704,7 +700,7 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-8">
-                    <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $data->id }}"><i class="fa fa-check"></i> Acc</a>
+                    <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc/{{ $data->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>
                 </div>
                 <!-- /.col -->
               </div>

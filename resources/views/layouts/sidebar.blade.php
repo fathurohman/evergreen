@@ -88,6 +88,7 @@
           <li class="nav-item">
             <a href="{{ url('/acc_applicant') }}" class="nav-link {{ (request()->segment(1) == 'acc_applicant') ? 'active' : null }}
                 {{ (request()->segment(1) == 'applicant_acc') ? 'active' : null }}
+                {{ (request()->segment(1) == 'detail_applicants') ? 'active' : null }}
                 ">
               <i class="nav-icon fas fa-id-card-alt"></i>
               <p>

@@ -156,7 +156,7 @@ if (isset($_POST['msform'])) {
   , '$hubungan_37', '$hubungan_38', '$hubungan_39', '$hubungan_40', '$abstraksi_1', '$abstraksi_2', '$abstraksi_3', '$abstraksi_4', '$abstraksi_5'
   , '$abstraksi_6', '$abstraksi_7', '$abstraksi_8', '$abstraksi_9', '$abstraksi_10', '$abstraksi_11', '$abstraksi_12', '$abstraksi_13', '$abstraksi_14'
   , '$abstraksi_15', '$abstraksi_16', '$abstraksi_17', '$abstraksi_18', '$abstraksi_19', '$abstraksi_20', '$abstraksi_21', '$abstraksi_22', '$abstraksi_23'
-  , '$abstraksi_24', '$abstraksi_25', '$abstraksi_26', '$abstraksi_27', '$abstraksi_28', '$abstraksi_29', '$abstraksi_30')");
+  , '$abstraksi_24', '$abstraksi_25', '$abstraksi_26', '$abstraksi_27', '$abstraksi_28', '$abstraksi_29', '$abstraksi_30', NULL, NULL)");
 
   if ($q) {
     // pesan jika data tersimpan

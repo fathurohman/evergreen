@@ -70,5 +70,15 @@ class AccPelamarController extends Controller
         );
     }
 
+    public function cancel_acc1($id){
+
+        $data = Pelamar::find($id);
+        $data->status_accepted = Null;
+        $data->save();
+
+        session()->flash("success", "Data Canceled!");
+        return back()->with(['success' => 'Data Canceled!']);
+    }
+
 
 }

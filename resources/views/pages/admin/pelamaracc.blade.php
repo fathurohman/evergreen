@@ -145,6 +145,7 @@
 
                      <td>
                         <a class="btn btn-info" href="/detail_applicants/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
+                        <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc_1/{{ $item->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>
 
                      </td>
 

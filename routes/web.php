@@ -79,6 +79,7 @@ Route::get('/print_form/{id}', [PostLowonganController::class, 'print_form']);
 Route::get('/acc_applicant', [AccPelamarController::class, 'index']);
 Route::get('/applicant_acc/{id}', [AccPelamarController::class, 'applicant_acc']);
 Route::get('/cancel_acc/{id}', [AccPelamarController::class, 'cancel_acc']);
+Route::get('/cancel_acc_1/{id}', [AccPelamarController::class, 'cancel_acc1']);
 
 //searching...
 Route::get('/search', [SearchController::class, 'index']);

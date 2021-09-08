@@ -587,5 +587,23 @@ class PostLowonganController extends Controller
         return view('pages.admin.detail_pelamar_acc', compact('data', 'data_post','data_position'));
     }
 
+    public function print_form($id){
+
+        $data = DB::table('data_pelamar')
+                         ->leftjoin('bagian', 'bagian.id','=','data_pelamar.id_department')
+                         ->leftjoin('position', 'position.id','=','data_pelamar.id_position')
+                         ->select('data_pelamar.*','bagian.nama_bagian','position.nama_posisi')
+                         ->where('data_pelamar.id', $id)
+                         ->orderBy('data_pelamar.id', 'DESC')
+                         ->get();
+
+        // $pdf = PDF::loadview('pages.print.form',['nama_bagian'=>$nama_bagian,'deskripsi'=>$deskripsi,'kualifikasi'=>$kualifikasi]);
+
+    	//return $pdf->stream();
+        // return $pdf->download();
+        return view('pages.print.form', compact('data'));
+
+    }
+
 
 }

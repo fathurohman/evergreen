@@ -705,6 +705,8 @@
                 <!-- /.col -->
                 <div class="col-8">
                     <a onclick="return confirm('Are you sure you will pass the applicant ?');" class="btn btn-info" href="/acc/{{ $data->id }}"><i class="fa fa-check"></i> Acc</a>
+                    <a target="_blank" class="btn btn-success" href="/print_form/{{ $data->id }}"><i class="fa fa-print"></i> Print Form</a>
+
                 </div>
                 <!-- /.col -->
               </div>

@@ -1,8 +1,42 @@
-@extends('layouts.template')
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Print Form</title>
 
-@section('content')
-
-<section>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="{{asset('images/evergreen_logo.png')}}" rel="icon">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/fontawesome-free/css/all.min.css')}}">
+   <!-- Ionicons -->
+   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+   <!-- Tempusdominus Bbootstrap 4 -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+   <!-- iCheck -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+   <!-- JQVMap -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/jqvmap/jqvmap.min.css')}}">
+   <!-- Theme style -->
+   <link rel="stylesheet" href="{{asset('assets/dist/css/adminlte.min.css')}}">
+   <!-- overlayScrollbars -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+   <!-- Daterange picker -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/daterangepicker/daterangepicker.css')}}">
+   <!-- summernote -->
+   <link rel="stylesheet" href="{{asset('assets/plugins/summernote/summernote-bs4.css')}}">
+   <!-- Google Font: Source Sans Pro -->
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{asset('assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
+  </head>
+  <body>
 
     <div class="container">
         <div class="login-logo">
@@ -21,6 +55,15 @@
             @endphp
               <input name="id" type="hidden" class="form-control-plaintext" aria-required="true" aria-invalid="false">
               <input name="id_post_lowongan" type="hidden" value="{{$id_post_lowongan}}" class="form-control-plaintext">
+
+              <div class="form-group">
+                <img src="{{asset('/images/photos')}}/{{$data->file_photo}}" style="max-width: 250px;margin-top: 10px;margin-bottom: 10px">
+              </div>
+
+              <div class="form-group">
+                <label>ID Card Number</label>
+                <input name="id_card_number" type="number" class="form-control-plaintext" value="{{$data->id_card_number}}">
+            </div>
 
               <div class="form-group">
                 <label>1. Name</label>
@@ -675,66 +718,21 @@
                                       <textarea name="career_development" class="form-control-plaintext" readonly>{{$data->career_development}}</textarea>
                                   </div>
 
-                                  <div class="form-group">
-                                    <img src="{{asset('/images/photos')}}/{{$data->file_photo}}" style="max-width: 500px;margin-top: 10px;margin-bottom: 10px">
-                                  </div>
 
-                              <div class="form-group">
-                                <embed type="application/pdf" src="{{asset('/images/cv')}}/{{$data->file_cv}}" width="800" height="400"></embed>
-                              </div>
 
-                              <div class="form-group">
-                                  <label>ID Card Number</label>
-                                  <input name="id_card_number" type="number" class="form-control-plaintext @error('id_card_number') is-invalid @enderror" value="{{$data->id_card_number}}">
-                                  @error('id_card_number')<div class="text-danger mt-2">{{ $message }}</div>@enderror
-
-                              </div>
                               <br>
 
 
                               @endforeach
-              <div class="row">
-                <div class="col-4">
-                    <a class="btn btn-primary" href="/download_foto/{{ $data->id }}"><i class="fa fa-download"></i> Download Photo</a>
-                    <a class="btn btn-primary" href="/download_cv/{{ $data->id }}"><i class="fa fa-download"></i> Download CV</a>
-                </div>
-                <!-- /.col -->
-                <div class="col-8">
-                    <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc/{{ $data->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>
-                    <a target="_blank" class="btn btn-success" href="/print_form/{{ $data->id }}"><i class="fa fa-print"></i> Print Form</a>
 
-                </div>
-                <!-- /.col -->
-              </div>
-
-
-            <!-- <div class="social-auth-links text-center mb-3">
-              <p>- OR -</p>
-              <a href="#" class="btn btn-block btn-primary">
-                <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-              </a>
-              <a href="#" class="btn btn-block btn-danger">
-                <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-              </a>
-            </div> -->
-            <!-- /.social-auth-links -->
-
-            <!-- <p class="mb-1">
-              <a href="forgot-password.html">I forgot my password</a>
-            </p>
-            <p class="mb-0">
-              <a href="register.html" class="text-center">Register a new membership</a>
-            </p> -->
           </div>
           <!-- /.login-card-body -->
         </div>
       </div>
 
+<script type="text/javascript">
+    window.print();
+</script>
 
-
-
-
-
-
-</section>
-@endsection
+  </body>
+</html>

@@ -15,7 +15,7 @@ $status = date('Y-m-d'); @endphp
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-
+  <link href="{{asset('images/evergreen_logo.png')}}" rel="icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('assets/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
@@ -36,15 +36,16 @@ $status = date('Y-m-d'); @endphp
 
 </head>
 
-<body class="hold-transition login-page">
+<body style="background: url(/images/cool-green-backgrounds-14.jpg) no-repeat center; background-size: cover;
+background-attachment: fixed;" class="hold-transition login-page">
 <div class="container">
   <div class="login-logo">
     <br>
       <img class="img-fluid" src="">
       {{-- <img class="img-fluid" src="{{asset('/images/img/evergreen1.png')}}"> --}}
-    <a href=""><b>JOB APPLICATION FORM</b></a>
+    <a href=""><font color="white"><b>JOB APPLICATION FORM</b></font></a>
     <br><br>
-    <p style="line-height: 1.0;" align="justify"><font size="5px">All the information below are rendered by me in truthfulness and factually; if such information is not in conformity with the actual situation, I accept all sanction conform to the company regulation.</font></p>
+    <p style="line-height: 1.0;" align="justify"><font color="white" size="5px">All the information below are rendered by me in truthfulness and factually; if such information is not in conformity with the actual situation, I accept all sanction conform to the company regulation.</font></p>
   </div>
   <!-- /.login-logo -->
   <div class="card">

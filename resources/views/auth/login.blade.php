@@ -19,7 +19,8 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page">
+<body style="background: url(/images/cool-green-backgrounds-14.jpg) no-repeat center; background-size: cover;
+background-attachment: fixed;" class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
       <img class="img-fluid" src="">

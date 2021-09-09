@@ -850,7 +850,14 @@ $status = date('Y-m-d'); @endphp
           <!-- /.col -->
         </div>
       </form>
-
+      <br><br>
+      <div class="row">
+        <div class="col-lg-12">
+            <p class="copyright text-center">All Rights Reserved. &copy; <?php echo date("Y"); ?> <a href="https://www.evergreen-line.com/" target="_blank">PT. Evergreen Shipping Agency Indonesia</a> Developed By:
+                <a href="https://erfadigital.com" target="_blank">ERFA Digital Creative</a>
+            </p>
+        </div>
+    </div>
       <!-- <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
         <a href="#" class="btn btn-block btn-primary">
@@ -960,7 +967,7 @@ $status = date('Y-m-d'); @endphp
 
 @else
 
-@include('welcome')
+@include('pages.closed_form')
 
 @endif
 @endforeach

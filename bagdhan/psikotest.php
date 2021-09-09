@@ -1369,728 +1369,728 @@ if ($temp_menit < 60) {
                                 </div>
                                 <legend class="h6">1. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-1.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox1" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox1" value="a">
                                             <label class="form-check-label" for="examplecheckbox1">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox2" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox2" value="b">
                                             <label class="form-check-label" for="examplecheckbox2">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox3" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox3" value="c">
                                             <label class="form-check-label" for="examplecheckbox3">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox4" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox4" value="d">
                                             <label class="form-check-label" for="examplecheckbox4">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox5" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox5" value="e">
                                             <label class="form-check-label" for="examplecheckbox5">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_1[]" id="examplecheckbox6" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_1[]" id="examplecheckbox6" value="f">
                                             <label class="form-check-label" for="examplecheckbox6">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-1-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">2. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-2.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox7" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox7" value="a">
                                             <label class="form-check-label" for="examplecheckbox7">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox8" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox8" value="b">
                                             <label class="form-check-label" for="examplecheckbox8">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox9" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox9" value="c">
                                             <label class="form-check-label" for="examplecheckbox9">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox10" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox10" value="d">
                                             <label class="form-check-label" for="examplecheckbox10">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox11" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox11" value="e">
                                             <label class="form-check-label" for="examplecheckbox11">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_2[]" id="examplecheckbox12" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_2[]" id="examplecheckbox12" value="f">
                                             <label class="form-check-label" for="examplecheckbox12">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-2-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">3. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-3.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox13" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox13" value="a">
                                             <label class="form-check-label" for="examplecheckbox13">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox14" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox14" value="b">
                                             <label class="form-check-label" for="examplecheckbox14">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox15" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox15" value="c">
                                             <label class="form-check-label" for="examplecheckbox15">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox16" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox16" value="d">
                                             <label class="form-check-label" for="examplecheckbox16">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox17" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox17" value="e">
                                             <label class="form-check-label" for="examplecheckbox17">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_3[]" id="examplecheckbox18" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_3[]" id="examplecheckbox18" value="f">
                                             <label class="form-check-label" for="examplecheckbox18">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-3-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">4. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-4.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox19" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox19" value="a">
                                             <label class="form-check-label" for="examplecheckbox19">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox20" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox20" value="b">
                                             <label class="form-check-label" for="examplecheckbox20">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox21" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox21" value="c">
                                             <label class="form-check-label" for="examplecheckbox21">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox22" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox22" value="d">
                                             <label class="form-check-label" for="examplecheckbox22">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox23" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox23" value="e">
                                             <label class="form-check-label" for="examplecheckbox23">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_4[]" id="examplecheckbox24" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_4[]" id="examplecheckbox24" value="f">
                                             <label class="form-check-label" for="examplecheckbox24">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-4-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">5. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-5.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox25" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox25" value="a">
                                             <label class="form-check-label" for="examplecheckbox25">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox26" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox26" value="b">
                                             <label class="form-check-label" for="examplecheckbox26">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox27" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox27" value="c">
                                             <label class="form-check-label" for="examplecheckbox27">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox28" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox28" value="d">
                                             <label class="form-check-label" for="examplecheckbox28">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox29" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox29" value="e">
                                             <label class="form-check-label" for="examplecheckbox29">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_5[]" id="examplecheckbox30" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_5[]" id="examplecheckbox30" value="f">
                                             <label class="form-check-label" for="examplecheckbox30">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-5-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">6. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-6.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox31" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox31" value="a">
                                             <label class="form-check-label" for="examplecheckbox31">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox32" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox32" value="b">
                                             <label class="form-check-label" for="examplecheckbox32">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox33" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox33" value="c">
                                             <label class="form-check-label" for="examplecheckbox33">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox34" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox34" value="d">
                                             <label class="form-check-label" for="examplecheckbox34">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox35" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox35" value="e">
                                             <label class="form-check-label" for="examplecheckbox35">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_6[]" id="examplecheckbox36" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_6[]" id="examplecheckbox36" value="f">
                                             <label class="form-check-label" for="examplecheckbox36">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-6-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">7. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-7.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox37" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox37" value="a">
                                             <label class="form-check-label" for="examplecheckbox37">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox38" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox38" value="b">
                                             <label class="form-check-label" for="examplecheckbox38">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox39" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox39" value="c">
                                             <label class="form-check-label" for="examplecheckbox39">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox40" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox40" value="d">
                                             <label class="form-check-label" for="examplecheckbox40">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox41" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox41" value="e">
                                             <label class="form-check-label" for="examplecheckbox41">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_7[]" id="examplecheckbox42" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_7[]" id="examplecheckbox42" value="f">
                                             <label class="form-check-label" for="examplecheckbox42">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-7-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">8. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-8.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox43" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox43" value="a">
                                             <label class="form-check-label" for="examplecheckbox43">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox44" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox44" value="b">
                                             <label class="form-check-label" for="examplecheckbox44">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox45" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox45" value="c">
                                             <label class="form-check-label" for="examplecheckbox45">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox46" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox46" value="d">
                                             <label class="form-check-label" for="examplecheckbox46">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox47" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox47" value="e">
                                             <label class="form-check-label" for="examplecheckbox47">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_8[]" id="examplecheckbox48" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_8[]" id="examplecheckbox48" value="f">
                                             <label class="form-check-label" for="examplecheckbox48">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-8-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">9. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-9.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox49" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox49" value="a">
                                             <label class="form-check-label" for="examplecheckbox49">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox50" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox50" value="b">
                                             <label class="form-check-label" for="examplecheckbox50">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox51" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox51" value="c">
                                             <label class="form-check-label" for="examplecheckbox51">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox52" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox52" value="d">
                                             <label class="form-check-label" for="examplecheckbox52">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox53" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox53" value="e">
                                             <label class="form-check-label" for="examplecheckbox53">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_9[]" id="examplecheckbox54" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_9[]" id="examplecheckbox54" value="f">
                                             <label class="form-check-label" for="examplecheckbox54">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-9-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">10. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-10.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox55" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox55" value="a">
                                             <label class="form-check-label" for="examplecheckbox55">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox56" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox56" value="b">
                                             <label class="form-check-label" for="examplecheckbox56">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox57" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox57" value="c">
                                             <label class="form-check-label" for="examplecheckbox57">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox58" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox58" value="d">
                                             <label class="form-check-label" for="examplecheckbox58">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox59" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox59" value="e">
                                             <label class="form-check-label" for="examplecheckbox59">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_10[]" id="examplecheckbox60" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_10[]" id="examplecheckbox60" value="f">
                                             <label class="form-check-label" for="examplecheckbox60">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-10-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">11. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-11.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox61" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox61" value="a">
                                             <label class="form-check-label" for="examplecheckbox61">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox62" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox62" value="b">
                                             <label class="form-check-label" for="examplecheckbox62">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox63" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox63" value="c">
                                             <label class="form-check-label" for="examplecheckbox63">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox64" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox64" value="d">
                                             <label class="form-check-label" for="examplecheckbox64">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox65" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox65" value="e">
                                             <label class="form-check-label" for="examplecheckbox65">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_11[]" id="examplecheckbox66" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_11[]" id="examplecheckbox66" value="f">
                                             <label class="form-check-label" for="examplecheckbox66">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-11-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">12. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-12.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox67" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox67" value="a">
                                             <label class="form-check-label" for="examplecheckbox67">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox68" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox68" value="b">
                                             <label class="form-check-label" for="examplecheckbox68">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox69" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox69" value="c">
                                             <label class="form-check-label" for="examplecheckbox69">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox70" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox70" value="d">
                                             <label class="form-check-label" for="examplecheckbox70">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox71" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox71" value="e">
                                             <label class="form-check-label" for="examplecheckbox71">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_12[]" id="examplecheckbox72" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_12[]" id="examplecheckbox72" value="f">
                                             <label class="form-check-label" for="examplecheckbox72">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-12-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">13. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-13.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox73" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox73" value="a">
                                             <label class="form-check-label" for="examplecheckbox73">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox74" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox74" value="b">
                                             <label class="form-check-label" for="examplecheckbox74">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox75" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox75" value="c">
                                             <label class="form-check-label" for="examplecheckbox75">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox76" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox76" value="d">
                                             <label class="form-check-label" for="examplecheckbox76">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox77" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox77" value="e">
                                             <label class="form-check-label" for="examplecheckbox77">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_13[]" id="examplecheckbox78" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_13[]" id="examplecheckbox78" value="f">
                                             <label class="form-check-label" for="examplecheckbox78">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-13-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">14. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-14.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox79" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox79" value="a">
                                             <label class="form-check-label" for="examplecheckbox79">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox80" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox80" value="b">
                                             <label class="form-check-label" for="examplecheckbox80">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox81" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox81" value="c">
                                             <label class="form-check-label" for="examplecheckbox81">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox82" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox82" value="d">
                                             <label class="form-check-label" for="examplecheckbox82">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox83" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox83" value="e">
                                             <label class="form-check-label" for="examplecheckbox83">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_14[]" id="examplecheckbox84" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_14[]" id="examplecheckbox84" value="f">
                                             <label class="form-check-label" for="examplecheckbox84">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-14-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">15. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-15.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox85" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox85" value="a">
                                             <label class="form-check-label" for="examplecheckbox85">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox86" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox86" value="b">
                                             <label class="form-check-label" for="examplecheckbox86">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox87" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox87" value="c">
                                             <label class="form-check-label" for="examplecheckbox87">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox88" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox88" value="d">
                                             <label class="form-check-label" for="examplecheckbox88">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox89" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox89" value="e">
                                             <label class="form-check-label" for="examplecheckbox89">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_15[]" id="examplecheckbox90" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_15[]" id="examplecheckbox90" value="f">
                                             <label class="form-check-label" for="examplecheckbox90">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-15-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">16. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-16.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox91" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox91" value="a">
                                             <label class="form-check-label" for="examplecheckbox91">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox92" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox92" value="b">
                                             <label class="form-check-label" for="examplecheckbox92">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox93" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox93" value="c">
                                             <label class="form-check-label" for="examplecheckbox93">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox94" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox94" value="d">
                                             <label class="form-check-label" for="examplecheckbox94">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox95" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox95" value="e">
                                             <label class="form-check-label" for="examplecheckbox95">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_16[]" id="examplecheckbox96" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_16[]" id="examplecheckbox96" value="f">
                                             <label class="form-check-label" for="examplecheckbox96">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-16-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">17. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-17.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox97" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox97" value="a">
                                             <label class="form-check-label" for="examplecheckbox97">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox98" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox98" value="b">
                                             <label class="form-check-label" for="examplecheckbox98">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox99" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox99" value="c">
                                             <label class="form-check-label" for="examplecheckbox99">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox100" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox100" value="d">
                                             <label class="form-check-label" for="examplecheckbox100">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox101" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox101" value="e">
                                             <label class="form-check-label" for="examplecheckbox101">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_17[]" id="examplecheckbox102" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_17[]" id="examplecheckbox102" value="f">
                                             <label class="form-check-label" for="examplecheckbox102">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-17-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">18. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-18.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox103" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox103" value="a">
                                             <label class="form-check-label" for="examplecheckbox103">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox104" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox104" value="b">
                                             <label class="form-check-label" for="examplecheckbox104">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox105" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox105" value="c">
                                             <label class="form-check-label" for="examplecheckbox105">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox106" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox106" value="d">
                                             <label class="form-check-label" for="examplecheckbox106">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox107" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox107" value="e">
                                             <label class="form-check-label" for="examplecheckbox107">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_18[]" id="examplecheckbox108" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_18[]" id="examplecheckbox108" value="f">
                                             <label class="form-check-label" for="examplecheckbox108">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-18-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">19. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-19.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox109" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox109" value="a">
                                             <label class="form-check-label" for="examplecheckbox109">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox110" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox110" value="b">
                                             <label class="form-check-label" for="examplecheckbox110">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox111" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox111" value="c">
                                             <label class="form-check-label" for="examplecheckbox111">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox112" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox112" value="d">
                                             <label class="form-check-label" for="examplecheckbox112">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox113" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox113" value="e">
                                             <label class="form-check-label" for="examplecheckbox113">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_19[]" id="examplecheckbox114" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_19[]" id="examplecheckbox114" value="f">
                                             <label class="form-check-label" for="examplecheckbox114">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-19-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">20. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-20.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox1155" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox1155" value="a">
                                             <label class="form-check-label" for="examplecheckbox1155">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox115" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox115" value="b">
                                             <label class="form-check-label" for="examplecheckbox115">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox116" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox116" value="c">
                                             <label class="form-check-label" for="examplecheckbox116">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox117" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox117" value="d">
                                             <label class="form-check-label" for="examplecheckbox117">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox118" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox118" value="e">
                                             <label class="form-check-label" for="examplecheckbox118">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_20[]" id="examplecheckbox119" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_20[]" id="examplecheckbox119" value="f">
                                             <label class="form-check-label" for="examplecheckbox119">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-20-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">21. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-21.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox120" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox120" value="a">
                                             <label class="form-check-label" for="examplecheckbox120">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox121" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox121" value="b">
                                             <label class="form-check-label" for="examplecheckbox121">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox122" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox122" value="c">
                                             <label class="form-check-label" for="examplecheckbox122">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox123" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox123" value="d">
                                             <label class="form-check-label" for="examplecheckbox123">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox124" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox124" value="e">
                                             <label class="form-check-label" for="examplecheckbox124">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_21[]" id="examplecheckbox125" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_21[]" id="examplecheckbox125" value="f">
                                             <label class="form-check-label" for="examplecheckbox125">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-21-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">22. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-22.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox126" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox126" value="a">
                                             <label class="form-check-label" for="examplecheckbox126">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox127" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox127" value="b">
                                             <label class="form-check-label" for="examplecheckbox127">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox128" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox128" value="c">
                                             <label class="form-check-label" for="examplecheckbox128">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox129" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox129" value="d">
                                             <label class="form-check-label" for="examplecheckbox129">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox130" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox130" value="e">
                                             <label class="form-check-label" for="examplecheckbox130">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_22[]" id="examplecheckbox131" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_22[]" id="examplecheckbox131" value="f">
                                             <label class="form-check-label" for="examplecheckbox131">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-22-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">23. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-23.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox132" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox132" value="a">
                                             <label class="form-check-label" for="examplecheckbox132">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox133" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox133" value="b">
                                             <label class="form-check-label" for="examplecheckbox133">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox134" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox134" value="c">
                                             <label class="form-check-label" for="examplecheckbox134">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox135" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox135" value="d">
                                             <label class="form-check-label" for="examplecheckbox135">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox136" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox136" value="e">
                                             <label class="form-check-label" for="examplecheckbox136">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_23[]" id="examplecheckbox137" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_23[]" id="examplecheckbox137" value="f">
                                             <label class="form-check-label" for="examplecheckbox137">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-23-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">24. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-24.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox138" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox138" value="a">
                                             <label class="form-check-label" for="examplecheckbox138">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox139" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox139" value="b">
                                             <label class="form-check-label" for="examplecheckbox139">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox140" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox140" value="c">
                                             <label class="form-check-label" for="examplecheckbox140">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox141" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox141" value="d">
                                             <label class="form-check-label" for="examplecheckbox141">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox142" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox142" value="e">
                                             <label class="form-check-label" for="examplecheckbox142">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_24[]" id="examplecheckbox143" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_24[]" id="examplecheckbox143" value="f">
                                             <label class="form-check-label" for="examplecheckbox143">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-24-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">25. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-25.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox150" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox150" value="a">
                                             <label class="form-check-label" for="examplecheckbox150">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox151" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox151" value="b">
                                             <label class="form-check-label" for="examplecheckbox151">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox152" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox152" value="c">
                                             <label class="form-check-label" for="examplecheckbox152">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox153" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox153" value="d">
                                             <label class="form-check-label" for="examplecheckbox153">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox154" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox154" value="e">
                                             <label class="form-check-label" for="examplecheckbox154">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_25[]" id="examplecheckbox155" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_25[]" id="examplecheckbox155" value="f">
                                             <label class="form-check-label" for="examplecheckbox155">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-25-f.png">
                                             </label>
                                             <br>
                                 <legend class="h6">26. <img src="resources\question\assets\img\soal-psikotes\soal-gabungan-26.png"></legend>
                                         
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox144" value="a">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox144" value="a">
                                             <label class="form-check-label" for="examplecheckbox144">
                                               a. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-a.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox145" value="b">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox145" value="b">
                                             <label class="form-check-label" for="examplecheckbox145">
                                               b. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-b.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox146" value="c">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox146" value="c">
                                             <label class="form-check-label" for="examplecheckbox146">
                                               c. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-c.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox147" value="d">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox147" value="d">
                                             <label class="form-check-label" for="examplecheckbox147">
                                               d. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-d.png">
                                             </label>
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox148" value="e">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox148" value="e">
                                             <label class="form-check-label" for="examplecheckbox148">
                                               e. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-e.png">
                                             </label>
                                             <br>
-                                            <input class="form-check-input" type="checkbox" name="bagian_26[]" id="examplecheckbox149" value="f">
+                                            <input class="form-check-input" type="checkbox" name="gabungan_26[]" id="examplecheckbox149" value="f">
                                             <label class="form-check-label" for="examplecheckbox149">
                                               f. <img width="50%" height="50%" src="resources\question\assets\img\soal-psikotes\jwb-gabungan-26-f.png">
                                             </label>
@@ -3696,234 +3696,234 @@ if ($temp_menit < 60) {
 
 <script>
   $(document).ready(function(){
-			$("input[name='bagian_1[]']").change(function() {
+			$("input[name='gabungan_1[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_1[]']:checked").length;
+                              var jml = $("input[name='gabungan_1[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_2[]']").change(function() {
+			$("input[name='gabungan_2[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_2[]']:checked").length;
+                              var jml = $("input[name='gabungan_2[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_3[]']").change(function() {
+			$("input[name='gabungan_3[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_3[]']:checked").length;
+                              var jml = $("input[name='gabungan_3[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_4[]']").change(function() {
+			$("input[name='gabungan_4[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_4[]']:checked").length;
+                              var jml = $("input[name='gabungan_4[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_5[]']").change(function() {
+			$("input[name='gabungan_5[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_5[]']:checked").length;
+                              var jml = $("input[name='gabungan_5[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_6[]']").change(function() {
+			$("input[name='gabungan_6[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_6[]']:checked").length;
+                              var jml = $("input[name='gabungan_6[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_7[]']").change(function() {
+			$("input[name='gabungan_7[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_7[]']:checked").length;
+                              var jml = $("input[name='gabungan_7[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_8[]']").change(function() {
+			$("input[name='gabungan_8[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_8[]']:checked").length;
+                              var jml = $("input[name='gabungan_8[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_9[]']").change(function() {
+			$("input[name='gabungan_9[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_9[]']:checked").length;
+                              var jml = $("input[name='gabungan_9[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_10[]']").change(function() {
+			$("input[name='gabungan_10[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_10[]']:checked").length;
+                              var jml = $("input[name='gabungan_10[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_11[]']").change(function() {
+			$("input[name='gabungan_11[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_11[]']:checked").length;
+                              var jml = $("input[name='gabungan_11[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_12[]']").change(function() {
+			$("input[name='gabungan_12[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_12[]']:checked").length;
+                              var jml = $("input[name='gabungan_12[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_13[]']").change(function() {
+			$("input[name='gabungan_13[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_13[]']:checked").length;
+                              var jml = $("input[name='gabungan_13[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_14[]']").change(function() {
+			$("input[name='gabungan_14[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_14[]']:checked").length;
+                              var jml = $("input[name='gabungan_14[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_15[]']").change(function() {
+			$("input[name='gabungan_15[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_15[]']:checked").length;
+                              var jml = $("input[name='gabungan_15[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_16[]']").change(function() {
+			$("input[name='gabungan_16[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_16[]']:checked").length;
+                              var jml = $("input[name='gabungan_16[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_17[]']").change(function() {
+			$("input[name='gabungan_17[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_17[]']:checked").length;
+                              var jml = $("input[name='gabungan_17[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_18[]']").change(function() {
+			$("input[name='gabungan_18[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_18[]']:checked").length;
+                              var jml = $("input[name='gabungan_18[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_19[]']").change(function() {
+			$("input[name='gabungan_19[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_19[]']:checked").length;
+                              var jml = $("input[name='gabungan_19[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_20[]']").change(function() {
+			$("input[name='gabungan_20[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_20[]']:checked").length;
+                              var jml = $("input[name='gabungan_20[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_21[]']").change(function() {
+			$("input[name='gabungan_21[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_21[]']:checked").length;
+                              var jml = $("input[name='gabungan_21[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_22[]']").change(function() {
+			$("input[name='gabungan_22[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_22[]']:checked").length;
+                              var jml = $("input[name='gabungan_22[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_23[]']").change(function() {
+			$("input[name='gabungan_23[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_23[]']:checked").length;
+                              var jml = $("input[name='gabungan_23[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_24[]']").change(function() {
+			$("input[name='gabungan_24[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_24[]']:checked").length;
+                              var jml = $("input[name='gabungan_24[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_25[]']").change(function() {
+			$("input[name='gabungan_25[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_25[]']:checked").length;
+                              var jml = $("input[name='gabungan_25[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}
 			});
 		});
   $(document).ready(function(){
-			$("input[name='bagian_26[]']").change(function() {
+			$("input[name='gabungan_26[]']").change(function() {
                              var maxpil = 2;
-                              var jml = $("input[name='bagian_26[]']:checked").length;
+                              var jml = $("input[name='gabungan_26[]']:checked").length;
 				if(jml > maxpil){
 					$(this).prop("checked","");
 			}

@@ -29,7 +29,7 @@ class SearchController extends Controller
         $search = $request->search;
 
         $data = DB::table('data_pelamar')
-                ->where('nik', 'like',"%".$search."%")
+                ->where('id_card_number', 'like',"%".$search."%")
                 ->get();
 
         return view('pages.admin.search',[
@@ -42,11 +42,11 @@ class SearchController extends Controller
 
     public function delete($id){
         $data = Pelamar::find($id);
-        if($data->foto_ktp){
-            unlink(public_path('images/foto_ktp').'/'.$data->foto_ktp);
+        if($data->file_photo){
+            unlink(public_path('images/photos').'/'.$data->file_photo);
          }
-         if($data->cv){
-            unlink(public_path('images/cv').'/'.$data->cv);
+         if($data->file_cv){
+            unlink(public_path('images/cv').'/'.$data->file_cv);
          }
         $data->delete();
             session()->flash("success", "Data deleted successfully!");

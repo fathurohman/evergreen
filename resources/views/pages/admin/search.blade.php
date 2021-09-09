@@ -55,8 +55,9 @@
                 <table id="example1s" class="table table-bordered table-striped">
                     <thead>
                     <tr align="center">
+                      <th>Photo</th>
                       <th>Nik</th>
-                      <th>Nama</th>
+                      <th>Name</th>
                       <th>Action</th>
                     </tr>
                     </thead>
@@ -66,8 +67,10 @@
 
                     @foreach ($data as $index=>$item)
                     <tr align="center">
-                      <td>{{$item->nik}}</td>
-                      <td>{{$item->nama}}</td>
+                      <td><img src="{{asset('/images/photos')}}/{{$item->file_photo}}" style="max-width: 100px;margin-top: 10px;margin-bottom: 10px">
+                      </td>
+                      <td>{{$item->id_card_number}}</td>
+                      <td>{{$item->personal_name}}</td>
                       <td><a onclick="return confirm('Are you sure you want to delete the data ?');" class="btn btn-danger" href="/delete_pelamar/{{ $item->id }}"><i class="fa fa-trash"></i></a>
                       </td>
                     </tr>

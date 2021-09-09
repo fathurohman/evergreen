@@ -55,14 +55,15 @@
                 <table id="example1s" class="table table-bordered table-striped">
                     <thead>
                     <tr align="center">
+                      <th>Photo</th>
                       <th>Nik</th>
-                      <th>Nama</th>
+                      <th>Name</th>
                       <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="4">
                             <p align="center">-</p></td>
 
                     </tr>

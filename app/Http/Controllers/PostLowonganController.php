@@ -734,7 +734,177 @@ class PostLowonganController extends Controller
 
     public function result_psikotest($id){
 
+        $data = DB::table('data_pelamar')
+                         ->leftjoin('bagian', 'bagian.id','=','data_pelamar.id_department')
+                         ->leftjoin('position', 'position.id','=','data_pelamar.id_position')
+                         ->select('data_pelamar.*','bagian.nama_bagian','position.nama_posisi')
+                         ->where('data_pelamar.id', $id)
+                         ->orderBy('data_pelamar.id', 'DESC')
+                         ->get();
+
+        $data_psikotest = DB::table('psikotest')
+                    ->leftjoin('data_pelamar', 'data_pelamar.id','=','psikotest.id_data_pelamar')
+                    ->where('psikotest.id_data_pelamar', $id)
+                    ->get();
+
+        foreach ($data_psikotest as $index=>$datas){
+
+            $angka_1 = $datas->angka_1;
+            $angka_2 = $datas->angka_2;
+            $angka_3 = $datas->angka_3;
+            $angka_4 = $datas->angka_4;
+            $angka_5 = $datas->angka_5;
+            $angka_6 = $datas->angka_6;
+            $angka_7 = $datas->angka_7;
+            $angka_8 = $datas->angka_8;
+            $angka_9 = $datas->angka_9;
+            $angka_10 = $datas->angka_10;
+            $angka_11 = $datas->angka_11;
+            $angka_12 = $datas->angka_12;
+            $angka_13 = $datas->angka_13;
+            $angka_14 = $datas->angka_14;
+            $angka_15 = $datas->angka_15;
+            $angka_16 = $datas->angka_16;
+            $angka_17 = $datas->angka_17;
+            $angka_18 = $datas->angka_18;
+            $angka_19 = $datas->angka_19;
+            $angka_20 = $datas->angka_20;
+            $angka_21 = $datas->angka_21;
+            $angka_22 = $datas->angka_22;
+            $angka_23 = $datas->angka_23;
+            $angka_24 = $datas->angka_24;
+            $angka_25 = $datas->angka_25;
+            $angka_26 = $datas->angka_26;
+            $angka_27 = $datas->angka_27;
+            $angka_28 = $datas->angka_28;
+            $angka_29 = $datas->angka_29;
+            $angka_30 = $datas->angka_30;
+            $angka_31 = $datas->angka_31;
+            $angka_32 = $datas->angka_32;
+            $angka_33 = $datas->angka_33;
+            $angka_34 = $datas->angka_34;
+            $angka_35 = $datas->angka_35;
+            $angka_36 = $datas->angka_36;
+            $angka_37 = $datas->angka_37;
+            $angka_38 = $datas->angka_38;
+            $angka_39 = $datas->angka_39;
+            $angka_40 = $datas->angka_40;
+            $gabungan_1 = $datas->gabungan_1;
+            $gabungan_2 = $datas->gabungan_2;
+            $gabungan_3 = $datas->gabungan_3;
+            $gabungan_4 = $datas->gabungan_4;
+            $gabungan_5 = $datas->gabungan_5;
+            $gabungan_6 = $datas->gabungan_6;
+            $gabungan_7 = $datas->gabungan_7;
+            $gabungan_8 = $datas->gabungan_8;
+            $gabungan_9 = $datas->gabungan_9;
+            $gabungan_10 = $datas->gabungan_10;
+            $gabungan_11 = $datas->gabungan_11;
+            $gabungan_12 = $datas->gabungan_12;
+            $gabungan_13 = $datas->gabungan_13;
+            $gabungan_14 = $datas->gabungan_14;
+            $gabungan_15 = $datas->gabungan_15;
+            $gabungan_16 = $datas->gabungan_16;
+            $gabungan_17 = $datas->gabungan_17;
+            $gabungan_18 = $datas->gabungan_18;
+            $gabungan_19 = $datas->gabungan_19;
+            $gabungan_20 = $datas->gabungan_20;
+            $gabungan_21 = $datas->gabungan_21;
+            $gabungan_22 = $datas->gabungan_22;
+            $gabungan_23 = $datas->gabungan_23;
+            $gabungan_24 = $datas->gabungan_24;
+            $gabungan_25 = $datas->gabungan_25;
+            $gabungan_26 = $datas->gabungan_26;
+            $hubungan_1 = $datas->hubungan_1;
+            $hubungan_2 = $datas->hubungan_2;
+            $hubungan_3 = $datas->hubungan_3;
+            $hubungan_4 = $datas->hubungan_4;
+            $hubungan_5 = $datas->hubungan_5;
+            $hubungan_6 = $datas->hubungan_6;
+            $hubungan_7 = $datas->hubungan_7;
+            $hubungan_8 = $datas->hubungan_8;
+            $hubungan_9 = $datas->hubungan_9;
+            $hubungan_10 = $datas->hubungan_10;
+            $hubungan_11 = $datas->hubungan_11;
+            $hubungan_12 = $datas->hubungan_12;
+            $hubungan_13 = $datas->hubungan_13;
+            $hubungan_14 = $datas->hubungan_14;
+            $hubungan_15 = $datas->hubungan_15;
+            $hubungan_16 = $datas->hubungan_16;
+            $hubungan_17 = $datas->hubungan_17;
+            $hubungan_18 = $datas->hubungan_18;
+            $hubungan_19 = $datas->hubungan_19;
+            $hubungan_20 = $datas->hubungan_20;
+            $hubungan_21 = $datas->hubungan_21;
+            $hubungan_22 = $datas->hubungan_22;
+            $hubungan_23 = $datas->hubungan_23;
+            $hubungan_24 = $datas->hubungan_24;
+            $hubungan_25 = $datas->hubungan_25;
+            $hubungan_26 = $datas->hubungan_26;
+            $hubungan_27 = $datas->hubungan_27;
+            $hubungan_28 = $datas->hubungan_28;
+            $hubungan_29 = $datas->hubungan_29;
+            $hubungan_30 = $datas->hubungan_30;
+            $hubungan_31 = $datas->hubungan_31;
+            $hubungan_32 = $datas->hubungan_32;
+            $hubungan_33 = $datas->hubungan_33;
+            $hubungan_34 = $datas->hubungan_34;
+            $hubungan_35 = $datas->hubungan_35;
+            $hubungan_36 = $datas->hubungan_36;
+            $hubungan_37 = $datas->hubungan_37;
+            $hubungan_38 = $datas->hubungan_38;
+            $hubungan_39 = $datas->hubungan_39;
+            $hubungan_40 = $datas->hubungan_40;
+            $abstraksi_1 = $datas->abstraksi_1;
+            $abstraksi_2 = $datas->abstraksi_2;
+            $abstraksi_3 = $datas->abstraksi_3;
+            $abstraksi_4 = $datas->abstraksi_4;
+            $abstraksi_5 = $datas->abstraksi_5;
+            $abstraksi_6 = $datas->abstraksi_6;
+            $abstraksi_7 = $datas->abstraksi_7;
+            $abstraksi_8 = $datas->abstraksi_8;
+            $abstraksi_9 = $datas->abstraksi_9;
+            $abstraksi_10 = $datas->abstraksi_10;
+            $abstraksi_11 = $datas->abstraksi_11;
+            $abstraksi_12 = $datas->abstraksi_12;
+            $abstraksi_13 = $datas->abstraksi_13;
+            $abstraksi_14 = $datas->abstraksi_14;
+            $abstraksi_15 = $datas->abstraksi_15;
+            $abstraksi_16 = $datas->abstraksi_16;
+            $abstraksi_17 = $datas->abstraksi_17;
+            $abstraksi_18 = $datas->abstraksi_18;
+            $abstraksi_19 = $datas->abstraksi_19;
+            $abstraksi_20 = $datas->abstraksi_20;
+            $abstraksi_21 = $datas->abstraksi_21;
+            $abstraksi_22 = $datas->abstraksi_22;
+            $abstraksi_23 = $datas->abstraksi_23;
+            $abstraksi_24 = $datas->abstraksi_24;
+            $abstraksi_25 = $datas->abstraksi_25;
+            $abstraksi_26 = $datas->abstraksi_26;
+            $abstraksi_27 = $datas->abstraksi_27;
+            $abstraksi_28 = $datas->abstraksi_28;
+            $abstraksi_29 = $datas->abstraksi_29;
+            $abstraksi_30 = $datas->abstraksi_30;
+
+            }
+
+
+        return view('pages.print.psikotest', compact('data', 'angka_1', 'angka_2', 'angka_3', 'angka_4', 'angka_5'
+        , 'angka_6', 'angka_7', 'angka_8', 'angka_9', 'angka_10', 'angka_11', 'angka_12', 'angka_13', 'angka_14', 'angka_15', 'angka_16'
+        , 'angka_17', 'angka_18', 'angka_19', 'angka_20', 'angka_21', 'angka_22', 'angka_23', 'angka_24', 'angka_25', 'angka_26', 'angka_27'
+        , 'angka_28', 'angka_29', 'angka_30', 'angka_31', 'angka_32', 'angka_33', 'angka_34', 'angka_35', 'angka_36', 'angka_37', 'angka_38'
+        , 'angka_39', 'angka_40', 'gabungan_1', 'gabungan_2', 'gabungan_3', 'gabungan_4', 'gabungan_5', 'gabungan_6', 'gabungan_7', 'gabungan_8'
+        , 'gabungan_9', 'gabungan_10', 'gabungan_11', 'gabungan_12', 'gabungan_13', 'gabungan_14', 'gabungan_15', 'gabungan_16', 'gabungan_17'
+        , 'gabungan_18', 'gabungan_19', 'gabungan_20', 'gabungan_21', 'gabungan_22', 'gabungan_23', 'gabungan_24', 'gabungan_25', 'gabungan_26'
+        , 'hubungan_1', 'hubungan_2', 'hubungan_3', 'hubungan_4', 'hubungan_5', 'hubungan_6', 'hubungan_7', 'hubungan_8', 'hubungan_9'
+        , 'hubungan_10', 'hubungan_11', 'hubungan_12', 'hubungan_13', 'hubungan_14', 'hubungan_15', 'hubungan_16', 'hubungan_17', 'hubungan_18'
+        , 'hubungan_19', 'hubungan_20', 'hubungan_21', 'hubungan_22', 'hubungan_23', 'hubungan_24', 'hubungan_25', 'hubungan_26', 'hubungan_27'
+        , 'hubungan_28', 'hubungan_29', 'hubungan_30', 'hubungan_31', 'hubungan_32', 'hubungan_33', 'hubungan_34', 'hubungan_35', 'hubungan_36'
+        , 'hubungan_37', 'hubungan_38', 'hubungan_39', 'hubungan_40', 'abstraksi_1', 'abstraksi_2', 'abstraksi_3', 'abstraksi_4', 'abstraksi_5'
+        , 'abstraksi_6', 'abstraksi_7', 'abstraksi_8', 'abstraksi_9', 'abstraksi_10', 'abstraksi_11', 'abstraksi_12', 'abstraksi_13', 'abstraksi_14'
+        , 'abstraksi_15', 'abstraksi_16', 'abstraksi_17', 'abstraksi_18', 'abstraksi_19', 'abstraksi_20', 'abstraksi_21', 'abstraksi_22','abstraksi_23', 'abstraksi_24', 'abstraksi_25', 'abstraksi_26', 'abstraksi_27', 'abstraksi_28', 'abstraksi_29', 'abstraksi_30'));
     }
 
-
 }
+
+

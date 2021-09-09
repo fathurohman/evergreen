@@ -143,9 +143,34 @@
                       {{-- <td>
                         </td> --}}
 
+                        @php
+
+                            $data_psikotest = DB::table('psikotest')
+                                            ->leftjoin('data_pelamar', 'data_pelamar.id','=','psikotest.id_data_pelamar')
+                                            ->where('psikotest.id_data_pelamar', $item->id)
+                                            ->get();
+
+                            $data_binggris = DB::table('b_inggris')
+                                        ->leftjoin('data_pelamar', 'data_pelamar.id','=','b_inggris.id_data_pelamar')
+                                        ->where('b_inggris.id_data_pelamar', $item->id)
+                                        ->get();
+
+                        @endphp
+
                      <td>
-                        <a target="_blank" class="btn btn-primary" href="/result_psikotest/{{ $item->id }}"><i class="fa fa-poll-h"></i> Psychological Test</a>
-                        <a target="_blank" class="btn btn-primary" href="/result_english/{{ $item->id }}"><i class="fa fa-poll"></i> English Test</a>
+                        @if ($data_psikotest->isEmpty())
+                            <span class="badge badge-warning"> Haven't filled out the psychotest yet</span>
+                        @else
+                            <a target="_blank" class="btn btn-primary" href="/result_psikotest/{{ $item->id }}"><i class="fa fa-print"></i> Psychological Test</a>
+                        @endif
+
+                        @if ($data_binggris->isEmpty())
+                            <span class="badge badge-warning"> Haven't filled out the English test yet</span>
+                        @else
+                            <a target="_blank" class="btn btn-primary" href="/result_english/{{ $item->id }}"><i class="fa fa-print"></i> English Test</a>
+                        @endif
+
+
                         <br>
                         <a class="btn btn-info" href="/detail_applicants/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
                         <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc_1/{{ $item->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>

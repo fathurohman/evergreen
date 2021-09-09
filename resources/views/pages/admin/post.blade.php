@@ -53,6 +53,7 @@
                       <th>Image</th>
                       <th>Department</th>
                       <th>Title</th>
+                      <th>Position</th>
                       <th>End Date</th>
                       <th>Action</th>
 
@@ -68,6 +69,17 @@
                       </td>
                       <td>{{$item->nama_bagian }}</td>
                       <td>{{$item->judul }}</td>
+                      <td>
+                        @php
+                            $data_position = DB::table('position')
+                                          ->where('id_post_lowongan' , $item->id)
+                                          ->get();
+                        @endphp
+                      @foreach ($data_position as $index=>$items)
+                          {{$index+1}}. {{$items->nama_posisi}} <br>
+                      @endforeach
+
+                    </td>
                       <td>
                         <?php
                         $tanggal = $item->tanggal_akhir;
@@ -120,7 +132,7 @@
                         <td colspan="4">
                             <div class="input-group mb-3">
 
-                                <input value="{{$uri}}/form/{{ $item->id }}" type="text" class="form-control" id="pilih" readonly>
+                                <input value="http://127.0.0.1:8000/form/applicants/{{ $item->id }}" type="text" class="form-control" id="pilih" readonly>
                                 <div class="input-group-append">
                                   <button class="btn btn-info" type="button" onclick="copy_text()"><i class="fa fa-copy"></i> Copy</button>
                                 </div>

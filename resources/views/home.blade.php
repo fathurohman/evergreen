@@ -55,7 +55,7 @@
                     <span class="info-box-icon bg-info"><i class="far fa-file-alt"></i></span>
 
                     <div class="info-box-content">
-                      <span class="info-box-text">Job Posting</span>
+                      <span class="info-box-text">Jobs Posting</span>
                       <span class="info-box-number">{{$allpost}}</span>
                     </div>
                     <!-- /.info-box-content -->

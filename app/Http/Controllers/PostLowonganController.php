@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post_lowongan;
 use App\Models\Pelamar;
+use App\Models\B_inggris;
+use App\Models\Psikotest;
 use PDF;
 use App;
 
@@ -602,6 +604,135 @@ class PostLowonganController extends Controller
     	//return $pdf->stream();
         // return $pdf->download();
         return view('pages.print.form', compact('data'));
+
+    }
+
+    public function result_english($id){
+
+        $data = DB::table('data_pelamar')
+                         ->leftjoin('bagian', 'bagian.id','=','data_pelamar.id_department')
+                         ->leftjoin('position', 'position.id','=','data_pelamar.id_position')
+                         ->select('data_pelamar.*','bagian.nama_bagian','position.nama_posisi')
+                         ->where('data_pelamar.id', $id)
+                         ->orderBy('data_pelamar.id', 'DESC')
+                         ->get();
+
+        $data_test = DB::table('b_inggris')
+                    ->leftjoin('data_pelamar', 'data_pelamar.id','=','b_inggris.id_data_pelamar')
+                    ->where('b_inggris.id_data_pelamar', $id)
+                    ->get();
+
+        foreach ($data_test as $index=>$items){
+
+            $nomor = 0;
+            $jwb_1 = $items->jwb_1;
+            $jwb_2 = $items->jwb_2;
+            $jwb_3 = $items->jwb_3;
+            $jwb_4 = $items->jwb_4;
+            $jwb_5 = $items->jwb_5;
+            $jwb_6 = $items->jwb_6;
+            $jwb_7 = $items->jwb_7;
+            $jwb_8 = $items->jwb_8;
+            $jwb_9 = $items->jwb_9;
+            $jwb_10 = $items->jwb_10;
+            $jwb_11 = $items->jwb_11;
+            $jwb_12 = $items->jwb_12;
+            $jwb_13 = $items->jwb_13;
+            $jwb_14 = $items->jwb_14;
+            $jwb_15 = $items->jwb_15;
+            $jwb_16 = $items->jwb_16;
+            $jwb_17 = $items->jwb_17;
+            $jwb_18 = $items->jwb_18;
+            $jwb_19 = $items->jwb_19;
+            $jwb_20 = $items->jwb_20;
+            $jwb_21 = $items->jwb_21;
+            $jwb_22 = $items->jwb_22;
+            $jwb_23 = $items->jwb_23;
+            $jwb_24 = $items->jwb_24;
+            $jwb_25 = $items->jwb_25;
+            $jwb_26 = $items->jwb_26;
+            $jwb_27 = $items->jwb_27;
+            $jwb_28 = $items->jwb_28;
+            $jwb_29 = $items->jwb_29;
+            $jwb_30 = $items->jwb_30;
+            $jwb_31 = $items->jwb_31;
+            $jwb_32 = $items->jwb_32;
+            $jwb_33 = $items->jwb_33;
+            $jwb_34 = $items->jwb_34;
+            $jwb_35 = $items->jwb_35;
+            $jwb_36 = $items->jwb_36;
+            $jwb_37 = $items->jwb_37;
+            $jwb_38 = $items->jwb_38;
+            $jwb_39 = $items->jwb_39;
+            $jwb_40 = $items->jwb_40;
+            $jwb_41 = $items->jwb_41;
+            $jwb_42 = $items->jwb_42;
+            $jwb_43 = $items->jwb_43;
+            $jwb_44 = $items->jwb_44;
+            $jwb_45 = $items->jwb_45;
+            $jwb_46 = $items->jwb_46;
+            $jwb_47 = $items->jwb_47;
+            $jwb_48 = $items->jwb_48;
+            $jwb_49 = $items->jwb_49;
+            $jwb_50 = $items->jwb_50;
+            $jwb_51 = $items->jwb_51;
+            $jwb_52 = $items->jwb_52;
+            $jwb_53 = $items->jwb_53;
+            $jwb_54 = $items->jwb_54;
+            $jwb_55 = $items->jwb_55;
+            $jwb_56 = $items->jwb_56;
+            $jwb_57 = $items->jwb_57;
+            $jwb_58 = $items->jwb_58;
+            $jwb_59 = $items->jwb_59;
+            $jwb_60 = $items->jwb_60;
+            $jwb_61 = $items->jwb_61;
+            $jwb_62 = $items->jwb_62;
+            $jwb_63 = $items->jwb_63;
+            $jwb_64 = $items->jwb_64;
+            $jwb_65 = $items->jwb_65;
+            $jwb_66 = $items->jwb_66;
+            $jwb_67 = $items->jwb_67;
+            $jwb_68 = $items->jwb_68;
+            $jwb_69 = $items->jwb_69;
+            $jwb_70 = $items->jwb_70;
+            $jwb_71 = $items->jwb_71;
+            $jwb_72 = $items->jwb_72;
+            $jwb_73 = $items->jwb_73;
+            $jwb_74 = $items->jwb_74;
+            $jwb_75 = $items->jwb_75;
+            $jwb_76 = $items->jwb_76;
+            $jwb_77 = $items->jwb_77;
+            $jwb_78 = $items->jwb_78;
+            $jwb_79 = $items->jwb_79;
+            $jwb_80 = $items->jwb_80;
+            $jwb_81 = $items->jwb_81;
+            $jwb_82 = $items->jwb_82;
+            $jwb_83 = $items->jwb_83;
+            $jwb_84 = $items->jwb_84;
+            $jwb_85 = $items->jwb_85;
+            $jwb_86 = $items->jwb_86;
+            $jwb_87 = $items->jwb_87;
+            $jwb_88 = $items->jwb_88;
+            $jwb_89 = $items->jwb_89;
+            $jwb_90 = $items->jwb_90;
+            $jwb_91 = $items->jwb_91;
+            $jwb_92 = $items->jwb_92;
+            $jwb_93 = $items->jwb_93;
+            $jwb_94 = $items->jwb_94;
+            $jwb_95 = $items->jwb_95;
+            $jwb_96 = $items->jwb_96;
+            $jwb_97 = $items->jwb_97;
+            $jwb_98 = $items->jwb_98;
+            $jwb_99 = $items->jwb_99;
+            $jwb_100 = $items->jwb_100;
+
+            }
+
+
+        return view('pages.print.english_test', compact('data', 'nomor', 'jwb_1', 'jwb_2', 'jwb_3', 'jwb_4', 'jwb_5', 'jwb_6', 'jwb_7', 'jwb_8', 'jwb_9', 'jwb_10', 'jwb_11', 'jwb_12', 'jwb_13', 'jwb_14', 'jwb_15', 'jwb_16', 'jwb_17', 'jwb_18', 'jwb_19', 'jwb_20', 'jwb_21', 'jwb_22', 'jwb_23', 'jwb_24', 'jwb_25', 'jwb_26', 'jwb_27', 'jwb_28', 'jwb_29', 'jwb_30', 'jwb_31', 'jwb_32', 'jwb_33', 'jwb_34', 'jwb_35', 'jwb_36', 'jwb_37', 'jwb_38', 'jwb_39', 'jwb_40', 'jwb_41', 'jwb_42', 'jwb_43', 'jwb_44', 'jwb_45', 'jwb_46', 'jwb_47', 'jwb_48', 'jwb_49', 'jwb_50', 'jwb_51', 'jwb_52', 'jwb_53', 'jwb_54', 'jwb_55', 'jwb_56', 'jwb_57', 'jwb_58', 'jwb_59', 'jwb_60', 'jwb_61', 'jwb_62', 'jwb_63', 'jwb_64', 'jwb_65', 'jwb_66', 'jwb_67', 'jwb_68', 'jwb_69', 'jwb_70', 'jwb_71', 'jwb_72', 'jwb_73', 'jwb_74', 'jwb_75', 'jwb_76', 'jwb_77', 'jwb_78', 'jwb_79', 'jwb_80', 'jwb_81', 'jwb_82', 'jwb_83', 'jwb_84', 'jwb_85', 'jwb_86', 'jwb_87', 'jwb_88', 'jwb_89', 'jwb_90', 'jwb_91', 'jwb_92', 'jwb_93', 'jwb_94', 'jwb_95', 'jwb_96', 'jwb_97', 'jwb_98', 'jwb_99','jwb_100'));
+    }
+
+    public function result_psikotest($id){
 
     }
 

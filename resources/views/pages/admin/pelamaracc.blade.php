@@ -144,8 +144,8 @@
                         </td> --}}
 
                      <td>
-                        <a class="btn btn-primary" href="/detail_applicants/{{ $item->id }}"><i class="fa fa-poll-h"></i> Psychological Test</a>
-                        <a class="btn btn-primary" href="/detail_applicants/{{ $item->id }}"><i class="fa fa-poll"></i> English Test</a>
+                        <a target="_blank" class="btn btn-primary" href="/result_psikotest/{{ $item->id }}"><i class="fa fa-poll-h"></i> Psychological Test</a>
+                        <a target="_blank" class="btn btn-primary" href="/result_english/{{ $item->id }}"><i class="fa fa-poll"></i> English Test</a>
                         <br>
                         <a class="btn btn-info" href="/detail_applicants/{{ $item->id }}"><i class="fa fa-info"></i> Detail</a>
                         <a onclick="return confirm('Cancel Acc ?');" class="btn btn-danger" href="/cancel_acc_1/{{ $item->id }}"><i class="fa fa-times-circle"></i> Cancel Acc</a>

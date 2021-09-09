@@ -74,6 +74,8 @@ Route::get('/acc_detail/{id}', [PostLowonganController::class, 'acc_detail']);
 Route::get('/download_foto/{id}', [PostLowonganController::class, 'download_foto']);
 Route::get('/download_cv/{id}', [PostLowonganController::class, 'download_cv']);
 Route::get('/print_form/{id}', [PostLowonganController::class, 'print_form']);
+Route::get('/result_english/{id}', [PostLowonganController::class, 'result_english']);
+Route::get('/result_psikotest/{id}', [PostLowonganController::class, 'result_psikotest']);
 
 //acc pelamar//
 Route::get('/acc_applicant', [AccPelamarController::class, 'index']);

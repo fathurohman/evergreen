@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-$koneksi = mysqli_connect("localhost","root","","evergreen");
+include('..\db\koneksi.php');
 
 if (isset($_POST['msform'])) {
   $id_data_pelamar = $_POST['id_data_pelamar'];

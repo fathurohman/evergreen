@@ -27,7 +27,7 @@ $id_data_pelamar=$_SESSION["id_data_pelamar"];
 $personal_name=$_SESSION["personal_name"];
 $id_card_number=$_SESSION["id_card_number"];
 
-$koneksi = mysqli_connect("localhost","root","","evergreen");
+include('db\koneksi.php');
 
 //set session dulu dengan nama $_SESSION["mulai"]
 if (isset($_SESSION["mulai"])) {

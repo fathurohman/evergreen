@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$koneksi = mysqli_connect("localhost","root","","evergreen");
+include('..\db\koneksi.php');
 
 $id_card_number = $_POST["id_card_number"];
 $tes = $_POST["tes"];

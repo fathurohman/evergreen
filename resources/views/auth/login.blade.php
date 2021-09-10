@@ -25,7 +25,7 @@ background-attachment: fixed;" class="hold-transition login-page">
   <div class="login-logo">
       <img class="img-fluid" src="">
        <img style="max-width: 150px;margin-top: 10px;margin-bottom: 10px" src="{{asset('images/evergreen_logo.png')}}"><br>
-    <a href=""><b>HRD</b> | Recruitment </a>
+    <a href=""><font color="white"><b>HRD</b> | Recruitment </font></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

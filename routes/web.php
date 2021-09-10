@@ -7,6 +7,7 @@ use App\Http\Controllers\BagianController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\AccPelamarController;
+use App\Http\Controllers\FormController;
 
 
 /*
@@ -25,11 +26,11 @@ Route::get('/', function () {
 });
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 //Formulir Pendaftaran
-Route::get('/form/applicants/{id}', [PostLowonganController::class, 'formindex'])->name('formindex');
-Route::post('/form/applicants/store', [PostLowonganController::class, 'formstore'])->name('form.store');
+Route::get('/form/applicants/{id}', [FormController::class, 'formindex'])->name('formindex');
+Route::post('/form/applicants/store', [FormController::class, 'formstore'])->name('form.store');
 
 // routes yg bisa di akses jika sudah login
 Route::middleware(['auth'])->group(function () {
